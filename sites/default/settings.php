@@ -249,10 +249,10 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'socialfinance_db',
-      'username' => 'sf_db_user',
+      'database' => 'c3sfdev_db',
+      'username' => 'c3socfindev',
       'password' => '7tPoKVjIYgJntqqi',
-      'host' => 'localhost',
+      'host' => '',
       'port' => '',
       'driver' => 'mysql',
       'prefix' => '',

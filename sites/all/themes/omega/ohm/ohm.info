@@ -82,8 +82,8 @@ settings[omega_demo_regions_list][sidebar_second] = sidebar_second
 settings[omega_demo_regions_list][footer] = footer
 
 ; Information added by Drupal.org packaging script on 2015-07-21
-version = "7.x-4.3+11-dev"
+version = "7.x-4.4"
 core = "7.x"
 project = "omega"
-datestamp = "1437470958"
+datestamp = "1437473042"
 
