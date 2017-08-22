@@ -1,0 +1,184 @@
+// Import external libraries.
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+@import "toolkit";
+
+// Import variables, abstractions, base styles and components using globbing.
+//
+// Globbing will always import files alphabetically. Optimally, all your
+// components should be self-contained and explicit enough to not have any
+// contained styles leak into unrelated components: The import order should not
+// affect the result.
+//
+// If there are variables, functions or mixins that depend on each other and
+// therefore need to be imported in a specific order you can import them
+// directly. Variables-, function- or mixin providing partials should never
+// output any styles themselves: Importing them multiple times to resolve
+// dependencies shouldn't be a problem.
+@import "../../variables/**/*";
+@import "../../abstractions/**/*";
+@import "../../layout/**/*";
+@import "../../base/**/*";
+@import "../../components/**/*"; 
+
+html,body {height:100%;margin:0;padding:0;}
+.l-page {min-height:100%;position:relative;}
+.l-main {padding-bottom:475px;}
+.l-footer-wrapper {
+	position:absolute;
+	bottom:0;
+	height:475px; 
+	background-color:$grey;
+	width:100%;
+} 
+
+
+h2 {
+    font-family:"Avenir LT W01 35 Light";
+	font-size:2em;
+	text-align: center;
+	margin-top:0;
+	padding-top:20px;
+}
+h4 {
+	text-transform: uppercase;
+	text-align: center;
+	padding-top:20px; 
+}
+
+.hero {
+	height:auto;
+	overflow: hidden;
+}
+
+@include breakpoint($gridded) {
+	h4 {padding-top:0;}	
+.hero {
+	height:500px;
+	overflow: hidden;
+}
+}
+
+.hero .pane-title {
+	position:relative;
+	top:180px;
+	color:#ffffff;
+	font-size:3em;
+	padding:0;
+	margin:0 auto;
+	text-align: center;
+}
+
+
+.l-region--whoweare {
+	background-color: #f3f2f1;
+}
+.l-region--search {
+	padding:20px 0;
+}
+.l-region--whatwedo {
+	background-color: $beige;
+}
+.l-region--resources {
+	background-color: #ffffff;
+}
+
+.down {
+	width:100%;
+	float:left;
+}
+
+
+.l-region--careers {
+	background-color:$lightblue;
+}
+
+#whoweare, #careers, #resources, #whatwedo, .l-region--search {
+	margin:0 20px;
+	@include clearfix;
+}
+.hero {
+	@include clearfix;
+}
+
+#whoweare h2,
+#whoweare h4 {
+	color:$pink;
+}
+#resources h2,
+#resources h4 {
+	color:$orange;
+}
+
+#careers h2,
+#careers h4 {
+	color:$blue;
+}
+
+#resources #projects,
+#resources #blogs,
+#resources #pubs,
+#resources #ibd,
+#whoweare #about, 
+#whoweare #people, 
+#whoweare #global, 
+#whoweare #news,
+#careers #gradbro,
+#careers #vacancies,
+#careers #workwithus {
+	width:100%;
+} 
+
+@include breakpoint($gridded) {
+	
+#resources #projects,
+#resources #blogs,
+#resources #pubs,
+#resources #ibd,	
+#whoweare #about, 
+#whoweare #people, 
+#whoweare #global, 
+#whoweare #news {
+	width:25%;
+	float:left;
+}
+	
+#careers #gradbro,
+#careers #vacancies,
+#careers #workwithus {
+	width:33%;
+	float:left;
+}
+}
+
+
+#whoweare #about, 
+#whoweare #global {
+	background:#ffffff;
+	height:200px;
+} 
+#whoweare .down img,
+#careers .down img,
+#resources .down img {
+	padding:0px;
+}
+
+
+
+#whoweare img,
+#careers img,
+#resources img {
+	padding:20px;
+}
+
+
+#search-block-form {
+	width:75%;
+	margin:0 auto;
+}
+#search-block-form input.form-text {
+	width:80%;
+}
+
+

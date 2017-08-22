@@ -1,0 +1,149 @@
+/* SCSS file */
+
+.l-header {
+	z-index: 1;
+	@include clearfix;
+
+}
+.l-region--navigation {
+	width:100%;
+	position:fixed;
+	top:0;
+	height:75px;
+	background:#ffffff;
+	-webkit-box-shadow: 0px 8px 7px 0px rgba(50, 50, 50, 0.14);
+	-moz-box-shadow:    0px 8px 7px 0px rgba(50, 50, 50, 0.14);
+	box-shadow:         0px 8px 7px 0px rgba(50, 50, 50, 0.14);
+}
+
+.logged-in .l-region--navigation {
+	top:30px;
+} 
+
+/*MOBILE BLOCKS*/
+#logo-holder {
+	width:200px;
+	padding-top:15px;
+	margin:0 auto;
+}
+#superfish-menu {
+	position:absolute;
+	text-transform: uppercase;
+	top:22px;
+	left:10px;
+}
+#sm-block {
+	display:none;
+}
+#search {
+	position:absolute;
+	top:5px;
+	right:10px;
+}
+			/*LAYOUT BLOCKS*/
+			@include breakpoint($gridded) {
+				#logo-holder {
+				margin:inherit;
+					
+			}
+				#superfish-menu {
+				left:200px;
+				top:31px;
+				width:60%;
+			}
+				#sm-block {
+				display:inherit;
+				position:fixed;
+				top:5px;
+				right:25px;
+			}	
+				#search {
+				position:fixed;
+				top:10px;
+				right:10px;
+			}
+				
+			}
+
+
+#logo-holder img {
+	width: 150px;
+	margin-left:10px;
+}
+
+/* mobile toggle */
+#superfish-1-toggle span {
+	display:block;
+	text-indent:-5000px;
+	width:75px;
+	height:25px;
+	background:url(/sites/all/themes/socialfinance/images/menu.png) no-repeat;
+	
+}
+
+
+#superfish-menu ul#superfish-1 > li {
+	width:23%;
+	margin-right:2%;
+}
+
+#superfish-menu ul li a {
+	display:block;
+	color:#31271c;
+}
+
+#superfish-menu ul li a:hover {
+	color:$pink;
+}
+
+
+#superfish-menu ul li ul {
+	position:fixed;
+	top:70px;
+	left:0;
+	right:0;
+	height:55px;
+	background:rgba(255,255,255,0.8);
+}
+
+#superfish-menu ul li ul li.first {
+	margin-left:200px;
+}
+
+
+#superfish-menu ul li ul li a  {
+	margin:20px 50px 0 0;
+}
+
+
+#sm-block ul, #sm-block li {
+	list-style:none;
+	list-style-image: none;
+	float:left;
+}
+
+#sm-block a {
+	display:block;
+	height:30px;
+}
+#sm-block #email {
+	text-indent: -5000px;
+	background:url(/sites/all/themes/socialfinance/images/sm-block/e.png) no-repeat left bottom;
+	width:45px;
+}
+
+#sm-block #facebook {
+	text-indent: -5000px;
+	background:url(/sites/all/themes/socialfinance/images/sm-block/fb.png) no-repeat left bottom;
+	width:30px;
+}
+#sm-block #twitter {
+	text-indent: -5000px;
+	background:url(/sites/all/themes/socialfinance/images/sm-block/twit.png) no-repeat left bottom;
+	width:40px;
+}
+#sm-block #linkedin {
+	text-indent: -5000px;
+	background:url(/sites/all/themes/socialfinance/images/sm-block/in.png) no-repeat left bottom;
+	width:50px;
+}

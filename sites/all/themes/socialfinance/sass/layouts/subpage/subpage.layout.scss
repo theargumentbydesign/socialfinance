@@ -1,0 +1,84 @@
+// Import external libraries.
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+@import "toolkit";
+
+// Import variables, abstractions, base styles and components using globbing.
+//
+// Globbing will always import files alphabetically. Optimally, all your
+// components should be self-contained and explicit enough to not have any
+// contained styles leak into unrelated components: The import order should not
+// affect the result.
+//
+// If there are variables, functions or mixins that depend on each other and
+// therefore need to be imported in a specific order you can import them
+// directly. Variables-, function- or mixin providing partials should never
+// output any styles themselves: Importing them multiple times to resolve
+// dependencies shouldn't be a problem.
+@import "../../variables/**/*";
+@import "../../abstractions/**/*";
+@import "../../layout/**/*";
+@import "../../base/**/*";
+@import "../../components/**/*";
+
+
+html,body {height:100%;margin:0;padding:0;}
+.l-page {min-height:100%;position:relative;}
+.l-main {padding-bottom:475px;}
+.l-footer-wrapper {
+	position:absolute;
+	bottom:0;
+	height:475px; 
+	background-color:$grey;
+	width:100%;
+} 
+
+
+.l-content {
+	padding-bottom:50px;
+}
+
+
+
+.hero {
+	height:auto;
+	overflow: hidden;
+}
+
+
+@include breakpoint($gridded) {
+.hero {
+	height:500px;
+	overflow: hidden;
+}
+	.page-contact .hero {
+	height:75px;
+}
+}
+
+.hero .pane-page-title { 
+    font-family:"Avenir LT W01 35 Light";
+	position:absolute;
+	top:180px;
+	left:0;
+	right:0;
+	color:#ffffff;
+	font-size:2em;
+	padding:0;
+	margin:0 auto;
+}
+.hero .pane-page-title h1 {
+	text-align: center;
+    font-family:"Avenir LT W01 35 Light";
+}
+
+
+
+.l-content {
+	margin:0 80px;
+}
+
+#superfish-menu li.active-trail a.active {
+	color:$pink;
+}

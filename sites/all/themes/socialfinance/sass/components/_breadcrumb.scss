@@ -1,0 +1,24 @@
+/* CSS Document */
+
+.pane-page-breadcrumb {
+	padding:20px 0;
+}
+.breadcrumb,
+.breadcrumb li {
+	list-style:none;
+	list-style-image:none;
+	float:left;
+	margin:0;
+	padding:0;
+	width:100%;
+}
+.breadcrumb li {
+	float:left;
+	margin:0 5px;
+	padding:0;
+	width:auto;
+}
+
+.breadcrumb li:before {
+	content: '> '
+}

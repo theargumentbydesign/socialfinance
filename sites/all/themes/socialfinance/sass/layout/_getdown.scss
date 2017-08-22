@@ -1,0 +1,12 @@
+/* CSS Document */
+
+html,body {height:100%;margin:0;padding:0;}
+.l-page {min-height:100%;position:relative;}
+.l-main {padding-bottom:475px;}
+.l-footer-wrapper {
+	position:absolute;
+	bottom:0;
+	height:475px; 
+	background-color:$grey;
+	width:100%;
+} 

@@ -1,0 +1,123 @@
+/* CSS Document */
+
+#footlog {
+	width:200px;
+	padding-top:15px;
+	padding-left:10px;
+	margin:0 auto;
+}
+
+
+footer .pane-block-1 {
+	position:absolute;
+	bottom:0;
+	background-color: $darkgrey;
+	width:100%;
+	color:#ffffff;
+}
+
+
+@include breakpoint($gridded) {
+#footlog {
+	width:150px;
+	margin:inherit;
+}
+	#fsm-block {
+		display:inherit;
+		position:absolute;
+		top:0;
+		right:25px;
+	}
+}
+	
+
+#fsm-block ul, #fsm-block li {
+	list-style:none;
+	list-style-image: none;
+	float:left;
+}
+
+#fsm-block a {
+	display:block;
+	height:30px;
+}
+#fsm-block #email {
+	text-indent: -5000px;
+	background:url(/sites/all/themes/socialfinance/images/sm-block/e-wo.png) no-repeat left bottom;
+	width:45px;
+}
+
+#fsm-block #facebook {
+	text-indent: -5000px;
+	background:url(/sites/all/themes/socialfinance/images/sm-block/fb.png) no-repeat left bottom;
+	width:30px;
+}
+#fsm-block #twitter {
+	text-indent: -5000px;
+	background:url(/sites/all/themes/socialfinance/images/sm-block/twit.png) no-repeat left bottom;
+	width:40px;
+}
+#fsm-block #linkedin {
+	text-indent: -5000px;
+	background:url(/sites/all/themes/socialfinance/images/sm-block/in.png) no-repeat left bottom;
+	width:50px;
+}
+
+/* Main menu and addresss block */
+#menu-address {
+	margin:0 20px;
+}
+#menu-address h4 {
+	text-align: left;
+	color:white;
+	margin-top:0;
+}
+
+#menu-address p {
+	margin:0;
+	padding:0 0 10px 0;
+	line-height:1.2em;
+}
+#menu-address .menu1,
+#menu-address .menu2,
+#menu-address .menu3,
+#menu-address .address {
+	color:#ffffff;
+	width:100%;
+}
+
+
+@include breakpoint($gridded) {
+	#menu-address .menu1,
+	#menu-address .menu2,
+	#menu-address .menu3,
+	#menu-address .address {
+		float:left;
+		width:25%;
+		padding-top:20px;
+		
+	}
+}
+
+/* FOOTER MENU */
+#footlinks {
+	margin:0 20px;
+	padding-top:40px;
+	float: left;
+}
+
+#footlinks ul, #footlinks li {
+	list-style:none;
+	list-style-image:none;
+	float:left;
+	margin:0;
+	padding:0;
+}
+#footlinks li {
+	width:auto;
+}
+#footlinks li a {
+	color:#fff;
+	text-transform: uppercase;
+	padding-right:2em;
+}
