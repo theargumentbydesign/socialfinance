@@ -652,40 +652,33 @@ a:link {
   /* line 18, ../../../sass/base/views/_people_views.scss */
   .view-people .views-row {
     float: left;
-    width: 35%;
-    margin: 0 7.5% 5%;
+    width: 20%;
+    margin: 0 2.5% 5%;
     position: relative; } }
-@media (min-width: 1024px) {
-  /* line 27, ../../../sass/base/views/_people_views.scss */
-  .view-people .views-row {
-    float: left;
-    width: 24%;
-    margin: 0 4% 5%;
-    position: relative; } }
-/* line 35, ../../../sass/base/views/_people_views.scss */
+/* line 28, ../../../sass/base/views/_people_views.scss */
 .view-people .views-field-name {
   text-transform: uppercase;
   color: #d5007f;
   text-align: center; }
 
-/* line 41, ../../../sass/base/views/_people_views.scss */
+/* line 34, ../../../sass/base/views/_people_views.scss */
 .view-people .views-field-field-job-title {
   text-align: center; }
 
-/* line 45, ../../../sass/base/views/_people_views.scss */
+/* line 38, ../../../sass/base/views/_people_views.scss */
 .view-people .views-field-field-biography {
   min-height: 100px; }
 
-/* line 49, ../../../sass/base/views/_people_views.scss */
+/* line 42, ../../../sass/base/views/_people_views.scss */
 .view-people .views-field-field-biography p {
   font-size: 0.9em;
   line-height: 1.4em; }
 
-/* line 54, ../../../sass/base/views/_people_views.scss */
+/* line 47, ../../../sass/base/views/_people_views.scss */
 .view-people .holder {
   position: relative; }
 
-/* line 57, ../../../sass/base/views/_people_views.scss */
+/* line 50, ../../../sass/base/views/_people_views.scss */
 .view-people .overproj {
   z-index: 1;
   position: absolute;
@@ -696,12 +689,12 @@ a:link {
   width: 100%;
   height: 100%; }
 
-/* line 68, ../../../sass/base/views/_people_views.scss */
+/* line 61, ../../../sass/base/views/_people_views.scss */
 .view-people .projimg {
   z-index: -1; }
 
 /* FILTERS */
-/* line 75, ../../../sass/base/views/_people_views.scss */
+/* line 68, ../../../sass/base/views/_people_views.scss */
 .view-people .views-exposed-form label {
   font-family: "Avenir LT W01_45 Book1475508";
   font-weight: normal;

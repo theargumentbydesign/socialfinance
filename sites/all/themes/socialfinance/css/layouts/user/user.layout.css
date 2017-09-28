@@ -652,40 +652,33 @@ a:link {
   /* line 18, ../../../sass/base/views/_people_views.scss */
   .view-people .views-row {
     float: left;
-    width: 35%;
-    margin: 0 7.5% 5%;
+    width: 20%;
+    margin: 0 2.5% 5%;
     position: relative; } }
-@media (min-width: 1024px) {
-  /* line 27, ../../../sass/base/views/_people_views.scss */
-  .view-people .views-row {
-    float: left;
-    width: 24%;
-    margin: 0 4% 5%;
-    position: relative; } }
-/* line 35, ../../../sass/base/views/_people_views.scss */
+/* line 28, ../../../sass/base/views/_people_views.scss */
 .view-people .views-field-name {
   text-transform: uppercase;
   color: #d5007f;
   text-align: center; }
 
-/* line 41, ../../../sass/base/views/_people_views.scss */
+/* line 34, ../../../sass/base/views/_people_views.scss */
 .view-people .views-field-field-job-title {
   text-align: center; }
 
-/* line 45, ../../../sass/base/views/_people_views.scss */
+/* line 38, ../../../sass/base/views/_people_views.scss */
 .view-people .views-field-field-biography {
   min-height: 100px; }
 
-/* line 49, ../../../sass/base/views/_people_views.scss */
+/* line 42, ../../../sass/base/views/_people_views.scss */
 .view-people .views-field-field-biography p {
   font-size: 0.9em;
   line-height: 1.4em; }
 
-/* line 54, ../../../sass/base/views/_people_views.scss */
+/* line 47, ../../../sass/base/views/_people_views.scss */
 .view-people .holder {
   position: relative; }
 
-/* line 57, ../../../sass/base/views/_people_views.scss */
+/* line 50, ../../../sass/base/views/_people_views.scss */
 .view-people .overproj {
   z-index: 1;
   position: absolute;
@@ -696,12 +689,12 @@ a:link {
   width: 100%;
   height: 100%; }
 
-/* line 68, ../../../sass/base/views/_people_views.scss */
+/* line 61, ../../../sass/base/views/_people_views.scss */
 .view-people .projimg {
   z-index: -1; }
 
 /* FILTERS */
-/* line 75, ../../../sass/base/views/_people_views.scss */
+/* line 68, ../../../sass/base/views/_people_views.scss */
 .view-people .views-exposed-form label {
   font-family: "Avenir LT W01_45 Book1475508";
   font-weight: normal;
@@ -1217,65 +1210,121 @@ html, body {
 /* line 38, ../../../sass/layouts/user/user.layout.scss */
 .l-content .l-region .panel-pane, .l-content .panel-pane {
   width: auto;
-  margin: 0 100px; }
+  margin: 0; }
 
 /* TITLE */
-/* line 46, ../../../sass/layouts/user/user.layout.scss */
+/* line 45, ../../../sass/layouts/user/user.layout.scss */
 .title {
-  padding: 0 80px;
+  padding: 0 10px;
   height: auto;
-  overflow: hidden; }
+  overflow: hidden;
+  background: #d5007f; }
 
 @media (min-width: 768px) {
   /* line 54, ../../../sass/layouts/user/user.layout.scss */
   .title {
-    height: 150px;
-    background: #d5007f; } }
-/* line 61, ../../../sass/layouts/user/user.layout.scss */
+    padding: 0 80px;
+    height: 150px; }
+
+  /* line 58, ../../../sass/layouts/user/user.layout.scss */
+  .l-content .l-region .panel-pane, .l-content .panel-pane {
+    width: auto;
+    margin: 0 50px; } }
+@media (min-width: 1024px) {
+  /* line 64, ../../../sass/layouts/user/user.layout.scss */
+  .l-content .l-region .panel-pane, .l-content .panel-pane {
+    margin: 0 100px; } }
+/* line 69, ../../../sass/layouts/user/user.layout.scss */
 .pane-user-field-first-name {
   float: left; }
 
-/* line 65, ../../../sass/layouts/user/user.layout.scss */
+/* line 72, ../../../sass/layouts/user/user.layout.scss */
 .title .pane-user-field-first-name,
 .title .pane-user-field-last-name {
   font-family: "Avenir LT W01 35 Light";
   color: #ffffff;
   padding: 100px 5px 0 0;
   text-transform: uppercase;
-  font-size: 2em; }
+  font-size: 1.6em;
+  float: left; }
 
-/* line 75, ../../../sass/layouts/user/user.layout.scss */
+/* line 81, ../../../sass/layouts/user/user.layout.scss */
+.title .pane-user-field-job-title {
+  font-size: 1.6em;
+  float: left;
+  color: #ffffff;
+  padding: 100px 0 0 20px; }
+
+/* line 88, ../../../sass/layouts/user/user.layout.scss */
 .field--name-field-biography p {
   font-size: 1em; }
 
-/* line 81, ../../../sass/layouts/user/user.layout.scss */
+/* line 93, ../../../sass/layouts/user/user.layout.scss */
 .l-content {
-  width: 57.62712%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 8.47458%;
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
   clear: none;
   padding-bottom: 50px; }
 
-/* line 86, ../../../sass/layouts/user/user.layout.scss */
+/* line 98, ../../../sass/layouts/user/user.layout.scss */
 .l-region--sidebar {
-  width: 23.72881%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 67.79661%;
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
   clear: none;
   margin-top: 20px;
   margin-bottom: 20px; }
 
-/* line 92, ../../../sass/layouts/user/user.layout.scss */
+@media (min-width: 768px) {
+  /* line 105, ../../../sass/layouts/user/user.layout.scss */
+  .l-content {
+    width: 66.10169%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+    padding-bottom: 50px; }
+
+  /* line 110, ../../../sass/layouts/user/user.layout.scss */
+  .l-region--sidebar {
+    width: 15.25424%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 67.79661%;
+    clear: none;
+    margin-top: 20px;
+    margin-bottom: 20px; } }
+@media (min-width: 1024px) {
+  /* line 118, ../../../sass/layouts/user/user.layout.scss */
+  .l-content {
+    width: 57.62712%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 8.47458%;
+    clear: none;
+    padding-bottom: 50px; }
+
+  /* line 123, ../../../sass/layouts/user/user.layout.scss */
+  .l-region--sidebar {
+    width: 15.25424%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 67.79661%;
+    clear: none;
+    margin-top: 20px;
+    margin-bottom: 20px; } }
+/* line 130, ../../../sass/layouts/user/user.layout.scss */
 .pane-page-title h1 {
   text-transform: uppercase; }
 
-/* line 97, ../../../sass/layouts/user/user.layout.scss */
+/* line 135, ../../../sass/layouts/user/user.layout.scss */
 #superfish-menu li.active-trail a.active {
   color: #d5007f; }
 
-/* line 101, ../../../sass/layouts/user/user.layout.scss */
+/* line 139, ../../../sass/layouts/user/user.layout.scss */
 .pane-page-title h2 {
   font-weight: normal;
   font-size: 1em;
@@ -1283,7 +1332,7 @@ html, body {
   padding-bottom: 0; }
 
 /* MAIN CONTENT */
-/* line 113, ../../../sass/layouts/user/user.layout.scss */
+/* line 151, ../../../sass/layouts/user/user.layout.scss */
 .l-content h2.pane-title {
   text-transform: uppercase;
   color: #ffffff;
@@ -1295,7 +1344,7 @@ html, body {
   font-size: 1em;
   clear: right; }
 
-/* line 125, ../../../sass/layouts/user/user.layout.scss */
+/* line 163, ../../../sass/layouts/user/user.layout.scss */
 .l-content .pane-user-field-job-title h2.pane-title {
   float: left;
   text-transform: inherit;
@@ -1305,40 +1354,40 @@ html, body {
   padding: 0 5px 0 0;
   clear: none; }
 
-/* line 135, ../../../sass/layouts/user/user.layout.scss */
+/* line 173, ../../../sass/layouts/user/user.layout.scss */
 .field--name-field-biography {
   float: left;
   width: 100%; }
 
 /*PROFILE PIC */
-/* line 142, ../../../sass/layouts/user/user.layout.scss */
+/* line 180, ../../../sass/layouts/user/user.layout.scss */
 .pane-user-field-profile-picture {
   background: url(/sites/all/themes/socialfinance/images/bg_circle.png) no-repeat;
   background-size: cover; }
 
 /*Work area etc*/
-/* line 153, ../../../sass/layouts/user/user.layout.scss */
+/* line 191, ../../../sass/layouts/user/user.layout.scss */
 .pane-user-field-work-area {
   background: #fbe5f2;
   padding: 20px;
   margin-top: 20px; }
 
-/* line 159, ../../../sass/layouts/user/user.layout.scss */
+/* line 197, ../../../sass/layouts/user/user.layout.scss */
 .pane-user-field-work-area h2.pane-title {
   text-transform: uppercase;
   color: #d5007f;
   margin: 0 0 10px 0; }
 
-/* line 165, ../../../sass/layouts/user/user.layout.scss */
+/* line 203, ../../../sass/layouts/user/user.layout.scss */
 .pane-user-field-active-projects {
   background: #fbe5f2;
   padding: 0 20px; }
 
-/* line 170, ../../../sass/layouts/user/user.layout.scss */
+/* line 208, ../../../sass/layouts/user/user.layout.scss */
 .pane-user-field-active-projects h2 {
   margin: 0 0 10px 0; }
 
-/* line 174, ../../../sass/layouts/user/user.layout.scss */
+/* line 212, ../../../sass/layouts/user/user.layout.scss */
 .pane-user-field-completed-projects {
   background: #fbe5f2;
   padding: 0 20px;

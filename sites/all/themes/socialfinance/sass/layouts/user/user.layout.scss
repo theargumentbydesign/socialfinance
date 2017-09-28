@@ -37,57 +37,95 @@ html,body {height:100%;margin:0;padding:0;}
 
 .l-content .l-region .panel-pane, .l-content .panel-pane {
 	width:auto;
-	margin:0 100px;
+	margin:0;
 }
 
 /* TITLE */
-
-
+ 
 .title {
-	padding:0 80px;
+	padding:0 10px;
 	height:auto;
 	overflow: hidden;
-}
-
-
-@include breakpoint($gridded) {
-.title {
-	height:150px;
 	background:$pink;
 }
-}
- 
+
+
+			@include breakpoint($gridded) {
+							.title {
+								padding:0 80px;
+								height:150px;
+							}
+							.l-content .l-region .panel-pane, .l-content .panel-pane {
+							width:auto;
+							margin:0 50px;
+						}
+			}
+ 			@include breakpoint($wide) {
+							.l-content .l-region .panel-pane, .l-content .panel-pane {
+							margin:0 100px;
+						}
+			}
 
 .pane-user-field-first-name {
 	float:left;
 }
-
 .title .pane-user-field-first-name,
 .title .pane-user-field-last-name { 
     font-family:"Avenir LT W01 35 Light";
 	color:#ffffff;
 	padding:100px 5px 0 0;
 	text-transform: uppercase;
-	font-size: 2em;
+	font-size: 1.6em;
+	float:left;
 }
-
+.title .pane-user-field-job-title {
+	font-size: 1.6em;
+	float:left;
+	color:#ffffff;
+	padding:100px 0 0 20px;	
+}
 
 .field--name-field-biography p {
 	font-size:1em;
 }
 
 
-
 .l-content {
-	@include grid-span(7,2); 
+	@include grid-span(12,1); 
 	padding-bottom:50px;
 }
 
 .l-region--sidebar {
-	@include grid-span(3,9);
+	@include grid-span(12,1);
 	margin-top:20px;
 	margin-bottom:20px;
 }
+
+			@include breakpoint($gridded) {
+				.l-content {
+					@include grid-span(8,1); 
+					padding-bottom:50px;
+				}
+
+				.l-region--sidebar {
+					@include grid-span(2,9);
+					margin-top:20px;
+					margin-bottom:20px;
+				}
+			}
+
+			@include breakpoint($wide) {
+				.l-content {
+					@include grid-span(7,2); 
+					padding-bottom:50px;
+				}
+
+				.l-region--sidebar {
+					@include grid-span(2,9);
+					margin-top:20px;
+					margin-bottom:20px;
+				}
+			}
 
 .pane-page-title h1 {
 		text-transform: uppercase;

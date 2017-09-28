@@ -65,12 +65,9 @@
   <?php print $page; ?>
   <?php print $page_bottom; ?>
   <script type="text/javascript">
-		$(function(){
-		  $("#superfish-1 a").click(function(e){
-			e.preventDefault();
-			$('html,body').scrollTo(this.hash,this.hash); 
-		  });
-		});
+		$(document).ready( function() {
+	$('.menu').smint();
+});
 	</script>
 
 </body>

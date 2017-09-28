@@ -17,20 +17,13 @@
 @include breakpoint($gridded) {
 		.view-people .views-row {
 			float:left;
-			width:35%;
-			margin:0 7.5% 5%;
+			width:20%;
+			margin:0 2.5% 5%;
 			position:relative;
 		} 
 }
  
-@include breakpoint($wide) {
-	.view-people .views-row {
-			float:left;
-			width:24%;
-			margin:0 4% 5%;
-			position:relative;
-		} 
-}
+
 
 .view-people .views-field-name {
 	text-transform: uppercase;
