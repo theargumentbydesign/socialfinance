@@ -1,0 +1,81 @@
+/* CSS Document */
+
+.hero {
+	height:260px;
+	overflow: hidden;
+}
+
+/* TITLES ETC */
+
+
+
+.hero .pane-title,
+.hero .pane-page-title { 
+	position:absolute;
+	top:50px;
+	left:0;
+	right:0;
+	padding:0;
+	margin:0 auto;
+	z-index:2;
+	text-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
+}
+
+.hero .pane-title {
+	top:150px;
+	color:#ffffff;
+	font-size:3em;
+	transition:font-size 300ms;
+	line-height: 1em;
+	text-align: center;
+}
+
+.hero .pane-page-title h1 {
+	text-align: center;
+    font-family:"Avenir LT W01 35 Light";
+	font-size:5.5em;
+	color:#ffffff;
+}
+
+.l-region .hero p {
+	padding:0;
+}
+.l-region--hero p img {
+	min-width:100%;
+	margin-top:0px;
+}
+
+
+
+@include breakpoint($gridded) {
+	.hero .pane-title,
+	.hero .pane-page-title { 
+	top:150px;
+	}
+	.hero {
+	height:500px;
+	overflow: hidden;
+	}
+
+	.page-user .hero {
+	height:inherit;
+	}
+	.page-contact .hero {
+	height:75px;
+	}
+	.l-region--hero p img {
+	width:100%;
+	margin-top:-150px;
+	}
+}
+
+
+@include breakpoint($wide) {
+	.hero .pane-title {
+	top:350px;
+	}
+}
+
+
+
+

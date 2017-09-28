@@ -1,0 +1,185 @@
+// Import external libraries.
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+@import "toolkit";
+
+// Import variables, abstractions, base styles and components using globbing.
+//
+// Globbing will always import files alphabetically. Optimally, all your
+// components should be self-contained and explicit enough to not have any
+// contained styles leak into unrelated components: The import order should not
+// affect the result.
+//
+// If there are variables, functions or mixins that depend on each other and
+// therefore need to be imported in a specific order you can import them
+// directly. Variables-, function- or mixin providing partials should never
+// output any styles themselves: Importing them multiple times to resolve
+// dependencies shouldn't be a problem.
+@import "../../variables/**/*";
+@import "../../abstractions/**/*";
+@import "../../layout/**/*";
+@import "../../base/**/*";
+@import "../../components/**/*";
+
+ 
+html,body {height:100%;margin:0;padding:0;}
+.l-page {min-height:100%;position:relative;}
+.l-main {padding-bottom:475px;margin:0 80px;}
+.l-footer-wrapper {
+	position:absolute;
+	bottom:0;
+	height:475px; 
+	background-color:$grey;
+	width:100%;
+} 
+
+
+.l-content .l-region .panel-pane, .l-content .panel-pane {
+	width:auto;
+	margin:0 100px;
+}
+
+/* TITLE */
+
+
+.title {
+	padding:0 80px;
+	height:auto;
+	overflow: hidden;
+}
+
+
+@include breakpoint($gridded) {
+.title {
+	height:150px;
+	background:$pink;
+}
+}
+ 
+
+.pane-user-field-first-name {
+	float:left;
+}
+
+.title .pane-user-field-first-name,
+.title .pane-user-field-last-name { 
+    font-family:"Avenir LT W01 35 Light";
+	color:#ffffff;
+	padding:100px 5px 0 0;
+	text-transform: uppercase;
+	font-size: 2em;
+}
+
+
+.field--name-field-biography p {
+	font-size:1em;
+}
+
+
+
+.l-content {
+	@include grid-span(7,2); 
+	padding-bottom:50px;
+}
+
+.l-region--sidebar {
+	@include grid-span(3,9);
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.pane-page-title h1 {
+		text-transform: uppercase;
+}
+
+
+#superfish-menu li.active-trail a.active {
+	color:$pink;
+}
+
+.pane-page-title h2 {
+	font-weight:normal;
+	font-size: 1em;
+	text-align:center;
+	padding-bottom:0; 
+}
+
+
+
+
+/* MAIN CONTENT */
+
+.l-content h2.pane-title {
+	text-transform: uppercase;
+	color:#ffffff;
+	background:$pink;
+	margin-left:-20px;
+	margin-bottom:0;
+	padding:5px 20px;
+	float:left;
+	font-size:1em;
+	clear:right;
+}
+
+.l-content .pane-user-field-job-title h2.pane-title {
+	float:left;
+	text-transform: inherit;
+	background:#ffffff;
+	color:#000000;
+	margin:0;
+	padding:0 5px 0 0;
+	clear:none;
+}
+
+.field--name-field-biography {
+	float:left;
+	width:100%;
+}
+
+/*PROFILE PIC */
+
+.pane-user-field-profile-picture {
+	background:url(/sites/all/themes/socialfinance/images/bg_circle.png) no-repeat;
+	background-size: cover;
+}
+
+.field--name-field-profile-picture .field__item {
+
+}
+
+
+/*Work area etc*/
+.pane-user-field-work-area {
+	background:$lightpink;
+	padding:20px;
+	margin-top:20px;
+}
+
+.pane-user-field-work-area h2.pane-title {
+	text-transform: uppercase;
+	color:$pink;
+	margin:0 0 10px 0;
+}
+
+.pane-user-field-active-projects {	
+	background:$lightpink;
+	padding:0 20px;	
+}
+
+	.pane-user-field-active-projects h2 {
+		margin:0 0 10px 0;
+	}
+
+.pane-user-field-completed-projects {
+	background:$lightpink;
+	padding:0 20px;	
+	margin-bottom:20px;
+}
+
+
+
+
+
+
+

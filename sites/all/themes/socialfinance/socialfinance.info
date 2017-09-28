@@ -18,7 +18,10 @@ stylesheets[all][] = css/socialfinance.no-query.css
 ; ========================================
 scripts[] = js/socialfinance.behaviors.js
 scripts[] = http://localhost:35729/livereload.js
-scripts[] = smint/js/jquery.smint.js
+;scripts[] = js/smint/jquery.smint.js
+scripts[] = js/jquery.scrollTo.js
+scripts[] = js/select.js
+
 
 ; ========================================
 ; Regions

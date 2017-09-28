@@ -22,3 +22,57 @@
 @import "base/**/*";
 @import "components/**/*";
 
+
+.page-user .l-content .pane-user-login {
+	position:relative;
+	z-index:100;
+	width:600px !important;
+	margin: 30px auto;
+	border-radius: 10px;
+	border:5px solid $lightbeige;
+	padding:0 20px;
+	top:120px;
+	@include clearfix;
+	background:#ffffff;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+	
+}
+.page-user .l-content .pane-user-login h2 {
+	margin-top:0;
+	line-height:1.2em;
+}
+
+
+.page-user .l-content .pane-user-login .form-item {
+	float:left;
+	width:45%;
+	margin-right:5%;
+}
+
+.page-user .l-content .pane-user-login .form-item input {
+	margin:5px 0;
+	width:100%;
+	padding:5px;
+	height:30px;
+}
+
+.page-user .l-content .pane-user-login .form-item label {
+	font-weight:normal;
+}
+
+
+/*
+.admin-menu #superfish-menu ul li ul {
+	top:105px;
+}
+
+.admin-menu #sm-block {
+	top:30px;
+}
+.admin-menu #search {
+	top:37px;
+}
+
+*/

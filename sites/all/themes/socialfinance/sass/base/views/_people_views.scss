@@ -1,0 +1,82 @@
+/* List views of people */
+
+.view-people a {
+	color:$pink;
+}
+
+.view-people {
+	@include clearfix;
+}
+.view-people .views-row {
+	float:left;
+	width:60%;
+	margin:0 20% 5%;
+	position:relative;
+} 
+
+@include breakpoint($gridded) {
+		.view-people .views-row {
+			float:left;
+			width:35%;
+			margin:0 7.5% 5%;
+			position:relative;
+		} 
+}
+ 
+@include breakpoint($wide) {
+	.view-people .views-row {
+			float:left;
+			width:24%;
+			margin:0 4% 5%;
+			position:relative;
+		} 
+}
+
+.view-people .views-field-name {
+	text-transform: uppercase;
+	color:$pink;
+	text-align: center;
+} 
+
+.view-people .views-field-field-job-title {
+	text-align:center;
+}
+
+.view-people .views-field-field-biography {
+	min-height:100px;
+}
+
+.view-people .views-field-field-biography p {
+	font-size:0.9em;
+	line-height:1.4em;
+}
+
+.view-people .holder {
+	position:relative;
+}
+.view-people .overproj {
+	z-index:1;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	width:100%;
+	height:100%;
+}
+
+.view-people .projimg {
+	z-index: -1;
+}
+
+/* FILTERS */
+
+
+.view-people .views-exposed-form label {
+  font-family: "Avenir LT W01_45 Book1475508";
+	font-weight: normal;
+	text-transform: uppercase;
+	margin-bottom:5px;
+	float:left;
+	color:$pink;
+}

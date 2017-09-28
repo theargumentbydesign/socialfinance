@@ -22,17 +22,30 @@
 @import "../../base/**/*";
 @import "../../components/**/*"; 
 
+
+/* GET DOWN LAYOUT*/
+
 html,body {height:100%;margin:0;padding:0;}
 .l-page {min-height:100%;position:relative;}
-.l-main {padding-bottom:475px;}
+.l-main {padding-bottom:1200px;}
 .l-footer-wrapper {
 	position:absolute;
 	bottom:0;
-	height:475px; 
+	height:1200px; 
 	background-color:$grey;
 	width:100%;
-} 
+}  
 
+
+@include breakpoint($gridded) {
+	.l-main {padding-bottom:475px;}
+	.l-footer-wrapper {
+		height:475px; 
+	} 
+}
+
+
+/*----------*/
 
 h2 {
     font-family:"Avenir LT W01 35 Light";
@@ -47,29 +60,25 @@ h4 {
 	padding-top:20px; 
 }
 
-.hero {
-	height:auto;
-	overflow: hidden;
-}
 
 @include breakpoint($gridded) {
 	h4 {padding-top:0;}	
-.hero {
-	height:500px;
-	overflow: hidden;
-}
 }
 
-.hero .pane-title {
-	position:relative;
-	top:180px;
-	color:#ffffff;
+/* COMMON STYLES FOR REGIONS */
+
+.l-region h2 {
+    font-family:"Avenir Next W01 Thin";
 	font-size:3em;
-	padding:0;
-	margin:0 auto;
-	text-align: center;
+	padding:40px 0 25px;
+	margin:0;	
 }
 
+.l-region p {
+	font-size:1.2em;
+	padding:0 0 25px;
+	margin:0;
+}
 
 .l-region--whoweare {
 	background-color: #f3f2f1;
@@ -87,6 +96,7 @@ h4 {
 .down {
 	width:100%;
 	float:left;
+	padding-top:30px;
 }
 
 
@@ -95,22 +105,42 @@ h4 {
 }
 
 #whoweare, #careers, #resources, #whatwedo, .l-region--search {
-	margin:0 20px;
 	@include clearfix;
 }
 .hero {
 	@include clearfix;
 }
 
+
+/* Who we are */ 
+
 #whoweare h2,
 #whoweare h4 {
 	color:$pink;
 }
+#whoweare h4 {
+	margin-bottom:0;
+}
+
+/* What we do */
+
+
+#whatwedo p {
+	color:#ffffff;
+}
+
+
+/* Resources */
+
 #resources h2,
 #resources h4 {
 	color:$orange;
 }
 
+
+#careers {
+	padding-bottom:50px;
+}
 #careers h2,
 #careers h4 {
 	color:$blue;
@@ -128,6 +158,20 @@ h4 {
 #careers #vacancies,
 #careers #workwithus {
 	width:100%;
+} 
+
+#resources #projects p,
+#resources #blogs p,
+#resources #pubs p,
+#resources #ibd p,
+#whoweare #about p, 
+#whoweare #people p, 
+#whoweare #global p, 
+#whoweare #news p,
+#careers #gradbro p,
+#careers #vacancies p,
+#careers #workwithus p {
+	padding:0;
 } 
 
 @include breakpoint($gridded) {
@@ -156,7 +200,7 @@ h4 {
 #whoweare #about, 
 #whoweare #global {
 	background:#ffffff;
-	height:200px;
+	height:170px;
 } 
 #whoweare .down img,
 #careers .down img,
@@ -164,21 +208,17 @@ h4 {
 	padding:0px;
 }
 
+#whoweare a {
+	color:$pink;
+}
 
-
-#whoweare img,
 #careers img,
 #resources img {
-	padding:20px;
+	padding:10px; 
+}
+#whoweare img {
+	padding:25px;
 }
 
-
-#search-block-form {
-	width:75%;
-	margin:0 auto;
-}
-#search-block-form input.form-text {
-	width:80%;
-}
 
 

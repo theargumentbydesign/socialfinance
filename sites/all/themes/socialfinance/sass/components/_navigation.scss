@@ -2,6 +2,7 @@
 
 .l-header {
 	z-index: 1;
+	position:relative;
 	@include clearfix;
 
 }
@@ -11,9 +12,9 @@
 	top:0;
 	height:75px;
 	background:#ffffff;
-	-webkit-box-shadow: 0px 8px 7px 0px rgba(50, 50, 50, 0.14);
-	-moz-box-shadow:    0px 8px 7px 0px rgba(50, 50, 50, 0.14);
-	box-shadow:         0px 8px 7px 0px rgba(50, 50, 50, 0.14);
+	-webkit-box-shadow: 0px 8px 7px 0px rgba(50, 50, 50, 0.24);
+	-moz-box-shadow:    0px 8px 7px 0px rgba(50, 50, 50, 0.24);
+	box-shadow:         0px 8px 7px 0px rgba(50, 50, 50, 0.24);
 }
 
 .logged-in .l-region--navigation {
@@ -21,81 +22,96 @@
 } 
 
 /*MOBILE BLOCKS*/
+
 #logo-holder {
 	width:200px;
-	padding-top:15px;
+	padding-top:17px;
 	margin:0 auto;
 }
+
+
 #superfish-menu {
 	position:absolute;
 	text-transform: uppercase;
 	top:22px;
-	left:10px;
 }
-#sm-block {
-	display:none;
-}
-#search {
-	position:absolute;
-	top:5px;
-	right:10px;
-}
+
+
 			/*LAYOUT BLOCKS*/
 			@include breakpoint($gridded) {
 				#logo-holder {
 				margin:inherit;
-					
-			}
-				#superfish-menu {
-				left:200px;
-				top:31px;
-				width:60%;
-			}
-				#sm-block {
-				display:inherit;
-				position:fixed;
-				top:5px;
-				right:25px;
-			}	
-				#search {
-				position:fixed;
-				top:10px;
-				right:10px;
-			}
+				}
 				
-			}
-
+				#superfish-menu {
+				width:100%;
+				margin:0;
+				text-align:center;
+				top:32px; 
+				}
+				#superfish-1 {
+				width:650px;
+				margin:0 auto;
+				}
+			
+				#search {
+				position:absolute;
+				top:20px;
+				right:20px;
+				}
+				
+	}
+		
+		@include breakpoint($wide) {
+		
+				
+	}
 
 #logo-holder img {
 	width: 150px;
-	margin-left:10px;
+	margin-left:20px;
 }
 
-/* mobile toggle */
-#superfish-1-toggle span {
-	display:block;
-	text-indent:-5000px;
-	width:75px;
-	height:25px;
-	background:url(/sites/all/themes/socialfinance/images/menu.png) no-repeat;
-	
-}
-
-
+/* LAYOUT MEU */
 #superfish-menu ul#superfish-1 > li {
-	width:23%;
-	margin-right:2%;
+	margin:0;
+	text-align: center;
 }
+
+/* WHO WE ARE */
+#superfish-menu ul#superfish-1 > li#menu-473-1 {
+	width:175px;
+}
+
+/* WHAT WE DO */
+#superfish-menu ul#superfish-1 > li#menu-495-1 {
+	width:175px;
+}
+
+/*RESOURCES */
+#superfish-menu ul#superfish-1 > li#menu-496-1 {
+	width:150px;
+}
+
+/*CAREERS */
+#superfish-menu ul#superfish-1 > li#menu-497-1 {
+	width:150px; 
+}
+
 
 #superfish-menu ul li a {
 	display:block;
 	color:#31271c;
+    font-family:"Avenir LT W01_45 Book1475508";
+	font-size:1.1em;
 }
+
 
 #superfish-menu ul li a:hover {
 	color:$pink;
 }
 
+/* SUB MENU OF SUPERFISH */
 
 #superfish-menu ul li ul {
 	position:fixed;
@@ -104,18 +120,79 @@
 	right:0;
 	height:55px;
 	background:rgba(255,255,255,0.8);
+	padding:0;
+	width:inherit;
+	margin:inherit;
 }
 
 #superfish-menu ul li ul li.first {
-	margin-left:200px;
+	margin-left:10px;
+}
+
+	@include breakpoint($gridded) {
+		#superfish-menu ul li ul {
+		position:fixed;
+		top:70px;
+		left:0;
+		right:0;
+		height:55px;
+		background:rgba(255,255,255,0.8);
+		padding:0 1px;
+		width:1438px;
+		margin:0;				
+		}
+		
+		.admin-menu #superfish-menu ul li ul {
+		top:105px;
+		}
+
+}
+	@include breakpoint($widest) {
+		#superfish-menu ul li ul {
+		position:fixed;
+		top:70px;
+		left:0;
+		right:0;
+		height:55px;
+		background:rgba(255,255,255,0.8);
+		padding:0;
+		width:1438px;
+		margin:0 auto;
+		}
+		
+		.admin-menu #superfish-menu ul li ul {
+		top:105px;
+		}
+
 }
 
 
+#superfish-menu ul li ul.sf-hidden li a {
+	margin:-50px 50px 0 0;
+	transition: margin 800ms;
+}
 #superfish-menu ul li ul li a  {
 	margin:20px 50px 0 0;
 }
 
+/* ORANGE OVERRIDE FOR WHAT WE DO */
+#superfish-menu #menu-495-1 a:hover,
+#superfish-menu #menu-495-1 ul li a:hover,
+#superfish-menu #menu-495-1 a.active,
+#superfish-menu #menu-495-1 ul li a.active {
+	color:$orange;
+}
 
+/* ORANGE OVERRIDE FOR RESOURCES */
+#superfish-menu #menu-496-1 a:hover,
+#superfish-menu #menu-496-1 ul li a:hover,
+#superfish-menu #menu-496-1 a.active,
+#superfish-menu #menu-496-1 ul li a.active {
+	color:$blue;
+}
+
+
+/*
 #sm-block ul, #sm-block li {
 	list-style:none;
 	list-style-image: none;
@@ -147,3 +224,32 @@
 	background:url(/sites/all/themes/socialfinance/images/sm-block/in.png) no-repeat left bottom;
 	width:50px;
 }
+
+
+*/
+
+
+/* SUPERFISH MOBILE VIEW */
+
+/* mobile toggle */
+#superfish-1-toggle span {
+	display:block;
+	text-indent:-5000px;
+	width:75px;
+	height:25px;
+	background:url(/sites/all/themes/socialfinance/images/menu.png) no-repeat;
+	margin-left:20px
+	
+}
+
+#superfish-1-accordion {
+	width:100%;
+	background:rgba(255,255,255,0.65);
+	padding:20px;
+}
+
+#superfish-1-accordion li {
+	padding:10px;
+}
+
+

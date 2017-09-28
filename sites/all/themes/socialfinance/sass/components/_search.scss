@@ -1,0 +1,53 @@
+#custom-search-blocks-form-1 {
+	width:100%;
+	margin:20px auto;
+}
+#custom-search-blocks-form-1 input.form-text {
+	width:100%;
+	font-size:1.6em;
+	
+}
+
+#custom-search-blocks-form-1 #edit-actions {
+	float:right;
+	width:20%;
+}
+
+#custom-search-blocks-form-1 .custom-search-box {
+	background:$lightbeige url(/sites/all/themes/socialfinance/images/search2.png) no-repeat right 10px;
+	border:0;
+	padding:15px;
+	height:60px;	
+}
+
+/* HEADER SEARCH FUNCTION */
+
+#header-search {
+	position:absolute;
+	right:0;
+	top:22px;
+	text-align: right;
+	width:300px;
+}
+
+#header-search  #custom-search-blocks-form-2 .custom-search-box {
+	width:0px;
+	padding:10px;
+	border:0;
+	transition:width 200ms;
+}
+#header-search:hover #custom-search-blocks-form-2 .custom-search-box {
+	width:200px;
+	background:$lightbeige;
+}
+#custom-search-blocks-form-2 .form-item label {
+	float:right;
+	font-size:0;
+	width:50px;
+	height:30px;
+	background: url(/sites/all/themes/socialfinance/images/search.png) no-repeat 10px 5px;	
+}
+
+#custom-search-blocks-form-2 #edit-actions {
+	float:right;
+}

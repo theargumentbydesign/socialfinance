@@ -1,0 +1,38 @@
+/* CSS Document */
+
+	.l-content .l-region .panel-pane,
+	.l-content .panel-pane {
+		margin:0 30px;	
+}
+
+
+@include breakpoint($gridded){
+	
+	.l-content .l-region .panel-pane,
+	.l-content .panel-pane {
+		margin:0 50px;	
+}
+} 
+
+@include breakpoint($wide){
+	
+	.l-content .l-region .panel-pane,
+	.l-content .panel-pane {
+		margin:0 auto;
+		width:1024px;
+	}	
+	
+}
+
+
+@include breakpoint($widest){
+	
+	.l-page {
+		margin:0 auto;
+		width:1440px;
+	}	
+	
+	.l-region--navigation {
+		width:1438px !important;
+	}
+}

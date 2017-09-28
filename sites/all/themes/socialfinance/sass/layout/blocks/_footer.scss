@@ -1,12 +1,27 @@
 /* CSS Document */
 
-#footlog {
-	width:200px;
-	padding-top:15px;
-	padding-left:10px;
+footer .l-region-footer p {
+	font-size: 0.8em;
+}
+
+#footlog img {
+	width:175px;
+	padding-top:20px;
+	padding-left:45px;
 	margin:0 auto;
 }
 
+#footlog p {
+	text-align: center;
+	padding:0;
+}
+
+
+	#fsm-block {
+		width:50%;
+		margin:0 25%;
+		padding:20px 0;
+	}
 
 footer .pane-block-1 {
 	position:absolute;
@@ -16,24 +31,56 @@ footer .pane-block-1 {
 	color:#ffffff;
 }
 
+footer .pane-block-1 p {
+	padding:10px 20px;
+	margin:0 0 0 10px;
+	font-size: 1em;
+	text-align: center;
+}
+
+#menu-address, #footlinks {	
+		margin:20px 50px;
+		text-align:center;
+}
 
 @include breakpoint($gridded) {
-#footlog {
-	width:150px;
-	margin:inherit;
+	
+	#footlog {
+	@include grid-span(8,1);	
+	}
+	#footlog p {
+	text-align: left;
 }
+	
 	#fsm-block {
-		display:inherit;
-		position:absolute;
-		top:0;
-		right:25px;
+		@include grid-span(4,9);
+		padding:20px 0 0 0;
+	}
+	
+	#menu-address, #footlinks {	
+		@include grid-span(12,1);	
+		margin:20px 0 10px 0;
+		text-align:left;
+	}
+	#menu-address {	
+		margin:50px 0 10px 0;
+	}	
+	
+	footer .pane-block-1 p {
+		text-align: left;
 	}
 }
 	
+#fsm-block ul {
+	margin:0 auto;
+}
+
 
 #fsm-block ul, #fsm-block li {
 	list-style:none;
 	list-style-image: none;
+}
+#fsm-block li {
 	float:left;
 }
 
@@ -64,20 +111,34 @@ footer .pane-block-1 {
 }
 
 /* Main menu and addresss block */
-#menu-address {
-	margin:0 20px;
-}
+
 #menu-address h4 {
-	text-align: left;
+	text-align: center;
 	color:white;
 	margin-top:0;
 }
+
+		@include breakpoint($gridded) {
+				#menu-address h4 {
+					text-align: left;
+					}
+		}
+
 
 #menu-address p {
 	margin:0;
 	padding:0 0 10px 0;
 	line-height:1.2em;
+	font-size:0.9em;
 }
+
+#menu-address p a {
+	color:#fff;
+}
+#menu-address p a:hover {
+	text-decoration: underline;
+}
+
 #menu-address .menu1,
 #menu-address .menu2,
 #menu-address .menu3,
@@ -85,7 +146,9 @@ footer .pane-block-1 {
 	color:#ffffff;
 	width:100%;
 }
-
+	#menu-address .address {
+	padding:30px 0 0 0;
+	}
 
 @include breakpoint($gridded) {
 	#menu-address .menu1,
@@ -97,27 +160,65 @@ footer .pane-block-1 {
 		padding-top:20px;
 		
 	}
+	
+	#menu-address .menu1 {
+	padding-left:3%;
+	width:22%;
+	}
+	#menu-address .menu3 {
+	width:24%;
+	}
+	#menu-address .address {
+	padding:30px 3% 0 0;
+	width:22%;
+	}
+	
 }
 
 /* FOOTER MENU */
+
+
 #footlinks {
-	margin:0 20px;
-	padding-top:40px;
-	float: left;
+	@include clearfix;
+		
 }
 
 #footlinks ul, #footlinks li {
 	list-style:none;
 	list-style-image:none;
-	float:left;
 	margin:0;
 	padding:0;
 }
+
+#footlinks ul {
+	padding:0 3%;
+	float:none;
+} 
+
 #footlinks li {
-	width:auto;
+	float:none;
+	text-align:center;
+	line-height: 1.6em;
 }
+@include breakpoint ($gridded) {
+	#footlinks ul {
+		float:right;
+	} 
+	#footlinks li {
+		float:left;
+		text-align:center;
+	}	
+}
+ 
+
 #footlinks li a {
 	color:#fff;
 	text-transform: uppercase;
-	padding-right:2em;
+	padding-right:1.5em;
+	font-size:0.9em;
 }
+
+#footlinks li a:hover {
+	text-decoration: underline
+}
+
