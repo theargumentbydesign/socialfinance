@@ -65,8 +65,10 @@
   <?php print $page; ?>
   <?php print $page_bottom; ?>
   <script type="text/javascript">
-		$(document).ready( function() {
-	$('.menu').smint();
+		jQuery(document).ready( function() {
+	jQuery('.menu').smint({
+    	'scrollSpeed' : 1000
+    });
 });
 	</script>
 

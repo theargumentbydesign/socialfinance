@@ -53,6 +53,10 @@
 				width:650px;
 				margin:0 auto;
 				}
+				#superfish-2 {
+				width:650px;
+				margin:0 auto;
+				}
 			
 				#search {
 				position:absolute;
@@ -175,6 +179,11 @@
 	margin:20px 50px 0 0;
 }
 
+
+
+
+
+
 /* ORANGE OVERRIDE FOR WHAT WE DO */
 #superfish-menu #menu-495-1 a:hover,
 #superfish-menu #menu-495-1 ul li a:hover,
@@ -251,5 +260,80 @@
 #superfish-1-accordion li {
 	padding:10px;
 }
+
+
+
+
+/* LAYOUT MEU */
+#superfish-menu ul#superfish-2 > li {
+	margin:0;
+	text-align: center;
+}
+
+/* WHO WE ARE */
+#superfish-menu ul#superfish-2 > li#menu-473-2 {
+	width:175px;
+}
+
+/* WHAT WE DO */
+#superfish-menu ul#superfish-2 > li#menu-495-2 {
+	width:175px;
+}
+
+/*RESOURCES */
+#superfish-menu ul#superfish-2 > li#menu-496-2 {
+	width:150px;
+}
+
+/*CAREERS */
+#superfish-menu ul#superfish-2 > li#menu-497-2 {
+	width:150px; 
+}
+
+
+
+
+/* ORANGE OVERRIDE FOR WHAT WE DO */
+#superfish-menu #menu-495-2 a:hover,
+#superfish-menu #menu-495-2 ul li a:hover,
+#superfish-menu #menu-495-2 a.active,
+#superfish-menu #menu-495-2 ul li a.active {
+	color:$orange;
+}
+
+/* ORANGE OVERRIDE FOR RESOURCES */
+#superfish-menu #menu-496-2 a:hover,
+#superfish-menu #menu-496-2 ul li a:hover,
+#superfish-menu #menu-496-2 a.active,
+#superfish-menu #menu-496-2 ul li a.active {
+	color:$blue;
+}
+
+
+
+/* SUPERFISH MOBILE VIEW */
+
+/* mobile toggle */
+#superfish-2-toggle span {
+	display:block;
+	text-indent:-5000px;
+	width:75px;
+	height:25px;
+	background:url(/sites/all/themes/socialfinance/images/menu.png) no-repeat;
+	margin-left:20px
+	
+}
+
+#superfish-2-accordion {
+	width:100%;
+	background:rgba(255,255,255,0.65);
+	padding:20px;
+}
+
+#superfish-2-accordion li {
+	padding:10px;
+}
+
+
 
 
