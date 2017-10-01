@@ -54,3 +54,7 @@ html,body {height:100%;margin:0;padding:0;}
 #superfish-menu li.active-trail a.active {
 	color:$pink;
 }
+
+.hero .pane-page-title {
+	z-index: 1 !important;
+}

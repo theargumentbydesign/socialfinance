@@ -177,20 +177,18 @@ html,body {height:100%;margin:0;padding:0;}
 
 /*PROFILE PIC */
 
-.pane-user-field-profile-picture {
-	background:url(/sites/all/themes/socialfinance/images/bg_circle.png) no-repeat;
-	background-size: cover;
+.pane-user-field-profile-picture img {
+	border-radius: 200px 200px 200px 200px;
+-moz-border-radius: 200px 200px 200px 200px;
+-webkit-border-radius: 200px 200px 200px 200px;
 }
 
-.field--name-field-profile-picture .field__item {
-
-}
 
 
 /*Work area etc*/
 .pane-user-field-work-area {
 	background:$lightpink;
-	padding:20px;
+	padding:10px;
 	margin-top:20px;
 }
 
@@ -198,26 +196,52 @@ html,body {height:100%;margin:0;padding:0;}
 	text-transform: uppercase;
 	color:$pink;
 	margin:0 0 10px 0;
+	font-size:1em;
 }
 
 .pane-user-field-active-projects {	
 	background:$lightpink;
-	padding:0 20px;	
+	padding:10px;	
 }
 
 	.pane-user-field-active-projects h2 {
+		text-transform: uppercase;
+		color:$pink;
+		font-size:1em;
 		margin:0 0 10px 0;
 	}
 
 .pane-user-field-completed-projects {
 	background:$lightpink;
-	padding:0 20px;	
+	padding:10px;	
 	margin-bottom:20px;
 }
 
+	.pane-user-field-completed-projects h2 {
+		text-transform: uppercase;
+		color:$pink;
+		font-size:1em;
+		margin:0 0 10px 0;
+	}
 
 
+.pane-people .view-people .views-row {
+	width:100%;
+	margin:20px 0;
+}
 
+.pane-people .view-people .views-row a {
+	display:block;
+	padding:5px;
+	color:#ffffff;
+	text-transform: uppercase;
+	text-align: center;
+	background:$pink; 
+}
 
+.pane-people .view-people .views-row a:hover {
+	color:$pink;
+	background:$lightpink; 
+}
 
 

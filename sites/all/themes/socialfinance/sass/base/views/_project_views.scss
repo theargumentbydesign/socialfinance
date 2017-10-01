@@ -38,7 +38,10 @@
 }
 
 .view-projects .views-field-title {
+    font-family:"Avenir LT W01_85 Heavy1475544";
+	font-weight: normal;
 	color:$orange;
+	font-size:1.8em;
 } 
 
 .view-projects .views-field-field-standfirst p {
@@ -72,7 +75,7 @@
 #views-exposed-form-projects-page {
 	float:left;
 	@include clearfix;
-	margin-bottom:20px;
+	margin-bottom:50px;
 }
 
 .views-exposed-form label {

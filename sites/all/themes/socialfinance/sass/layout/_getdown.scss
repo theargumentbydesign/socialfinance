@@ -1,7 +1,14 @@
 /* CSS Document */
 
 html,body {height:100%;margin:0;padding:0;}
-.l-page {min-height:100%;position:relative;}
+body {
+		background:url(/sites/all/themes/socialfinance/images/hatch.png); 
+		background-attachment: fixed;
+}
+.l-page {
+	min-height:100%;position:relative;
+	background:#ffffff;
+}
 .l-main {padding-bottom:800px;}
 .l-footer-wrapper {
 	position:absolute;

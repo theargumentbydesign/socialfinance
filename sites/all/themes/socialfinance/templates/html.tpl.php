@@ -66,7 +66,7 @@
   <?php print $page_bottom; ?>
   <script type="text/javascript">
 		jQuery(document).ready( function() {
-	jQuery('.menu').smint({
+	jQuery('.sf-menu').smint({
     	'scrollSpeed' : 1000
     });
 });

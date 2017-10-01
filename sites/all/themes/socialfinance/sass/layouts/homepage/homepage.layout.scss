@@ -197,11 +197,7 @@ h4 {
 }
 
 
-#whoweare #about, 
-#whoweare #global {
-	background:#ffffff;
-	height:170px;
-} 
+
 #whoweare .down img,
 #careers .down img,
 #resources .down img {
@@ -210,6 +206,16 @@ h4 {
 
 #whoweare a {
 	color:$pink;
+}
+#whatwedo a {
+	
+}
+#resources a {
+	color:$orange;
+
+}
+#careers a {
+	color:$blue;
 }
 
 #careers img,

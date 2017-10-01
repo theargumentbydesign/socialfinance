@@ -34,6 +34,10 @@ html,body {height:100%;margin:0;padding:0;}
 	width:100%;
 } 
 
+/* OVERRIDE THE OTHER PAGES */
+.l-content .l-region .panel-pane, .l-content .panel-pane {
+	width:auto;
+}
 
 .l-content {
 	@include grid-span(7,1); 
@@ -44,7 +48,13 @@ html,body {height:100%;margin:0;padding:0;}
 	@include grid-span(5,8);
 }
 
+
+.node-type-projects .hero .pane-title {
+	top:0;
+}
+
 .pane-page-title h1 {
+	top:50px;
 		text-transform: uppercase;
 }
 
@@ -64,11 +74,11 @@ html,body {height:100%;margin:0;padding:0;}
 /* MAIN CONTENT */
 
 .l-content h2.pane-title {
-		text-transform: uppercase;
+	text-transform: uppercase;
 	color:#ffffff;
 	background:$orange;
 	margin-left:-20px;
-	padding:0 20px;
+	padding:10px 20px;
 	float:left;
 	font-size:1em;
 	clear:right;
@@ -105,6 +115,18 @@ html,body {height:100%;margin:0;padding:0;}
 	font-size:1.2em;
 } 
 
+/* CONTACT PANE */
+
+.l-region--sidebar .contact-pane a {
+	text-align: center;
+	padding:10px;
+	background-color: $orange;
+	color:#ffffff;
+	display:block;
+	margin:10px 0;
+	
+}
+
 
 /*KEY FACTS*/
 .pane-node-field-key-facts {
@@ -116,6 +138,7 @@ html,body {height:100%;margin:0;padding:0;}
 .pane-node-field-key-facts h2.pane-title {
 	text-transform: uppercase;
 	color:$orange;
+	margin-top:0;
 }
 
 .pane-node-field-key-facts td.odd {
@@ -124,3 +147,15 @@ html,body {height:100%;margin:0;padding:0;}
 .pane-node-field-key-facts td {
 	padding:20px;
 }
+
+.pane-node-field-key-facts td h1 {
+	margin:0;
+	font-size:4em;
+	color:$orange;
+}
+.pane-node-field-key-facts td p {
+	margin-top:0;
+}
+
+
+
