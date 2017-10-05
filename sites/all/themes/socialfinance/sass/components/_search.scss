@@ -14,7 +14,7 @@
 }
 
 #custom-search-blocks-form-1 .custom-search-box {
-	background:$lightbeige url(/sites/all/themes/socialfinance/images/search2.png) no-repeat right 10px;
+	background:$lightbeige url(/sites/all/themes/socialfinance/images/search2.png) no-repeat right 30px;
 	border:0;
 	padding:15px;
 	height:60px;	
@@ -25,27 +25,46 @@
 #header-search {
 	position:absolute;
 	right:0;
-	top:22px;
+	top:0;
 	text-align: right;
-	width:300px;
+	width:60px;
+	background:rgba(255,255,255,0);
+	transition:background 200ms;	
+	z-index:15;
+}
+#header-search .form-item {
+	margin:0;
 }
 
-#header-search  #custom-search-blocks-form-2 .custom-search-box {
-	width:0px;
-	padding:10px;
-	border:0;
-	transition:width 200ms;
-}
-#header-search:hover #custom-search-blocks-form-2 .custom-search-box {
-	width:200px;
-	background:$lightbeige;
-}
-#custom-search-blocks-form-2 .form-item label {
+#header-search .form-item label {
 	float:right;
 	font-size:0;
-	width:50px;
-	height:30px;
-	background: url(/sites/all/themes/socialfinance/images/search.png) no-repeat 10px 5px;	
+	width:60px;
+	height:75px;
+	background: url(/sites/all/themes/socialfinance/images/search.png) no-repeat 16px 27px;	
+}
+
+
+#header-search:hover {
+	width:100%;
+	background:rgba(255,255,255,0.92);
+	transition:background 200ms;	
+}
+
+#header-search  .custom-search-box {
+	width:0;
+	padding:0;
+	border:0;
+	transition:width 100ms;
+}
+
+#header-search:hover .custom-search-box {
+	padding:10px;
+	margin-right:10px;
+	width:55%;
+	margin-top:20px;
+	background:$lightbeige;
+	transition:width 100ms;
 }
 
 #custom-search-blocks-form-2 #edit-actions {

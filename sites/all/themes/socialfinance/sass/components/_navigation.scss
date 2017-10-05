@@ -22,7 +22,7 @@
 
 #logo-holder {
 	width:200px;
-	padding-top:17px;
+	padding-top:15px;
 	margin:0 auto;
 }
 #logo-holder img {
@@ -32,7 +32,8 @@
 #superfish-menu {
 	position:absolute;
 	text-transform: uppercase;
-	top:22px;
+	top:0;
+	z-index:10;
 }
 
 			/*LAYOUT BLOCKS*/
@@ -43,9 +44,9 @@
 				
 				#superfish-menu {
 				width:100%;
-				margin:0;
+				margin:31px 0 0 0;
 				text-align:center;
-				top:32px; 
+				top:0; 
 				}
 				.sf-menu.menu {
 				width:650px;
@@ -63,187 +64,135 @@
 
 /* LAYOUT MEU */
 
-#superfish-menu ul.sf-menu > li {
+#superfish-menu > ul.sf-menu > li {
 	margin:0;
 	text-align: center;
+	float:right;
+	padding:0;
 }
-#superfish-menu ul li a {
+#superfish-menu > ul.sf-menu > li a {
 	display:block;
-    font-family:"Avenir LT W01_45 Book1475508";
+    font-family:"Avenir LT W01_55 Roman1475520";
 	font-size:0.9em;
+	padding:0 20px;
+	color:#000000;
 }
 
-/* WHO WE ARE */
 
-#superfish-menu ul.sf-menu > li.sf-item-1 {
-	width:175px;
-}
-			#superfish-menu ul.sf-menu > li.sf-item-1 > ul {
+/*WHO WE ARE */
+
+			#superfish-menu ul.sf-menu > li.sf-item-4 > ul {
 				background:$pink;
 			}
 
-/* WHAT WE DO */
-#superfish-menu ul.sf-menu > li.sf-item-2 {
-	width:175px;
-}
-			#superfish-menu ul.sf-menu > li.sf-item-2 > ul {
-				background:$beige; 
-			}
-
-/*RESOURCES */
-#superfish-menu ul.sf-menu > li.sf-item-3 {
-	width:150px;
-}
+/*WHAT WE DO */
 			#superfish-menu ul.sf-menu > li.sf-item-3 > ul {
-				background:$orange;
+				background:$beige;
 			}
 
-/*CAREERS */
-#superfish-menu ul.sf-menu > li.sf-item-4 {
-	width:150px; 
-}
-			#superfish-menu ul.sf-menu > li.sf-item-4 > ul {
+/* RESOURCES */
+
+			#superfish-menu ul.sf-menu > li.sf-item-2 > ul {
+				background:$orange; 
+			}
+
+/* CAREERS */
+
+			#superfish-menu ul.sf-menu > li.sf-item-1 > ul {
 				background:$blue;
 			}
 
 
-
 /* SUB MENU OF SUPERFISH */
 
-#superfish-menu ul li ul {
+#superfish-menu > ul.sf-menu > li > ul {
 	position:fixed;
 	top:70px;
 	left:0;
-	right:0;
+	right:0;  
 	height:55px;
-	background:rgba(255,255,255,0.8);
 	padding:0;
 	width:inherit;
 	margin:inherit;
 }
 
-#superfish-menu ul li ul li {
+#superfish-menu > ul.sf-menu > li > ul li {
 	float:right; 
+	text-align: center;
 }
 
-#superfish-menu ul li ul li.first {
-	margin-left:10px;
-}
 
-#superfish-menu ul li ul li a  {
+#superfish-menu > ul.sf-menu > li > ul a  {
 	color:#fff;
+	padding:22px 0 14px;
+	margin:0 20px;
+	border-bottom:5px solid transparent;
+	transition: border-bottom-color 200ms;
+}
+
+#superfish-menu > ul.sf-menu > li > ul a:hover,
+#superfish-menu > ul.sf-menu > li > ul a.active {
+	color:#ffffff;
+	border-bottom:5px solid #ffffff;
 }
 
 
 
 	@include breakpoint($gridded) {
-		#superfish-menu ul li ul {
+		#superfish-menu > ul.sf-menu > li > ul{
 		position:fixed;
 		top:70px;
 		left:0;
 		right:0;
 		height:55px;
-		background:rgba(255,255,255,0.8);
-		padding:0 1px;
+		padding:0 50px 0 0;
 		width:100%;
-		margin:0;				
+		margin:0 auto;				
 		}
 		
-		.admin-menu #superfish-menu ul li ul {
+		.admin-menu #superfish-menu > ul.sf-menu > li > ul {
 		top:105px;
 		}
 
-}
+	}
 	@include breakpoint($wide) {
-		#superfish-menu ul li ul {
-		position:fixed;
-		top:70px;
-		left:0;
-		right:0;
-		height:55px;
-		background:rgba(255,255,255,0.8);
-		padding:0;
-		width:100%;
-		margin:0 auto;
-		}
+	}
 		
-		.admin-menu #superfish-menu ul li ul {
-		top:105px;
-		}
 
-}
-
-@include breakpoint($widest) {
-		#superfish-menu ul li ul {
-		position:fixed;
-		top:70px;
-		left:0;
-		right:0;
-		height:55px;
-		background:rgba(255,255,255,0.8);
-		padding:0;
+	@include breakpoint($widest) {
+		#superfish-menu > ul.sf-menu > li > ul {
 		width:1440px;
-		margin:0 auto;
 		}
-		
-		.admin-menu #superfish-menu ul li ul {
-		top:105px;
-		}
-
-}
+	}
 
 
 #superfish-menu ul li ul.sf-hidden li a {
 	margin:-50px 50px 0 0;
 	transition: margin 800ms;
 }
-#superfish-menu ul li ul li a  {
-	margin:20px 50px 0 0;
-}
-
 
 
 /* ORANGE OVERRIDE FOR WHAT WE DO */
 
-#superfish-menu .sf-item-1 a:hover,
-#superfish-menu .sf-item-1 a.active {
+#superfish-menu .sf-item-4 a:hover,
+#superfish-menu .sf-item-4 a.active {
  	color:$pink;
 }
 
-#superfish-menu .sf-item-2 a:hover,
-#superfish-menu .sf-item-2 a.active {
+#superfish-menu .sf-item-3 a:hover,
+#superfish-menu .sf-item-3 a.active {
    	color:$beige;
 }
-#superfish-menu .sf-item-3 a:hover,
-#superfish-menu .sf-item-3 a.active{
+#superfish-menu .sf-item-2 a:hover,
+#superfish-menu .sf-item-2 a.active{
    	color:$orange;
 }
 
-#superfish-menu .sf-item-4 a:hover,
-#superfish-menu .sf-item-4 a.active {
+#superfish-menu .sf-item-1 a:hover,
+#superfish-menu .sf-item-1 a.active {
   	color:$blue;
 }
 
-/*  OVERRIDE FOR SUB-MENU */
-#superfish-menu .sf-item-1 ul li a:hover,
-#superfish-menu .sf-item-2 ul li a:hover,
-#superfish-menu .sf-item-3 ul li a:hover,
-#superfish-menu .sf-item-4 ul li a:hover {
-	border-bottom:2px solid transparent;
-
-}
-
-#superfish-menu .sf-item-1 ul li a:hover,
-#superfish-menu .sf-item-2 ul li a:hover,
-#superfish-menu .sf-item-3 ul li a:hover,
-#superfish-menu .sf-item-4 ul li a:hover,
-#superfish-menu .sf-item-1 ul li a.active,
-#superfish-menu .sf-item-2 ul li a.active,
-#superfish-menu .sf-item-3 ul li a.active,
-#superfish-menu .sf-item-4 ul li a.active {
-	color:#ffffff;
-	border-bottom:2px solid #ffffff;
-}
 
 
 /*
