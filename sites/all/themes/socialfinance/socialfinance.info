@@ -12,6 +12,7 @@ stylesheets[all][] = css/socialfinance.normalize.css
 stylesheets[all][] = css/socialfinance.hacks.css
 stylesheets[all][] = css/socialfinance.styles.css
 stylesheets[all][] = css/socialfinance.no-query.css
+stylesheets[all][] = css/socialfinance.custom.css
 
 ; ========================================
 ; Scripts

@@ -132,9 +132,11 @@ footer .pane-block-1 p {
 	font-size:0.9em;
 }
 
+#menu-address h4 a,
 #menu-address p a {
 	color:#fff;
 }
+#menu-address h4 a:hover,
 #menu-address p a:hover {
 	text-decoration: underline;
 }
@@ -147,7 +149,7 @@ footer .pane-block-1 p {
 	width:100%;
 }
 	#menu-address .address {
-	padding:30px 0 0 0;
+	padding:20px 0 0 0;
 	}
 
 @include breakpoint($gridded) {

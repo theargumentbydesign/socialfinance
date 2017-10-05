@@ -119,7 +119,7 @@ body {
   overflow: hidden; }
 
 /* TITLES ETC */
-/* line 12, ../sass/layout/_hero.scss */
+/* line 10, ../sass/layout/_hero.scss */
 .hero .pane-title,
 .hero .pane-page-title {
   position: absolute;
@@ -128,10 +128,10 @@ body {
   right: 0;
   padding: 0;
   margin: 0 auto;
-  z-index: 0;
+  z-index: 2;
   text-shadow: 0px 0px 30px black; }
 
-/* line 24, ../sass/layout/_hero.scss */
+/* line 22, ../sass/layout/_hero.scss */
 .hero .pane-title {
   top: 150px;
   color: #ffffff;
@@ -140,47 +140,47 @@ body {
   line-height: 1em;
   text-align: center; }
 
-/* line 33, ../sass/layout/_hero.scss */
+/* line 31, ../sass/layout/_hero.scss */
 .hero .pane-page-title h1 {
   text-align: center;
   font-family: "Avenir LT W01 35 Light";
   font-size: 5.5em;
   color: #ffffff; }
 
-/* line 40, ../sass/layout/_hero.scss */
+/* line 38, ../sass/layout/_hero.scss */
 .l-region .hero p {
   padding: 0; }
 
-/* line 43, ../sass/layout/_hero.scss */
+/* line 41, ../sass/layout/_hero.scss */
 .l-region--hero p img {
   min-width: 100%;
   margin-top: 0px; }
 
 @media (min-width: 768px) {
-  /* line 51, ../sass/layout/_hero.scss */
+  /* line 49, ../sass/layout/_hero.scss */
   .hero .pane-title,
   .hero .pane-page-title {
     top: 150px; }
 
-  /* line 55, ../sass/layout/_hero.scss */
+  /* line 53, ../sass/layout/_hero.scss */
   .hero {
     height: 500px;
     overflow: hidden; }
 
-  /* line 60, ../sass/layout/_hero.scss */
+  /* line 58, ../sass/layout/_hero.scss */
   .page-user .hero {
     height: inherit; }
 
-  /* line 63, ../sass/layout/_hero.scss */
+  /* line 61, ../sass/layout/_hero.scss */
   .page-contact .hero {
     height: 75px; }
 
-  /* line 66, ../sass/layout/_hero.scss */
+  /* line 64, ../sass/layout/_hero.scss */
   .l-region--hero p img {
     width: 100%;
     margin-top: -150px; } }
 @media (min-width: 1024px) {
-  /* line 74, ../sass/layout/_hero.scss */
+  /* line 72, ../sass/layout/_hero.scss */
   .hero .pane-title {
     top: 350px; } }
 /* CSS Document */
@@ -208,7 +208,7 @@ body {
 
   /* line 35, ../sass/layout/_width.scss */
   .l-region--navigation {
-    width: 1438px !important; } }
+    width: 1440px !important; } }
 /* CSS Document */
 /* line 3, ../sass/layout/blocks/_footer.scss */
 footer .l-region-footer p {
@@ -352,14 +352,16 @@ footer .pane-block-1 p {
   font-size: 0.9em; }
 
 /* line 135, ../sass/layout/blocks/_footer.scss */
+#menu-address h4 a,
 #menu-address p a {
   color: #fff; }
 
-/* line 138, ../sass/layout/blocks/_footer.scss */
+/* line 139, ../sass/layout/blocks/_footer.scss */
+#menu-address h4 a:hover,
 #menu-address p a:hover {
   text-decoration: underline; }
 
-/* line 142, ../sass/layout/blocks/_footer.scss */
+/* line 144, ../sass/layout/blocks/_footer.scss */
 #menu-address .menu1,
 #menu-address .menu2,
 #menu-address .menu3,
@@ -367,12 +369,12 @@ footer .pane-block-1 p {
   color: #ffffff;
   width: 100%; }
 
-/* line 149, ../sass/layout/blocks/_footer.scss */
+/* line 151, ../sass/layout/blocks/_footer.scss */
 #menu-address .address {
-  padding: 30px 0 0 0; }
+  padding: 20px 0 0 0; }
 
 @media (min-width: 768px) {
-  /* line 154, ../sass/layout/blocks/_footer.scss */
+  /* line 156, ../sass/layout/blocks/_footer.scss */
   #menu-address .menu1,
   #menu-address .menu2,
   #menu-address .menu3,
@@ -381,16 +383,16 @@ footer .pane-block-1 p {
     width: 25%;
     padding-top: 20px; }
 
-  /* line 164, ../sass/layout/blocks/_footer.scss */
+  /* line 166, ../sass/layout/blocks/_footer.scss */
   #menu-address .menu1 {
     padding-left: 3%;
     width: 22%; }
 
-  /* line 168, ../sass/layout/blocks/_footer.scss */
+  /* line 170, ../sass/layout/blocks/_footer.scss */
   #menu-address .menu3 {
     width: 24%; }
 
-  /* line 171, ../sass/layout/blocks/_footer.scss */
+  /* line 173, ../sass/layout/blocks/_footer.scss */
   #menu-address .address {
     padding: 30px 3% 0 0;
     width: 22%; } }
@@ -401,41 +403,41 @@ footer .pane-block-1 p {
   display: table;
   clear: both; }
 
-/* line 186, ../sass/layout/blocks/_footer.scss */
+/* line 188, ../sass/layout/blocks/_footer.scss */
 #footlinks ul, #footlinks li {
   list-style: none;
   list-style-image: none;
   margin: 0;
   padding: 0; }
 
-/* line 193, ../sass/layout/blocks/_footer.scss */
+/* line 195, ../sass/layout/blocks/_footer.scss */
 #footlinks ul {
   padding: 0 3%;
   float: none; }
 
-/* line 198, ../sass/layout/blocks/_footer.scss */
+/* line 200, ../sass/layout/blocks/_footer.scss */
 #footlinks li {
   float: none;
   text-align: center;
   line-height: 1.6em; }
 
 @media (min-width: 768px) {
-  /* line 204, ../sass/layout/blocks/_footer.scss */
+  /* line 206, ../sass/layout/blocks/_footer.scss */
   #footlinks ul {
     float: right; }
 
-  /* line 207, ../sass/layout/blocks/_footer.scss */
+  /* line 209, ../sass/layout/blocks/_footer.scss */
   #footlinks li {
     float: left;
     text-align: center; } }
-/* line 214, ../sass/layout/blocks/_footer.scss */
+/* line 216, ../sass/layout/blocks/_footer.scss */
 #footlinks li a {
   color: #fff;
   text-transform: uppercase;
   padding-right: 1.5em;
   font-size: 0.9em; }
 
-/* line 221, ../sass/layout/blocks/_footer.scss */
+/* line 223, ../sass/layout/blocks/_footer.scss */
 #footlinks li a:hover {
   text-decoration: underline; }
 
@@ -799,6 +801,120 @@ a:link {
   padding-bottom: 10px;
   color: #eb5c1c; }
 
+/* List views of projects */
+/* line 3, ../sass/base/views/_pubication_views.scss */
+.view-publications a {
+  color: #3795c2; }
+
+/* line 13, ../../../../../../../../../../../usr/local/rvm/gems/ruby-2.2.4/gems/toolkit-2.10.2/stylesheets/toolkit/_clearfix.scss */
+.view-publications:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* line 10, ../sass/base/views/_pubication_views.scss */
+.view-publications .views-row {
+  float: left;
+  width: 60%;
+  margin: 30px 20%;
+  position: relative; }
+
+/* line 17, ../sass/base/views/_pubication_views.scss */
+.view-publications .views-field {
+  padding-bottom: 10px; }
+
+/* line 21, ../sass/base/views/_pubication_views.scss */
+.view-publications .views-label {
+  float: left;
+  margin-right: 5px; }
+
+/* line 26, ../sass/base/views/_pubication_views.scss */
+.view-publications .views-field-title {
+  color: #3795c2;
+  font-size: 1.2em; }
+
+/* line 32, ../sass/base/views/_pubication_views.scss */
+.view-publications .details,
+.view-publications .readmore {
+  float: left;
+  width: 100%; }
+  /* line 13, ../../../../../../../../../../../usr/local/rvm/gems/ruby-2.2.4/gems/toolkit-2.10.2/stylesheets/toolkit/_clearfix.scss */
+  .view-publications .details:after,
+  .view-publications .readmore:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 39, ../sass/base/views/_pubication_views.scss */
+.view-publications .readmore p {
+  font-size: 1em;
+  line-height: 1.4em; }
+
+/* line 44, ../sass/base/views/_pubication_views.scss */
+.view-publications .views-field-field-cover-pic img {
+  width: 100%; }
+
+/* line 48, ../sass/base/views/_pubication_views.scss */
+.view-publications .views-field-field-upload img {
+  vertical-align: top;
+  margin-right: 10px; }
+
+/* line 53, ../sass/base/views/_pubication_views.scss */
+html.js .view-publications fieldset.collapsed {
+  padding-left: 0;
+  border: none;
+  border-bottom: 1px solid #3795c2; }
+
+/* line 59, ../sass/base/views/_pubication_views.scss */
+.view-publications fieldset legend {
+  padding-left: 0;
+  border: none;
+  text-transform: uppercase; }
+
+@media (min-width: 768px) {
+  /* line 13, ../../../../../../../../../../../usr/local/rvm/gems/ruby-2.2.4/gems/toolkit-2.10.2/stylesheets/toolkit/_clearfix.scss */
+  .view-publications .views-row-odd:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+  /* line 69, ../sass/base/views/_pubication_views.scss */
+  .view-publications .views-row {
+    float: left;
+    width: 48%;
+    margin: 30px 2% 5% 0;
+    position: relative; }
+
+  /* line 75, ../sass/base/views/_pubication_views.scss */
+  .views-field-field-cover-pic {
+    float: left;
+    width: 23%;
+    margin-right: 4%;
+    min-height: 190px; }
+
+  /* line 81, ../sass/base/views/_pubication_views.scss */
+  .titlegroup {
+    float: right;
+    width: 73%; } }
+/* FILTERS */
+/* line 89, ../sass/base/views/_pubication_views.scss */
+#views-exposed-form-projects-page {
+  float: left;
+  margin-bottom: 40px; }
+  /* line 13, ../../../../../../../../../../../usr/local/rvm/gems/ruby-2.2.4/gems/toolkit-2.10.2/stylesheets/toolkit/_clearfix.scss */
+  #views-exposed-form-projects-page:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 95, ../sass/base/views/_pubication_views.scss */
+.views-exposed-form label {
+  font-family: "Avenir LT W01_45 Book1475508";
+  font-weight: normal;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  color: #3795c2; }
+
 /* CSS Document */
 /* WHAT WE DO VIEW */
 /* line 6, ../sass/base/views/_views.scss */
@@ -906,7 +1022,7 @@ a:link {
 /* SCSS file */
 /* line 3, ../sass/components/_navigation.scss */
 .l-header {
-  z-index: 1;
+  z-index: 10;
   position: relative; }
   /* line 13, ../../../../../../../../../../../usr/local/rvm/gems/ruby-2.2.4/gems/toolkit-2.10.2/stylesheets/toolkit/_clearfix.scss */
   .l-header:after {
@@ -933,7 +1049,12 @@ a:link {
   padding-top: 17px;
   margin: 0 auto; }
 
-/* line 30, ../sass/components/_navigation.scss */
+/* line 28, ../sass/components/_navigation.scss */
+#logo-holder img {
+  width: 200px;
+  margin-left: 20px; }
+
+/* line 32, ../sass/components/_navigation.scss */
 #superfish-menu {
   position: absolute;
   text-transform: uppercase;
@@ -941,76 +1062,77 @@ a:link {
 
 /*LAYOUT BLOCKS*/
 @media (min-width: 768px) {
-  /* line 39, ../sass/components/_navigation.scss */
+  /* line 40, ../sass/components/_navigation.scss */
   #logo-holder {
     margin: inherit; }
 
-  /* line 43, ../sass/components/_navigation.scss */
+  /* line 44, ../sass/components/_navigation.scss */
   #superfish-menu {
     width: 100%;
     margin: 0;
     text-align: center;
     top: 32px; }
 
-  /* line 49, ../sass/components/_navigation.scss */
-  #superfish-1 {
+  /* line 50, ../sass/components/_navigation.scss */
+  .sf-menu.menu {
     width: 650px;
-    margin: 0 auto; }
+    margin: 0 50px 0 auto; }
 
-  /* line 53, ../sass/components/_navigation.scss */
-  #superfish-2 {
-    width: 650px;
-    margin: 0 auto; }
-
-  /* line 58, ../sass/components/_navigation.scss */
+  /* line 55, ../sass/components/_navigation.scss */
   #search {
     position: absolute;
     top: 20px;
     right: 20px; } }
-/* line 71, ../sass/components/_navigation.scss */
-#logo-holder img {
-  width: 150px;
-  margin-left: 20px; }
-
 /* LAYOUT MEU */
-/* line 77, ../sass/components/_navigation.scss */
-#superfish-menu ul#superfish-1 > li {
+/* line 66, ../sass/components/_navigation.scss */
+#superfish-menu ul.sf-menu > li {
   margin: 0;
   text-align: center; }
 
-/* WHO WE ARE */
-/* line 83, ../sass/components/_navigation.scss */
-#superfish-menu ul#superfish-1 > li#menu-473-1 {
-  width: 175px; }
-
-/* WHAT WE DO */
-/* line 88, ../sass/components/_navigation.scss */
-#superfish-menu ul#superfish-1 > li#menu-495-1 {
-  width: 175px; }
-
-/*RESOURCES */
-/* line 93, ../sass/components/_navigation.scss */
-#superfish-menu ul#superfish-1 > li#menu-496-1 {
-  width: 150px; }
-
-/*CAREERS */
-/* line 98, ../sass/components/_navigation.scss */
-#superfish-menu ul#superfish-1 > li#menu-497-1 {
-  width: 150px; }
-
-/* line 103, ../sass/components/_navigation.scss */
+/* line 70, ../sass/components/_navigation.scss */
 #superfish-menu ul li a {
   display: block;
-  color: #31271c;
   font-family: "Avenir LT W01_45 Book1475508";
-  font-size: 1.1em; }
+  font-size: 0.9em; }
 
-/* line 111, ../sass/components/_navigation.scss */
-#superfish-menu ul li a:hover {
-  color: #d5007f; }
+/* WHO WE ARE */
+/* line 78, ../sass/components/_navigation.scss */
+#superfish-menu ul.sf-menu > li.sf-item-1 {
+  width: 175px; }
+
+/* line 81, ../sass/components/_navigation.scss */
+#superfish-menu ul.sf-menu > li.sf-item-1 > ul {
+  background: #d5007f; }
+
+/* WHAT WE DO */
+/* line 86, ../sass/components/_navigation.scss */
+#superfish-menu ul.sf-menu > li.sf-item-2 {
+  width: 175px; }
+
+/* line 89, ../sass/components/_navigation.scss */
+#superfish-menu ul.sf-menu > li.sf-item-2 > ul {
+  background: #bbb0ab; }
+
+/*RESOURCES */
+/* line 94, ../sass/components/_navigation.scss */
+#superfish-menu ul.sf-menu > li.sf-item-3 {
+  width: 150px; }
+
+/* line 97, ../sass/components/_navigation.scss */
+#superfish-menu ul.sf-menu > li.sf-item-3 > ul {
+  background: #eb5c1c; }
+
+/*CAREERS */
+/* line 102, ../sass/components/_navigation.scss */
+#superfish-menu ul.sf-menu > li.sf-item-4 {
+  width: 150px; }
+
+/* line 105, ../sass/components/_navigation.scss */
+#superfish-menu ul.sf-menu > li.sf-item-4 > ul {
+  background: #3795c2; }
 
 /* SUB MENU OF SUPERFISH */
-/* line 117, ../sass/components/_navigation.scss */
+/* line 113, ../sass/components/_navigation.scss */
 #superfish-menu ul li ul {
   position: fixed;
   top: 70px;
@@ -1022,12 +1144,20 @@ a:link {
   width: inherit;
   margin: inherit; }
 
+/* line 125, ../sass/components/_navigation.scss */
+#superfish-menu ul li ul li {
+  float: right; }
+
 /* line 129, ../sass/components/_navigation.scss */
 #superfish-menu ul li ul li.first {
   margin-left: 10px; }
 
+/* line 133, ../sass/components/_navigation.scss */
+#superfish-menu ul li ul li a {
+  color: #fff; }
+
 @media (min-width: 768px) {
-  /* line 134, ../sass/components/_navigation.scss */
+  /* line 140, ../sass/components/_navigation.scss */
   #superfish-menu ul li ul {
     position: fixed;
     top: 70px;
@@ -1036,14 +1166,30 @@ a:link {
     height: 55px;
     background: rgba(255, 255, 255, 0.8);
     padding: 0 1px;
-    width: 1440px;
+    width: 100%;
     margin: 0; }
 
-  /* line 146, ../sass/components/_navigation.scss */
+  /* line 152, ../sass/components/_navigation.scss */
+  .admin-menu #superfish-menu ul li ul {
+    top: 105px; } }
+@media (min-width: 1024px) {
+  /* line 158, ../sass/components/_navigation.scss */
+  #superfish-menu ul li ul {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    height: 55px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 0;
+    width: 100%;
+    margin: 0 auto; }
+
+  /* line 170, ../sass/components/_navigation.scss */
   .admin-menu #superfish-menu ul li ul {
     top: 105px; } }
 @media (min-width: 1440px) {
-  /* line 152, ../sass/components/_navigation.scss */
+  /* line 177, ../sass/components/_navigation.scss */
   #superfish-menu ul li ul {
     position: fixed;
     top: 70px;
@@ -1055,33 +1201,58 @@ a:link {
     width: 1440px;
     margin: 0 auto; }
 
-  /* line 164, ../sass/components/_navigation.scss */
+  /* line 189, ../sass/components/_navigation.scss */
   .admin-menu #superfish-menu ul li ul {
     top: 105px; } }
-/* line 171, ../sass/components/_navigation.scss */
+/* line 196, ../sass/components/_navigation.scss */
 #superfish-menu ul li ul.sf-hidden li a {
   margin: -50px 50px 0 0;
   transition: margin 800ms; }
 
-/* line 175, ../sass/components/_navigation.scss */
+/* line 200, ../sass/components/_navigation.scss */
 #superfish-menu ul li ul li a {
   margin: 20px 50px 0 0; }
 
 /* ORANGE OVERRIDE FOR WHAT WE DO */
-/* line 185, ../sass/components/_navigation.scss */
-#superfish-menu #menu-495-1 a:hover,
-#superfish-menu #menu-495-1 ul li a:hover,
-#superfish-menu #menu-495-1 a.active,
-#superfish-menu #menu-495-1 ul li a.active {
+/* line 208, ../sass/components/_navigation.scss */
+#superfish-menu .sf-item-1 a:hover,
+#superfish-menu .sf-item-1 a.active {
+  color: #d5007f; }
+
+/* line 213, ../sass/components/_navigation.scss */
+#superfish-menu .sf-item-2 a:hover,
+#superfish-menu .sf-item-2 a.active {
+  color: #bbb0ab; }
+
+/* line 217, ../sass/components/_navigation.scss */
+#superfish-menu .sf-item-3 a:hover,
+#superfish-menu .sf-item-3 a.active {
   color: #eb5c1c; }
 
-/* ORANGE OVERRIDE FOR RESOURCES */
-/* line 193, ../sass/components/_navigation.scss */
-#superfish-menu #menu-496-1 a:hover,
-#superfish-menu #menu-496-1 ul li a:hover,
-#superfish-menu #menu-496-1 a.active,
-#superfish-menu #menu-496-1 ul li a.active {
+/* line 222, ../sass/components/_navigation.scss */
+#superfish-menu .sf-item-4 a:hover,
+#superfish-menu .sf-item-4 a.active {
   color: #3795c2; }
+
+/*  OVERRIDE FOR SUB-MENU */
+/* line 228, ../sass/components/_navigation.scss */
+#superfish-menu .sf-item-1 ul li a:hover,
+#superfish-menu .sf-item-2 ul li a:hover,
+#superfish-menu .sf-item-3 ul li a:hover,
+#superfish-menu .sf-item-4 ul li a:hover {
+  border-bottom: 2px solid transparent; }
+
+/* line 236, ../sass/components/_navigation.scss */
+#superfish-menu .sf-item-1 ul li a:hover,
+#superfish-menu .sf-item-2 ul li a:hover,
+#superfish-menu .sf-item-3 ul li a:hover,
+#superfish-menu .sf-item-4 ul li a:hover,
+#superfish-menu .sf-item-1 ul li a.active,
+#superfish-menu .sf-item-2 ul li a.active,
+#superfish-menu .sf-item-3 ul li a.active,
+#superfish-menu .sf-item-4 ul li a.active {
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff; }
 
 /*
 #sm-block ul, #sm-block li {
@@ -1120,8 +1291,8 @@ a:link {
 */
 /* SUPERFISH MOBILE VIEW */
 /* mobile toggle */
-/* line 241, ../sass/components/_navigation.scss */
-#superfish-1-toggle span {
+/* line 289, ../sass/components/_navigation.scss */
+.sf-menu-toggle span {
   display: block;
   text-indent: -5000px;
   width: 75px;
@@ -1129,61 +1300,61 @@ a:link {
   background: url(/sites/all/themes/socialfinance/images/menu.png) no-repeat;
   margin-left: 20px; }
 
-/* line 251, ../sass/components/_navigation.scss */
-#superfish-1-accordion {
+/* line 299, ../sass/components/_navigation.scss */
+.sf-menu-accordion {
   width: 100%;
   background: rgba(255, 255, 255, 0.65);
   padding: 20px; }
 
-/* line 257, ../sass/components/_navigation.scss */
-#superfish-1-accordion li {
+/* line 305, ../sass/components/_navigation.scss */
+.sf-menu-accordion li {
   padding: 10px; }
 
 /* LAYOUT MEU */
-/* line 265, ../sass/components/_navigation.scss */
+/* line 313, ../sass/components/_navigation.scss */
 #superfish-menu ul#superfish-2 > li {
   margin: 0;
   text-align: center; }
 
 /* WHO WE ARE */
-/* line 271, ../sass/components/_navigation.scss */
+/* line 319, ../sass/components/_navigation.scss */
 #superfish-menu ul#superfish-2 > li#menu-473-2 {
   width: 175px; }
 
 /* WHAT WE DO */
-/* line 276, ../sass/components/_navigation.scss */
+/* line 324, ../sass/components/_navigation.scss */
 #superfish-menu ul#superfish-2 > li#menu-495-2 {
   width: 175px; }
 
 /*RESOURCES */
-/* line 281, ../sass/components/_navigation.scss */
+/* line 329, ../sass/components/_navigation.scss */
 #superfish-menu ul#superfish-2 > li#menu-496-2 {
   width: 150px; }
 
 /*CAREERS */
-/* line 286, ../sass/components/_navigation.scss */
+/* line 334, ../sass/components/_navigation.scss */
 #superfish-menu ul#superfish-2 > li#menu-497-2 {
   width: 150px; }
 
-/* ORANGE OVERRIDE FOR WHAT WE DO */
-/* line 294, ../sass/components/_navigation.scss */
+/* BEIGE OVERRIDE FOR WHAT WE DO */
+/* line 342, ../sass/components/_navigation.scss */
 #superfish-menu #menu-495-2 a:hover,
 #superfish-menu #menu-495-2 ul li a:hover,
 #superfish-menu #menu-495-2 a.active,
 #superfish-menu #menu-495-2 ul li a.active {
-  color: #eb5c1c; }
+  color: #bbb0ab; }
 
 /* ORANGE OVERRIDE FOR RESOURCES */
-/* line 302, ../sass/components/_navigation.scss */
+/* line 350, ../sass/components/_navigation.scss */
 #superfish-menu #menu-496-2 a:hover,
 #superfish-menu #menu-496-2 ul li a:hover,
 #superfish-menu #menu-496-2 a.active,
 #superfish-menu #menu-496-2 ul li a.active {
-  color: #3795c2; }
+  color: #eb5c1c; }
 
 /* SUPERFISH MOBILE VIEW */
 /* mobile toggle */
-/* line 314, ../sass/components/_navigation.scss */
+/* line 362, ../sass/components/_navigation.scss */
 #superfish-2-toggle span {
   display: block;
   text-indent: -5000px;
@@ -1192,13 +1363,369 @@ a:link {
   background: url(/sites/all/themes/socialfinance/images/menu.png) no-repeat;
   margin-left: 20px; }
 
-/* line 324, ../sass/components/_navigation.scss */
+/* line 372, ../sass/components/_navigation.scss */
 #superfish-2-accordion {
   width: 100%;
   background: rgba(255, 255, 255, 0.65);
   padding: 20px; }
 
-/* line 330, ../sass/components/_navigation.scss */
+/* line 378, ../sass/components/_navigation.scss */
+#superfish-2-accordion li {
+  padding: 10px; }
+
+/* Scss Document */
+/* SCSS file */
+/* line 3, ../sass/components/_navigation_old.scss */
+.l-header {
+  z-index: 10;
+  position: relative; }
+  /* line 13, ../../../../../../../../../../../usr/local/rvm/gems/ruby-2.2.4/gems/toolkit-2.10.2/stylesheets/toolkit/_clearfix.scss */
+  .l-header:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 9, ../sass/components/_navigation_old.scss */
+.l-region--navigation {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 75px;
+  background: #ffffff; }
+
+/* line 17, ../sass/components/_navigation_old.scss */
+.logged-in .l-region--navigation {
+  top: 30px; }
+
+/*MOBILE BLOCKS*/
+/* line 23, ../sass/components/_navigation_old.scss */
+#logo-holder {
+  width: 200px;
+  padding-top: 17px;
+  margin: 0 auto; }
+
+/* line 28, ../sass/components/_navigation_old.scss */
+#logo-holder img {
+  width: 150px;
+  margin-left: 20px; }
+
+/* line 32, ../sass/components/_navigation_old.scss */
+#superfish-menu {
+  position: absolute;
+  text-transform: uppercase;
+  top: 22px; }
+
+/*LAYOUT BLOCKS*/
+@media (min-width: 768px) {
+  /* line 40, ../sass/components/_navigation_old.scss */
+  #logo-holder {
+    margin: inherit; }
+
+  /* line 44, ../sass/components/_navigation_old.scss */
+  #superfish-menu {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    top: 32px; }
+
+  /* line 50, ../sass/components/_navigation_old.scss */
+  .sf-menu.menu {
+    width: 650px;
+    margin: 0 50px 0 auto; }
+
+  /* line 55, ../sass/components/_navigation_old.scss */
+  #search {
+    position: absolute;
+    top: 20px;
+    right: 20px; } }
+/* LAYOUT MEU */
+/* line 66, ../sass/components/_navigation_old.scss */
+#superfish-menu ul.sf-menu > li {
+  margin: 0;
+  text-align: center; }
+
+/* line 70, ../sass/components/_navigation_old.scss */
+#superfish-menu ul li a {
+  display: block;
+  color: #31271c;
+  font-family: "Avenir LT W01_45 Book1475508";
+  font-size: 1.1em; }
+
+/* WHO WE ARE */
+/* line 79, ../sass/components/_navigation_old.scss */
+#superfish-menu ul.sf-menu > li.sf-item-1 {
+  width: 175px; }
+
+/* line 82, ../sass/components/_navigation_old.scss */
+#superfish-menu ul.sf-menu > li.sf-item-1 > ul {
+  background: #d5007f; }
+
+/* WHAT WE DO */
+/* line 87, ../sass/components/_navigation_old.scss */
+#superfish-menu ul.sf-menu > li.sf-item-2 {
+  width: 175px; }
+
+/* line 90, ../sass/components/_navigation_old.scss */
+#superfish-menu ul.sf-menu > li.sf-item-2 > ul {
+  background: #eb5c1c; }
+
+/*RESOURCES */
+/* line 95, ../sass/components/_navigation_old.scss */
+#superfish-menu ul.sf-menu > li.sf-item-3 {
+  width: 150px; }
+
+/* line 98, ../sass/components/_navigation_old.scss */
+#superfish-menu ul.sf-menu > li.sf-item-3 > ul {
+  background: #3795c2; }
+
+/*CAREERS */
+/* line 103, ../sass/components/_navigation_old.scss */
+#superfish-menu ul.sf-menu > li.sf-item-4 {
+  width: 150px; }
+
+/* line 106, ../sass/components/_navigation_old.scss */
+#superfish-menu ul.sf-menu > li.sf-item-4 > ul {
+  background: #d5007f; }
+
+/* SUB MENU OF SUPERFISH */
+/* line 114, ../sass/components/_navigation_old.scss */
+#superfish-menu ul li ul {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  right: 0;
+  height: 55px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0;
+  width: inherit;
+  margin: inherit; }
+
+/* line 126, ../sass/components/_navigation_old.scss */
+#superfish-menu ul li ul li {
+  float: right; }
+
+/* line 130, ../sass/components/_navigation_old.scss */
+#superfish-menu ul li ul li.first {
+  margin-left: 10px; }
+
+/* line 134, ../sass/components/_navigation_old.scss */
+#superfish-menu ul li ul li a {
+  color: #fff; }
+
+@media (min-width: 768px) {
+  /* line 141, ../sass/components/_navigation_old.scss */
+  #superfish-menu ul li ul {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    height: 55px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 0 1px;
+    width: 100%;
+    margin: 0; }
+
+  /* line 153, ../sass/components/_navigation_old.scss */
+  .admin-menu #superfish-menu ul li ul {
+    top: 105px; } }
+@media (min-width: 1024px) {
+  /* line 159, ../sass/components/_navigation_old.scss */
+  #superfish-menu ul li ul {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    height: 55px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 0;
+    width: 100%;
+    margin: 0 auto; }
+
+  /* line 171, ../sass/components/_navigation_old.scss */
+  .admin-menu #superfish-menu ul li ul {
+    top: 105px; } }
+@media (min-width: 1440px) {
+  /* line 178, ../sass/components/_navigation_old.scss */
+  #superfish-menu ul li ul {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    height: 55px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 0;
+    width: 1440px;
+    margin: 0 auto; }
+
+  /* line 190, ../sass/components/_navigation_old.scss */
+  .admin-menu #superfish-menu ul li ul {
+    top: 105px; } }
+/* line 197, ../sass/components/_navigation_old.scss */
+#superfish-menu ul li ul.sf-hidden li a {
+  margin: -50px 50px 0 0;
+  transition: margin 800ms; }
+
+/* line 201, ../sass/components/_navigation_old.scss */
+#superfish-menu ul li ul li a {
+  margin: 20px 50px 0 0; }
+
+/* ORANGE OVERRIDE FOR WHAT WE DO */
+/* line 209, ../sass/components/_navigation_old.scss */
+#superfish-menu .sf-item-1 a:hover,
+#superfish-menu .sf-item-1 a.active {
+  color: #d5007f; }
+
+/* line 214, ../sass/components/_navigation_old.scss */
+#superfish-menu .sf-item-2 a:hover,
+#superfish-menu .sf-item-2 a.active {
+  color: #eb5c1c; }
+
+/* line 218, ../sass/components/_navigation_old.scss */
+#superfish-menu .sf-item-3 a:hover,
+#superfish-menu .sf-item-3 a.active {
+  color: #3795c2; }
+
+/* line 223, ../sass/components/_navigation_old.scss */
+#superfish-menu .sf-item-4 a:hover,
+#superfish-menu .sf-item-4 a.active {
+  color: #d5007f; }
+
+/*  OVERRIDE FOR SUB-MENU */
+/* line 229, ../sass/components/_navigation_old.scss */
+#superfish-menu .sf-item-1 ul li a:hover,
+#superfish-menu .sf-item-2 ul li a:hover,
+#superfish-menu .sf-item-3 ul li a:hover,
+#superfish-menu .sf-item-4 ul li a:hover {
+  border-bottom: 2px solid transparent; }
+
+/* line 237, ../sass/components/_navigation_old.scss */
+#superfish-menu .sf-item-1 ul li a:hover,
+#superfish-menu .sf-item-2 ul li a:hover,
+#superfish-menu .sf-item-3 ul li a:hover,
+#superfish-menu .sf-item-4 ul li a:hover,
+#superfish-menu .sf-item-1 ul li a.active,
+#superfish-menu .sf-item-2 ul li a.active,
+#superfish-menu .sf-item-3 ul li a.active,
+#superfish-menu .sf-item-4 ul li a.active {
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff; }
+
+/*
+#sm-block ul, #sm-block li {
+	list-style:none;
+	list-style-image: none;
+	float:left;
+}
+
+#sm-block a {
+	display:block;
+	height:30px;
+}
+#sm-block #email {
+	text-indent: -5000px;
+	background:url(/sites/all/themes/socialfinance/images/sm-block/e.png) no-repeat left bottom;
+	width:45px;
+}
+
+#sm-block #facebook {
+	text-indent: -5000px;
+	background:url(/sites/all/themes/socialfinance/images/sm-block/fb.png) no-repeat left bottom;
+	width:30px;
+}
+#sm-block #twitter {
+	text-indent: -5000px;
+	background:url(/sites/all/themes/socialfinance/images/sm-block/twit.png) no-repeat left bottom;
+	width:40px;
+}
+#sm-block #linkedin {
+	text-indent: -5000px;
+	background:url(/sites/all/themes/socialfinance/images/sm-block/in.png) no-repeat left bottom;
+	width:50px;
+}
+
+
+*/
+/* SUPERFISH MOBILE VIEW */
+/* mobile toggle */
+/* line 290, ../sass/components/_navigation_old.scss */
+.sf-menu-toggle span {
+  display: block;
+  text-indent: -5000px;
+  width: 75px;
+  height: 25px;
+  background: url(/sites/all/themes/socialfinance/images/menu.png) no-repeat;
+  margin-left: 20px; }
+
+/* line 300, ../sass/components/_navigation_old.scss */
+.sf-menu-accordion {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.65);
+  padding: 20px; }
+
+/* line 306, ../sass/components/_navigation_old.scss */
+.sf-menu-accordion li {
+  padding: 10px; }
+
+/* LAYOUT MEU */
+/* line 314, ../sass/components/_navigation_old.scss */
+#superfish-menu ul#superfish-2 > li {
+  margin: 0;
+  text-align: center; }
+
+/* WHO WE ARE */
+/* line 320, ../sass/components/_navigation_old.scss */
+#superfish-menu ul#superfish-2 > li#menu-473-2 {
+  width: 175px; }
+
+/* WHAT WE DO */
+/* line 325, ../sass/components/_navigation_old.scss */
+#superfish-menu ul#superfish-2 > li#menu-495-2 {
+  width: 175px; }
+
+/*RESOURCES */
+/* line 330, ../sass/components/_navigation_old.scss */
+#superfish-menu ul#superfish-2 > li#menu-496-2 {
+  width: 150px; }
+
+/*CAREERS */
+/* line 335, ../sass/components/_navigation_old.scss */
+#superfish-menu ul#superfish-2 > li#menu-497-2 {
+  width: 150px; }
+
+/* ORANGE OVERRIDE FOR WHAT WE DO */
+/* line 343, ../sass/components/_navigation_old.scss */
+#superfish-menu #menu-495-2 a:hover,
+#superfish-menu #menu-495-2 ul li a:hover,
+#superfish-menu #menu-495-2 a.active,
+#superfish-menu #menu-495-2 ul li a.active {
+  color: #eb5c1c; }
+
+/* ORANGE OVERRIDE FOR RESOURCES */
+/* line 351, ../sass/components/_navigation_old.scss */
+#superfish-menu #menu-496-2 a:hover,
+#superfish-menu #menu-496-2 ul li a:hover,
+#superfish-menu #menu-496-2 a.active,
+#superfish-menu #menu-496-2 ul li a.active {
+  color: #3795c2; }
+
+/* SUPERFISH MOBILE VIEW */
+/* mobile toggle */
+/* line 363, ../sass/components/_navigation_old.scss */
+#superfish-2-toggle span {
+  display: block;
+  text-indent: -5000px;
+  width: 75px;
+  height: 25px;
+  background: url(/sites/all/themes/socialfinance/images/menu.png) no-repeat;
+  margin-left: 20px; }
+
+/* line 373, ../sass/components/_navigation_old.scss */
+#superfish-2-accordion {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.65);
+  padding: 20px; }
+
+/* line 379, ../sass/components/_navigation_old.scss */
 #superfish-2-accordion li {
   padding: 10px; }
 

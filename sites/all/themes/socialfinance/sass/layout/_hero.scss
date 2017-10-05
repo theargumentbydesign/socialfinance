@@ -7,8 +7,6 @@
 
 /* TITLES ETC */
 
-
-
 .hero .pane-title,
 .hero .pane-page-title { 
 	position:absolute;
@@ -17,7 +15,7 @@
 	right:0;
 	padding:0;
 	margin:0 auto;
-	z-index:0;
+	z-index:2;
 	text-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
 }
 

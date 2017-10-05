@@ -26,7 +26,7 @@
 	margin:0 auto;
 }
 #logo-holder img {
-	width: 200px;
+	width: 150px;
 	margin-left:20px;
 }
 #superfish-menu {
@@ -69,8 +69,9 @@
 }
 #superfish-menu ul li a {
 	display:block;
+	color:#31271c;
     font-family:"Avenir LT W01_45 Book1475508";
-	font-size:0.9em;
+	font-size:1.1em;
 }
 
 /* WHO WE ARE */
@@ -87,7 +88,7 @@
 	width:175px;
 }
 			#superfish-menu ul.sf-menu > li.sf-item-2 > ul {
-				background:$beige; 
+				background:$orange; 
 			}
 
 /*RESOURCES */
@@ -95,7 +96,7 @@
 	width:150px;
 }
 			#superfish-menu ul.sf-menu > li.sf-item-3 > ul {
-				background:$orange;
+				background:$blue;
 			}
 
 /*CAREERS */
@@ -103,7 +104,7 @@
 	width:150px; 
 }
 			#superfish-menu ul.sf-menu > li.sf-item-4 > ul {
-				background:$blue;
+				background:$pink;
 			}
 
 
@@ -212,16 +213,16 @@
 
 #superfish-menu .sf-item-2 a:hover,
 #superfish-menu .sf-item-2 a.active {
-   	color:$beige;
+   	color:$orange;
 }
 #superfish-menu .sf-item-3 a:hover,
 #superfish-menu .sf-item-3 a.active{
-   	color:$orange;
+   	color:$blue;
 }
 
 #superfish-menu .sf-item-4 a:hover,
 #superfish-menu .sf-item-4 a.active {
-  	color:$blue;
+  	color:$pink;
 }
 
 /*  OVERRIDE FOR SUB-MENU */
@@ -338,12 +339,12 @@
 
 
 
-/* BEIGE OVERRIDE FOR WHAT WE DO */
+/* ORANGE OVERRIDE FOR WHAT WE DO */
 #superfish-menu #menu-495-2 a:hover,
 #superfish-menu #menu-495-2 ul li a:hover,
 #superfish-menu #menu-495-2 a.active,
 #superfish-menu #menu-495-2 ul li a.active {
-	color:$beige;
+	color:$orange;
 }
 
 /* ORANGE OVERRIDE FOR RESOURCES */
@@ -351,7 +352,7 @@
 #superfish-menu #menu-496-2 ul li a:hover,
 #superfish-menu #menu-496-2 a.active,
 #superfish-menu #menu-496-2 ul li a.active {
-	color:$orange;
+	color:$blue;
 }
 
 
@@ -381,6 +382,4 @@
 
 
 
-
-/* Scss Document */
 
