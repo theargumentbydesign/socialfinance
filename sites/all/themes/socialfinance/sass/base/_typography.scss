@@ -6,13 +6,15 @@ font-family:"Avenir LT W01 35 Light";
 p {
 	font-size:1.2em;
 	line-height:1.6em;
+	color:$darkgrey;
 }
 
-.l-main .l-content li {
+.l-main .l-content .field li {
 	line-height:1.6em;
-	margin:0;
-	padding:0;
+	margin:0 0 20px -25px;
+	padding:0 0 0 20px;
 }
+
 
 h1,h2,h3,h4,h5,h6 {
     font-family:"Avenir LT W01_85 Heavy1475544";
@@ -29,6 +31,27 @@ strong, b {
 a:link {
 	text-decoration: none;
 }
+
+
+/* default link color to Pink*/
+a:link,a:visited,a:active,a:hover {
+	text-decoration: none;
+	color:$pink;
+}
+/* links to orange in resources */
+
+.section-resources a:link,.section-resources a:visited,.section-resources a:active,.section-resources a:hover {
+	text-decoration: none;
+	color:$green; 
+}
+
+/* links to blue in careers */
+
+.section-careers a:link,.section-careers a:visited,.section-careers a:active,.section-careers a:hover {
+	text-decoration: none;
+	color:$blue;
+}
+
 
 
 .l-region--footer p {margin-left:10px;}

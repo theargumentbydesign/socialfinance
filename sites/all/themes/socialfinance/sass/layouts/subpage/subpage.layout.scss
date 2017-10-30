@@ -23,27 +23,6 @@
 @import "../../components/**/*";
 
 
-/* GET DOWN LAYOUT*/
-
-html,body {height:100%;margin:0;padding:0;}
-.l-page {min-height:100%;position:relative;}
-.l-main {padding-bottom:1200px;}
-.l-footer-wrapper {
-	position:absolute;
-	bottom:0;
-	height:1200px; 
-	background-color:$grey;
-	width:100%;
-}  
-
-
-@include breakpoint($gridded) {
-	.l-main {padding-bottom:475px;}
-	.l-footer-wrapper {
-		height:475px; 
-	} 
-}
-
 
 /*----------*/
 

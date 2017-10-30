@@ -2,26 +2,28 @@
 
 html,body {height:100%;margin:0;padding:0;}
 body {
-		background:url(/sites/all/themes/socialfinance/images/hatch.png); 
-		background-attachment: fixed;
+		/*background:url(/sites/all/themes/socialfinance/images/hatch.png)*/
+		background-color:$lightgrey; 
+		/*background-attachment: fixed;*/
 }
 .l-page {
 	min-height:100%;position:relative;
 	background:#ffffff;
 }
-.l-main {padding-bottom:800px;}
+.l-main {padding-bottom:1100px;}
 .l-footer-wrapper {
 	position:absolute;
 	bottom:0;
-	height:800px; 
+	height:1100px; 
 	background-color:$grey;
+	padding-top:25px;
 	width:100%;
 }  
 
 
 @include breakpoint($gridded) {
-	.l-main {padding-bottom:475px;}
+	.l-main {padding-bottom:400px;}
 	.l-footer-wrapper {
-		height:475px; 
+		height:400px; 
 	} 
 }

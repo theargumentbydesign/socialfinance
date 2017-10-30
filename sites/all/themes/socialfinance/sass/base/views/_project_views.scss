@@ -1,17 +1,22 @@
 /* List views of projects */
 
 .view-projects a {
-	color:$orange;
+	color:$green;
 }
 
 .view-projects {
 	@include clearfix;
 }
+.view-blog-page .views-row,
 .view-projects .views-row {
 	float:left;
 	width:60%;
 	margin:0 20% 5%;
 	position:relative;
+} 
+
+.view-projects .views-row-last {
+	margin-bottom:10%;
 } 
 
 @include breakpoint($gridded) {
@@ -26,6 +31,12 @@
 		width:15%;
 		margin-right:5%;
 	}
+		.view-projects .view-filters {
+		@include grid-span(4,9);
+	}
+	.view-projects .view-content {
+		@include grid-span(8,1);
+	}
 }
  
 @include breakpoint($wide) {
@@ -38,10 +49,21 @@
 }
 
 .view-projects .views-field-title {
-    font-family:"Avenir LT W01_85 Heavy1475544";
+	font-family:"Avenir LT W01 35 Light";
 	font-weight: normal;
-	color:$orange;
+	color:$green;
+	font-size:1.6em;
+} 
+
+.view-projects .view-content h3 {
+	font-family:"Avenir LT W01 35 Light";
+	font-weight: normal;
+	color:$grey !important;
 	font-size:1.8em;
+	margin-top:0;
+} 
+.view-projects .view-content h3 a  {
+	color:$grey !important;
 } 
 
 .view-projects .views-field-field-standfirst p {
@@ -78,10 +100,32 @@
 	margin-bottom:50px;
 }
 
-.views-exposed-form label {
+#views-exposed-form-projects-page label {
   font-family: "Avenir LT W01_45 Book1475508";
 	font-weight: normal;
 	text-transform: uppercase;
 	padding-bottom:10px;
-	color:$orange;
+	color:$green;
+}
+
+.view-projects .form-type-bef-link a {
+	background:$lightgreen;
+}
+.view-projects .form-type-bef-link a.active {
+	background:$green;
+}
+
+
+#views-exposed-form-projects-page .views-reset-button #edit-reset {
+	display:block !important;
+	padding:10px;
+	background:$lightgreen;
+	margin:20px 0; 
+	color:$green; 
+	border-radius: 0;
+	border: none;
+}
+#views-exposed-form-projects-page .views-reset-button #edit-reset:hover {
+	color:$lightgreen;
+	background:$green;
 }

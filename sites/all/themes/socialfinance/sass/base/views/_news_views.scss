@@ -1,0 +1,116 @@
+/* List views of news */
+
+.view-news a {
+	color:$green;
+}
+
+.view-news {
+	@include clearfix;
+}
+
+.view-news .views-row {
+	float:left;
+	width:80%;
+	margin:30px 10% 0;
+	position:relative;
+} 
+
+
+@include breakpoint($gridded) {
+	
+		.view-news .view-filters {
+			@include grid-span(4,9);
+		}
+		.view-news .view-content {
+			@include grid-span(8,1);
+		}
+		.view-news .views-row {
+			float:left;
+			width:100%;
+			margin:0 0 30px 0;
+			position:relative;
+		} 
+		.view-news .titlegroup {
+			float:left;
+			width:100%;
+		}
+}
+/* List views of news items */
+
+
+.view-news .views-field {
+	padding-bottom:10px;
+}
+
+.view-news .views-label {
+	float:left;
+	margin-right:5px;
+}
+
+.view-news .views-field-title {
+	color:$green;
+	font-size:1.2em;
+} 
+
+.view-news .views-field-field-upload img {
+	vertical-align: top;
+	margin-right:10px;
+}
+
+.view-news .details,
+.view-news .readmore {
+		float:left;
+		width:100%;
+	@include clearfix;
+	}
+
+.view-news .readmore p {
+		font-size:1em;
+		line-height: 1.4em;
+	}
+
+
+html.js .view-news fieldset.collapsed {
+	padding-left:0;
+	border:none;
+	border-bottom:1px solid $green; 
+}
+html.js .view-news fieldset {
+	padding-left:0;
+	border:none;
+	border-top:1px solid $green; 
+}
+
+.view-news fieldset legend {
+	padding-left:0;
+	border:none;
+	text-transform:uppercase;
+}
+
+ 
+/* FILTERS */
+
+#views-exposed-form-news-page {
+	float:left;
+	@include clearfix;
+	margin-bottom:40px;
+}
+
+.view-news .views-exposed-form label {
+  font-family: "Avenir LT W01_45 Book1475508";
+	font-weight: normal;
+	text-transform: uppercase;
+	margin-bottom:10px;
+	float:left;
+	color:$green;
+}
+
+.view-news .form-type-bef-link a {
+	background:$lightgreen;
+}
+.view-news .form-type-bef-link a.active {
+	background:$green;
+}
+
+
+

@@ -1,0 +1,40 @@
+
+@include breakpoint($gridded) {	
+	ul.pager {
+		width:66.10169%;
+	}
+}
+ 
+
+
+ul.pager {
+	margin:0;
+	padding:0;
+}
+
+.pager li.pager__item {
+	padding:10px;
+    font-family:"Avenir LT W01_85 Heavy1475544";	
+	font-weight:normal;
+}
+.pager li.pager__item:hover {
+	padding:10px;
+}
+
+.pager li.pager__item--current,
+.pager li.pager__item--current:hover {
+	padding:10px;
+	color:#ffffff;
+	
+}
+
+/* PEOPLE VIEW COLOURS */
+
+.view-people .pager li.pager__item:hover {
+	background:$lightpink;
+}
+
+.view-people .pager li.pager__item--current,
+.view-people .pager li.pager__item--current:hover {
+	background:$pink;
+}

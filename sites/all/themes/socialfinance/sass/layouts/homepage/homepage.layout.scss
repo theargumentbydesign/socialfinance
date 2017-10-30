@@ -23,28 +23,6 @@
 @import "../../components/**/*"; 
 
 
-/* GET DOWN LAYOUT*/
-
-html,body {height:100%;margin:0;padding:0;}
-.l-page {min-height:100%;position:relative;}
-.l-main {padding-bottom:1200px;}
-.l-footer-wrapper {
-	position:absolute;
-	bottom:0;
-	height:1200px; 
-	background-color:$grey;
-	width:100%;
-}  
-
-
-@include breakpoint($gridded) {
-	.l-main {padding-bottom:475px;}
-	.l-footer-wrapper {
-		height:475px; 
-	} 
-}
-
-
 /*----------*/
 
 h2 {
@@ -60,7 +38,6 @@ h4 {
 	padding-top:20px; 
 }
 
-
 @include breakpoint($gridded) {
 	h4 {padding-top:0;}	
 }
@@ -72,39 +49,28 @@ h4 {
 	font-size:3em;
 	padding:40px 0 25px;
 	margin:0;	
-}
+} 
+
+.l-region h2.node__title {
+	padding:0; 
+	margin:0;
+} 
 
 .l-region p {
 	font-size:1.2em;
 	padding:0 0 25px;
-	margin:0;
+	margin:0; 
 }
 
-.l-region--whoweare {
-	background-color: #f3f2f1;
-}
 .l-region--search {
 	padding:20px 0;
-}
-.l-region--whatwedo {
-	background-color: $beige;
 }
 .l-region--resources {
 	background-color: #ffffff;
 }
 
-.down {
-	width:100%;
-	float:left;
-	padding-top:30px;
-}
 
-
-.l-region--careers {
-	background-color:$lightblue;
-}
-
-#whoweare, #careers, #resources, #whatwedo, .l-region--search {
+#whoweare, #resources, .l-region--search {
 	@include clearfix;
 }
 .hero {
@@ -114,117 +80,127 @@ h4 {
 
 /* Who we are */ 
 
-#whoweare h2,
-#whoweare h4 {
-	color:$pink;
+.l-region--whoweare h2.pane-title,
+.l-region--whoweare h4 {
+	color:$green;
 }
-#whoweare h4 {
-	margin-bottom:0;
-}
-
-/* What we do */
-
-
-#whatwedo p {
-	color:#ffffff;
+.l-region--whoweare h4 { 
+	margin:0 0 30px 0;
 }
 
-
-/* Resources */
-
-#resources h2,
-#resources h4 {
-	color:$orange;
+.l-region--whoweare p {
+	padding-bottom:5px;
 }
 
+/* Most read */
 
-#careers {
-	padding-bottom:50px;
-}
-#careers h2,
-#careers h4 {
+.l-region--resources h2,
+.l-region--resources h4 {
 	color:$blue;
 }
 
-#resources #projects,
-#resources #blogs,
-#resources #pubs,
-#resources #ibd,
-#whoweare #about, 
-#whoweare #people, 
-#whoweare #global, 
-#whoweare #news,
-#careers #gradbro,
-#careers #vacancies,
-#careers #workwithus {
+.l-region--whoweare #about, 
+.l-region--whoweare #people, 
+.l-region--whoweare #global, 
+.l-region--whoweare #news {
 	width:100%;
 } 
 
-#resources #projects p,
-#resources #blogs p,
-#resources #pubs p,
-#resources #ibd p,
-#whoweare #about p, 
-#whoweare #people p, 
-#whoweare #global p, 
-#whoweare #news p,
-#careers #gradbro p,
-#careers #vacancies p,
-#careers #workwithus p {
-	padding:0;
-} 
 
 @include breakpoint($gridded) {
-	
-#resources #projects,
-#resources #blogs,
-#resources #pubs,
-#resources #ibd,	
-#whoweare #about, 
-#whoweare #people, 
-#whoweare #global, 
-#whoweare #news {
+		
+.l-region--whoweare #about, 
+.l-region--whoweare #people, 
+.l-region--whoweare #global, 
+.l-region--whoweare #news {
 	width:25%;
 	float:left;
 }
-	
-#careers #gradbro,
-#careers #vacancies,
-#careers #workwithus {
-	width:33%;
-	float:left;
-}
 }
 
-
-
-#whoweare .down img,
-#careers .down img,
-#resources .down img {
-	padding:0px;
+.l-region--whoweare a {
+	color:$green;
 }
 
-#whoweare a {
-	color:$pink;
-}
-#whatwedo a {
-	
-}
-#resources a {
-	color:$orange;
+.l-region--resources a {
+	color:$blue;
 
 }
-#careers a {
+
+.l-region--whoweare img {
+	padding:10px;
+}
+
+/* HoMEPAGE RESOURCES VIEW */
+
+.view-homepage-recent-content a {
 	color:$blue;
 }
 
-#careers img,
-#resources img {
-	padding:10px; 
+.view-homepage-recent-content {
+	@include clearfix;
+	margin-bottom:50px;
 }
-#whoweare img {
-	padding:25px;
+
+
+
+.view-homepage-recent-content .projects {
+	float:left;
+	width:100%;
+	margin-right:0;
 }
+.view-homepage-recent-content .attachment .view-display-id-attachment_1 {
+	float:left;
+	width:100%;
+	
+}
+.view-homepage-recent-content .attachment .view-display-id-attachment_2 {
+	float:left;
+	width:100%;
+}
+
+.view-homepage-recent-content .attachment .view-display-id-attachment_2 .pubs {
+	float:left;
+	width:100%;
+	margin-right:0%;
+}
+
+			@include breakpoint($gridded) {
+				.view-homepage-recent-content .projects {
+					width:45%;
+					margin-right:5%;
+				}
+				.view-homepage-recent-content .attachment .view-display-id-attachment_1 {
+					width:45%;
+				}
+				.view-homepage-recent-content .attachment .view-display-id-attachment_2 .pubs {
+					width:45%;
+					margin-right:5%;
+				}	
+			}
+
+.view-homepage-recent-content .blogs{
+	padding-right:30px;
+}
+
+.view-homepage-recent-content .views-field {
+	padding-bottom:5px;
+}
+
+
+.view-homepage-recent-content > .view-header {
+	position:absolute;
+}
+
+.view-homepage-recent-content .view-header h4 {
+	text-align: left;
+}
+
+.view-homepage-recent-content .view-footer {
+	float:left;
+	width:25%;
+}
+
 
 
 

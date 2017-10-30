@@ -79,7 +79,7 @@
 			}
 		}
 
-
+ 
 .view-areas-of-work .view-footer a:hover {
 	background:rgba(0,0,0,0.45);
 	color:$lightbeige;
@@ -87,5 +87,21 @@
 
 
 
+/* BETTER EXPOSED FILTERS */
 
+
+ .views-exposed-form .form-item.form-type-bef-link {
+	margin:5px 0;
+}
+.form-type-bef-link a {
+	padding:10px 5px;
+	display:block;
+}
+.form-type-bef-link a:hover {
+	background:#ffffff;
+	transition: background 200ms;
+}
+ .form-type-bef-link a.active {
+	color:#ffffff;
+}
 

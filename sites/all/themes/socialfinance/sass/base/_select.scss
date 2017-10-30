@@ -1,13 +1,17 @@
 /* CSS Document */
 
-.form-item-field-work-area-tid {
+
+
+.container-inline-date .form-item,
+.form-type-select {
 	width:240px;
 	overflow: hidden;
 }
 
-select#edit-field-work-area-tid {
+select.form-select {
+	margin:10px 0 5px 0;
 	border:none;
-	background:$pink;
+	background:$green;
 	border-radius: 0;
 	box-shadow: none;
 	padding-left:10px;
@@ -16,7 +20,7 @@ select#edit-field-work-area-tid {
 	width:268px;
 }
 
-select#edit-field-work-area-tid option {
+select.form-select option {
 	padding:10px;
 	color:$pink;
 	background:$lightpink;
@@ -25,107 +29,31 @@ select#edit-field-work-area-tid option {
 }
 
 
-select#edit-field-work-area-tid option[selected] {
+select.form-select option[selected] {
 	background:$pink;
 	color:#ffffff;
 }
-select#edit-field-work-area-tid option:hover {
+select.form-select option:hover {
 	background:$pink;
+}  
+
+
+/* COLOURS */
+.section-resources select.form-select,
+.section-projects select.form-select {
+	background:$green;
+}
+.section-resources select.form-select option,
+.section-projects select.form-select option {
+	color:$green;
+	background:$lightgreen;
+}
+.section-resources select.form-select option[selected],
+.section-projects select.form-select option[selected] {
+	background:$green;
+}
+.section-resources select.form-select option:hover,
+.section-projects select.form-select option:hover {
+	background:$green;
 }
 
-
-
-.dropcontainer {
-	position:relative;
-	font-size: 16px;
-	color: #777;
-	} 
-
-.trigger {
-	color: #777;
-	padding: 10px;
-	font-size: 16px;
-	width: 50%;
-	background: #fff url(../images/select-arrow-open.png) 98% center no-repeat;
-	display: block;
-	border: 1px solid #ccc;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease; 
-	transition: all 0.5s ease;
-	}
-
-.trigger:hover {
-	color: #777;
-	background: #f5f5f5 url(../images/select-arrow-open.png) 98% center no-repeat;
-	}
-
-.activetrigger {
-	color: #777;
-	padding: 10px;
-	font-size: 16px;
-	width: 50%;
-	background: #f5f5f5 url(../images/select-arrow-close.png) 98% center no-repeat;
-	display: block;
-	border: 1px solid #ccc;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	}
-
-.activetrigger:hover {
-	background: #f5f5f5 url(../images/select-arrow-close.png) 98% center no-repeat;
-	color: #777;
-	}
-
-.activetrigger:active {
-	background: #f5f5f5 url(../images/select-arrow-close.png) 98% center no-repeat;
-	color: #777;
-	}
-
-.dropcontainer ul {
-	font-size: 16px;
-	border: 1px solid #ccc;
-	border-top: none;
-	background: #fff;
-	list-style-type: none;
-	padding: 10px;
-	margin: 0;
-	width: 50%;
-	z-index: 100;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	}
-
-.dropcontainer ul li {
-	padding: 5px;
-	-webkit-transition: all 0.5s ease; 
-	-moz-transition: all 0.5s ease; 
-	-o-transition: all 0.5s ease; 
-	transition: all 0.5s ease;
-	}
-
-.dropcontainer ul li:hover {
-	background: #f5f5f5;
-	outline: none;
-	}
-
-.dropcontainer ul li:first-child {
-	display: none;
-	}
-
-.dropcontainer ul li:last-child {
-	border-bottom: none;
-	}
-
-.dropdownhidden {
-	display: none;
-	}
-
-.dropdownvisible {
-	height: auto;
-	}

@@ -1,0 +1,47 @@
+/* List views of supporters */
+
+.view-supporters a {
+	color:$pink;
+}
+
+.view-supporters {
+	@include clearfix;
+}
+.view-supporters .views-row {
+	float:left;
+	width:60%;
+	margin:0 20% 5%;
+	min-height:150px;
+	position:relative;
+} 
+
+.view-supporters h3 {
+	float:left;
+	width:100%;
+} 
+
+@include breakpoint($gridded) {
+		.view-supporters .views-row {
+			float:left;
+			width:20%;
+			margin:0 2.5% 5%;
+			position:relative;
+		} 
+}
+ 
+ 
+
+
+
+/* FILTERS */
+
+
+.view-supporters .views-exposed-form label {
+  font-family: "Avenir LT W01_45 Book1475508";
+	font-weight: normal;
+	text-transform: uppercase;
+	margin-bottom:5px;
+	float:left;
+	color:$pink;
+}
+  

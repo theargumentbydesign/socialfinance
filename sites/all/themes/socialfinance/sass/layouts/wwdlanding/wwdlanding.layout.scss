@@ -1,0 +1,151 @@
+// Import external libraries.
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+@import "toolkit";
+
+// Import variables, abstractions, base styles and components using globbing.
+//
+// Globbing will always import files alphabetically. Optimally, all your
+// components should be self-contained and explicit enough to not have any
+// contained styles leak into unrelated components: The import order should not
+// affect the result.
+//
+// If there are variables, functions or mixins that depend on each other and
+// therefore need to be imported in a specific order you can import them
+// directly. Variables-, function- or mixin providing partials should never
+// output any styles themselves: Importing them multiple times to resolve
+// dependencies shouldn't be a problem.
+@import "../../variables/**/*";
+@import "../../abstractions/**/*";
+@import "../../layout/**/*";
+@import "../../base/**/*";
+@import "../../components/**/*";
+
+a:link,a:visited,a:active,a:hover {
+	color:$gold;
+}
+
+.l-main {
+	@include clearfix;
+}
+.l-content {
+	@include grid-span(10,2);
+}
+
+
+			
+.l-content .l-region .panel-pane, .l-content .panel-pane {
+	width:auto;
+}
+
+#publicservice {
+	margin:50px 0;
+	border-bottom:5px $lightgold solid;
+	padding-bottom:50px;
+	@include clearfix;
+}
+#charities {
+	@include grid-span(4,1);
+	margin-bottom:50px;
+}
+#trusts {
+	@include grid-span(4,5);
+	background:$lightgold;
+	margin-bottom:50px;
+}
+#international {
+	@include grid-span(4,9);
+	margin-bottom:50px;
+}
+
+
+#charities .l-region--charities,
+#trusts .l-region--trusts,
+#international .l-region--international {
+	padding:20px;
+}
+
+  
+h2.pane-title {
+	color:$gold;
+	font-family:"Avenir LT W01 35 Light";
+	text-align: center;
+	font-size:2em;
+	margin-top:0;
+}
+
+
+#international .field__item .field__item,
+#trusts .field__item .field__item,
+#charities .field__item .field__item,
+#publicservice .field__item .field__item {
+	float:left;
+	width:100%;
+	text-align: center;
+	text-transform: uppercase;
+} 
+
+
+
+#publicservice .field__items,
+#international .field__items,
+#trusts .field__items,
+#charities .field__items {
+	float:left;
+	width:100%;
+	margin:0 0 20px 0;
+}  
+
+#publicservice .field__item,
+#international .field__item,
+#trusts .field__item,
+#charities .field__item {
+	float:left;
+	width:60%;
+	margin:0 20%;
+} 
+
+					@include breakpoint($gridded) {
+						#publicservice .field__item {
+							float:left;
+							width:30%;
+							margin:1.5%;
+						} 
+						#international .field__item,
+						#trusts .field__item,
+						#charities .field__item {
+							float:left;
+							width:45%;
+							margin:0 2.5%;
+						} 
+					}
+
+					@include breakpoint($wide) {
+						#publicservice .field__item {
+							float:left;
+							width:14%;
+							margin:1.25%;
+						} 
+					}
+
+
+					@include breakpoint($widest) {
+						#publicservice .field__item {
+							float:left;
+							width:14%;
+							margin:1.25%;
+						} 
+						
+					}
+
+
+#international .field__item img,
+#trusts .field__item img,
+#charities .field__item img,
+#publicservice .field__item img {
+	padding:20px 20px 0;
+}
+
+
+

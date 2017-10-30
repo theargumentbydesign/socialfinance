@@ -1,23 +1,26 @@
 /* CSS Document */
 
-.breadcrumb {
-	padding:20px 0;
+.easy-breadcrumb {
+	padding:35px 0;
 }
 
-.breadcrumb,
-.breadcrumb li {
-	list-style:none;
-	list-style-image:none;
-	float:left;
-	margin:0;
-	width:100%; 
-}
-.l-main .l-content .breadcrumb li {
-	float:left;
-	margin:0 5px;
-	padding:0 10px 0 0;
-	width:auto;
-}
 
-.breadcrumb li:before {
+.easy-breadcrumb a {
+	color:$pink;
+} 
+
+.section-blogs .easy-breadcrumb a,
+.section-projects .easy-breadcrumb a,
+.section-resources .easy-breadcrumb a {
+	color:$green;
+} 
+
+
+/* Board breadcrumb overrides */
+
+.easy-breadcrumb.pane-people .view-people .views-row a {
+	background:none;
+	display:inline;
+	color:$pink;
+	text-transform: capitalize;
 }

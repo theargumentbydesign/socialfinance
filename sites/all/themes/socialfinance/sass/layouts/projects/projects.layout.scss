@@ -22,32 +22,57 @@
 @import "../../base/**/*";
 @import "../../components/**/*";
 
-
-html,body {height:100%;margin:0;padding:0;}
-.l-page {min-height:100%;position:relative;}
-.l-main {padding-bottom:475px;margin:0 80px;}
-.l-footer-wrapper {
+/* MOVE THE TABS FOR THESE PAGES */
+.pane-page-tabs {
 	position:absolute;
-	bottom:0;
-	height:475px; 
-	background-color:$grey;
-	width:100%;
-} 
+	right:0;
+}
 
+ 
 /* OVERRIDE THE OTHER PAGES */
 .l-content .l-region .panel-pane, .l-content .panel-pane {
 	width:auto;
 }
 
+
 .l-content {
-	@include grid-span(7,1); 
+	@include grid-span(12,1); 
+	padding-bottom:50px;
+}
+.l-content p {
+	font-size:1em;
+}
+
+
+
+/* BACKGROUNDING OF THE IMAGE */
+
+.background-image-formatter {
+	background-size: cover;
+	background:center;
+	min-height:300px;
+}
+
+/* SOME OF THESE TITLES ARE REALLY LONG... So - reduce the size on Project pages */
+.hero .pane-page-title h1 {
+	font-size:3em;
+}
+
+.l-region--sidebar {
+	@include grid-span(12,1);
+}
+ 
+
+@include breakpoint($gridded) {
+.l-content {
+	@include grid-span(7,2); 
 	padding-bottom:50px;
 }
 
 .l-region--sidebar {
-	@include grid-span(5,8);
+	@include grid-span(3,9);
 }
-
+}
 
 .node-type-projects .hero .pane-title {
 	top:0;
@@ -75,17 +100,16 @@ html,body {height:100%;margin:0;padding:0;}
 
 .l-content h2.pane-title {
 	text-transform: uppercase;
-	color:#ffffff;
-	background:$orange;
-	margin-left:-20px;
-	padding:10px 20px;
+	color:$grey;
+	padding:10px 0;
+	margin-bottom:0;
 	float:left;
-	font-size:1em;
+	font-size:1.2em;
 	clear:right;
 }
 
 
-.field--name-body,
+.field--name-field-background,
 .field--name-field-what,
 .field--name-field-why {
 	float:left;
@@ -95,8 +119,8 @@ html,body {height:100%;margin:0;padding:0;}
 /* STANDFIRST */
 
 .field--name-field-standfirst p {
-	color:$orange;
-	font-size:1.6em;	
+	color:$grey;
+	font-size:1.4em;	
 }
 
 /* PROJECT PARTNERS */
@@ -108,7 +132,7 @@ html,body {height:100%;margin:0;padding:0;}
 }
 
 .l-content .pane-node-field-project-partners h2.pane-title {
-	color:$orange;
+	color:$green;
 	background:white;
 	width:100%;
 	font-family:"Avenir LT W01 35 Light";
@@ -120,7 +144,7 @@ html,body {height:100%;margin:0;padding:0;}
 .l-region--sidebar .contact-pane a {
 	text-align: center;
 	padding:10px;
-	background-color: $orange;
+	background-color: $green;
 	color:#ffffff;
 	display:block;
 	margin:10px 0;
@@ -130,32 +154,52 @@ html,body {height:100%;margin:0;padding:0;}
 
 /*KEY FACTS*/
 .pane-node-field-key-facts {
-	background:$lightorange;
-	padding:20px;
-	margin-top:20px;
+	background:$lightgreen;
+	padding:10px;
+	margin-top:125px;
 }
 
 .pane-node-field-key-facts h2.pane-title {
 	text-transform: uppercase;
-	color:$orange;
+	color:$green;
 	margin-top:0;
 }
 
-.pane-node-field-key-facts td.odd {
-	background:#ffffff;
+.group-key-first.field-group-div {
+	padding-top:0px;
 }
-.pane-node-field-key-facts td {
+.field-group-div {
 	padding:20px;
 }
+.group-second {
+	background:#ffffff;
+}
 
-.pane-node-field-key-facts td h1 {
+.field-group-div .field--name-field-key-header-1,
+.field-group-div .field--name-field-key-header-2,
+.field-group-div .field--name-field-key-header-3 {
+    font-family:"Avenir LT W01_85 Heavy1475544";
 	margin:0;
-	font-size:4em;
-	color:$orange;
+	font-size:2.5em;
+	letter-spacing: 0.0075em;
+	color:$green;
+	
 }
 .pane-node-field-key-facts td p {
-	margin-top:0;
+	font-size:1em;
+	line-height:1.2em;
+	margin-top:10px;
 }
 
-
-
+/* The TEAM  */
+	.views-field-field-profile-picture {
+		float:left;
+		width:50%;
+	}
+	.views-field-name {
+		text-align: left;
+		float:right;
+		width:40%;
+		margin-left:5%;
+		padding-top:20px;
+	}

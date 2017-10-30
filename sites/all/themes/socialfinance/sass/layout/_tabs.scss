@@ -1,0 +1,28 @@
+#tabs ul.tabs--primary {
+	margin:1em 0;
+	border:none;
+}
+#tabs ul.tabs--primary li {
+	margin:10px;
+}
+#tabs ul.tabs--primary li a {
+	color:$pink;
+}
+
+
+
+/* COLOURS */
+
+
+.section-who-we-are #tabs ul.tabs--primary li a {
+	color:$pink;
+}
+
+
+.section-resources #tabs ul.tabs--primary li a {
+	color:$orange;
+}
+
+.section-careers #tabs ul.tabs--primary li a {
+	color:$blue;
+}

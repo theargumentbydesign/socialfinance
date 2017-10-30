@@ -4,78 +4,177 @@ footer .l-region-footer p {
 	font-size: 0.8em;
 }
 
-#footlog img {
-	width:175px;
-	padding-top:20px;
-	padding-left:45px;
-	margin:0 auto;
-}
-
-#footlog p {
-	text-align: center;
-	padding:0;
-}
-
-
-	#fsm-block {
-		width:50%;
-		margin:0 25%;
-		padding:20px 0;
-	}
+/* VERY BOTTOM COPYRIGHT BLOCK */
 
 footer .pane-block-1 {
 	position:absolute;
 	bottom:0;
 	background-color: $darkgrey;
 	width:100%;
-	color:#ffffff;
 }
 
 footer .pane-block-1 p {
-	padding:10px 20px;
-	margin:0 0 0 10px;
+	padding:10px 0;
+	margin:0;
 	font-size: 1em;
 	text-align: center;
+	color:#ffffff;
+}
+		@include breakpoint($gridded) {
+			footer .pane-block-1 p {
+				padding:10px 0 10px 40px;
+			}
+		}
+
+/* MENUS AND ADDRESS BLOCKS */
+
+#menu-address {	
+	text-align:center;
+	margin:0 0 10px 0;
+}	
+	
+#menu-address h4 {
+	text-align: center;
+	color:white;
+	margin-top:0;
 }
 
-#menu-address, #footlinks {	
-		margin:20px 50px;
-		text-align:center;
+#menu-address p {
+	margin:0;
+	padding:0 0 10px 0;
+	line-height:1.2em;
+	font-size:0.9em;
+	color:#ffffff; 
 }
+
+#menu-address h4 a,
+#menu-address p a {
+	color:#fff;
+}
+#menu-address h4 a:hover,
+#menu-address p a:hover {
+	text-decoration: underline;
+}
+
+#menu-address .menu1,
+#menu-address .menu2,
+#menu-address .menu3,
+#menu-address .address {
+	color:#ffffff;
+	width:100%;
+	margin-bottom:20px;
+}
+
+	#menu-address .address {
+	padding:20px 0 0 0;
+	}
+
+
+
 
 @include breakpoint($gridded) {
+
+		footer .pane-block-1 p {
+			text-align: left;
+		}
+
+		#menu-address {	
+			@include grid-span(12,1);	
+			margin:20px 0 10px 0;
+			text-align:left;
+		}	
+		#menu-address h4 {
+			text-align: left;
+		}
 	
-	#footlog {
-	@include grid-span(8,1);	
-	}
-	#footlog p {
-	text-align: left;
+		#footlinks {
+			@include grid-span(8,1);
+			clear:both;
+			margin-top:40px;
+		}
+		#fsm-block {
+			@include grid-span(4,9);
+			padding:40px 0 0 0;
+			margin:0;
+		}
+		#menu-address .menu1,
+		#menu-address .menu2,
+		#menu-address .menu3,
+		#menu-address .address {
+			float:left;
+			width:25%;
+			padding-top:20px;
+			margin-bottom:0;
+		}
+		#menu-address .menu1 {
+		padding-left:40px;
+		width:22%;
+		}
+		#menu-address .menu3 {
+		width:24%;
+		}
+		#menu-address .address {
+		padding:30px 3% 0 0;
+		width:22%;
+		}	
 }
-	
-	#fsm-block {
-		@include grid-span(4,9);
-		padding:20px 0 0 0;
-	}
-	
-	#menu-address, #footlinks {	
-		@include grid-span(12,1);	
-		margin:20px 0 10px 0;
-		text-align:left;
-	}
-	#menu-address {	
-		margin:50px 0 10px 0;
-	}	
-	
-	footer .pane-block-1 p {
-		text-align: left;
-	}
+
+
+
+/* FOOTER MENU */
+
+#footlinks {
+	@include clearfix;	
 }
-	
+
+#footlinks ul, #footlinks li {
+	list-style:none;
+	list-style-image:none;
+	margin:0;
+	padding:0;
+}
+
+#footlinks ul {
+	padding:0 40px;
+	float:none;
+} 
+
+#footlinks li {
+	float:none;
+	text-align:center;
+	line-height: 1.6em;
+}
+#footlinks li a {
+	color:#fff;
+	text-transform: uppercase;
+	padding-right:1.5em;
+	font-size:0.9em;
+}
+
+#footlinks li a:hover {
+	text-decoration: underline
+}
+
+			@include breakpoint ($gridded) {
+				#footlinks ul {
+					float:left;
+				} 
+				#footlinks li {
+					float:left;
+					text-align:left;
+				}	
+			}
+
+
+/* SOCIAL MEDIA LINKS */
+
+#fsm-block {
+	padding:0;
+	margin:30px 0;
+}	
 #fsm-block ul {
 	margin:0 auto;
 }
-
-
 #fsm-block ul, #fsm-block li {
 	list-style:none;
 	list-style-image: none;
@@ -83,7 +182,6 @@ footer .pane-block-1 p {
 #fsm-block li {
 	float:left;
 }
-
 #fsm-block a {
 	display:block;
 	height:30px;
@@ -109,118 +207,3 @@ footer .pane-block-1 p {
 	background:url(/sites/all/themes/socialfinance/images/sm-block/in.png) no-repeat left bottom;
 	width:50px;
 }
-
-/* Main menu and addresss block */
-
-#menu-address h4 {
-	text-align: center;
-	color:white;
-	margin-top:0;
-}
-
-		@include breakpoint($gridded) {
-				#menu-address h4 {
-					text-align: left;
-					}
-		}
-
-
-#menu-address p {
-	margin:0;
-	padding:0 0 10px 0;
-	line-height:1.2em;
-	font-size:0.9em;
-}
-
-#menu-address h4 a,
-#menu-address p a {
-	color:#fff;
-}
-#menu-address h4 a:hover,
-#menu-address p a:hover {
-	text-decoration: underline;
-}
-
-#menu-address .menu1,
-#menu-address .menu2,
-#menu-address .menu3,
-#menu-address .address {
-	color:#ffffff;
-	width:100%;
-}
-	#menu-address .address {
-	padding:20px 0 0 0;
-	}
-
-@include breakpoint($gridded) {
-	#menu-address .menu1,
-	#menu-address .menu2,
-	#menu-address .menu3,
-	#menu-address .address {
-		float:left;
-		width:25%;
-		padding-top:20px;
-		
-	}
-	
-	#menu-address .menu1 {
-	padding-left:3%;
-	width:22%;
-	}
-	#menu-address .menu3 {
-	width:24%;
-	}
-	#menu-address .address {
-	padding:30px 3% 0 0;
-	width:22%;
-	}
-	
-}
-
-/* FOOTER MENU */
-
-
-#footlinks {
-	@include clearfix;
-		
-}
-
-#footlinks ul, #footlinks li {
-	list-style:none;
-	list-style-image:none;
-	margin:0;
-	padding:0;
-}
-
-#footlinks ul {
-	padding:0 3%;
-	float:none;
-} 
-
-#footlinks li {
-	float:none;
-	text-align:center;
-	line-height: 1.6em;
-}
-@include breakpoint ($gridded) {
-	#footlinks ul {
-		float:right;
-	} 
-	#footlinks li {
-		float:left;
-		text-align:center;
-	}	
-}
- 
-
-#footlinks li a {
-	color:#fff;
-	text-transform: uppercase;
-	padding-right:1.5em;
-	font-size:0.9em;
-}
-
-#footlinks li a:hover {
-	text-decoration: underline
-}
-

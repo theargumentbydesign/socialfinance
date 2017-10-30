@@ -25,8 +25,8 @@
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
       <?php print render($page['content']); ?>
-      <?php print render($page['whoweare']); ?>
       <?php print render($page['search']); ?>
+      <?php print render($page['whoweare']); ?>
       <?php print render($page['whatwedo']); ?>
       <?php print render($page['resources']); ?>
       <?php print render($page['careers']); ?>

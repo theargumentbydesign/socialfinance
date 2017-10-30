@@ -21,13 +21,19 @@
 /*MOBILE BLOCKS*/
 
 #logo-holder {
-	width:200px;
+	width:140px;
 	padding-top:15px;
 	margin:0 auto;
+	position:relative;
+	z-index:100;
 }
+#logo {
+	display:block;
+}
+
 #logo-holder img {
-	width: 200px;
-	margin-left:20px;
+	width: 140px;
+	margin-left:0;
 }
 #superfish-menu {
 	position:absolute;
@@ -39,12 +45,16 @@
 			/*LAYOUT BLOCKS*/
 			@include breakpoint($gridded) {
 				#logo-holder {
+				width:200px;
 				margin:inherit;
 				}
-				
+				#logo-holder img {
+				width: 200px;
+				margin-left:20px;
+				}
 				#superfish-menu {
 				width:100%;
-				margin:31px 0 0 0;
+				margin:32px 0 0 0;
 				text-align:center;
 				top:0; 
 				}
@@ -87,13 +97,13 @@
 
 /*WHAT WE DO */
 			#superfish-menu ul.sf-menu > li.sf-item-3 > ul {
-				background:$beige;
+				background:$gold;
 			}
 
 /* RESOURCES */
 
 			#superfish-menu ul.sf-menu > li.sf-item-2 > ul {
-				background:$orange; 
+				background:$green; 
 			}
 
 /* CAREERS */
@@ -181,55 +191,17 @@
 
 #superfish-menu .sf-item-3 a:hover,
 #superfish-menu .sf-item-3 a.active {
-   	color:$beige;
+   	color:$gold;
 }
 #superfish-menu .sf-item-2 a:hover,
 #superfish-menu .sf-item-2 a.active{
-   	color:$orange;
+   	color:$green;
 }
 
 #superfish-menu .sf-item-1 a:hover,
 #superfish-menu .sf-item-1 a.active {
   	color:$blue;
 }
-
-
-
-/*
-#sm-block ul, #sm-block li {
-	list-style:none;
-	list-style-image: none;
-	float:left;
-}
-
-#sm-block a {
-	display:block;
-	height:30px;
-}
-#sm-block #email {
-	text-indent: -5000px;
-	background:url(/sites/all/themes/socialfinance/images/sm-block/e.png) no-repeat left bottom;
-	width:45px;
-}
-
-#sm-block #facebook {
-	text-indent: -5000px;
-	background:url(/sites/all/themes/socialfinance/images/sm-block/fb.png) no-repeat left bottom;
-	width:30px;
-}
-#sm-block #twitter {
-	text-indent: -5000px;
-	background:url(/sites/all/themes/socialfinance/images/sm-block/twit.png) no-repeat left bottom;
-	width:40px;
-}
-#sm-block #linkedin {
-	text-indent: -5000px;
-	background:url(/sites/all/themes/socialfinance/images/sm-block/in.png) no-repeat left bottom;
-	width:50px;
-}
-
-
-*/
 
 
 /* SUPERFISH MOBILE VIEW */
@@ -292,7 +264,7 @@
 #superfish-menu #menu-495-2 ul li a:hover,
 #superfish-menu #menu-495-2 a.active,
 #superfish-menu #menu-495-2 ul li a.active {
-	color:$beige;
+	color:$gold;
 }
 
 /* ORANGE OVERRIDE FOR RESOURCES */
@@ -300,7 +272,7 @@
 #superfish-menu #menu-496-2 ul li a:hover,
 #superfish-menu #menu-496-2 a.active,
 #superfish-menu #menu-496-2 ul li a.active {
-	color:$orange;
+	color:$green;
 }
 
 
@@ -308,24 +280,33 @@
 /* SUPERFISH MOBILE VIEW */
  
 /* mobile toggle */
-#superfish-2-toggle span {
+.sf-accordion-toggle span {
 	display:block;
 	text-indent:-5000px;
 	width:75px;
 	height:25px;
 	background:url(/sites/all/themes/socialfinance/images/menu.png) no-repeat;
-	margin-left:20px
+	margin:20px 0 0 20px;
 	
 }
 
-#superfish-2-accordion {
+#superfish-1-accordion {
+	position:fixed;
+	height:100% !important;
+	z-index: 200;
 	width:100%;
-	background:rgba(255,255,255,0.65);
+	background:rgba(255,255,255,0.85);
 	padding:20px;
 }
 
-#superfish-2-accordion li {
+#superfish-menu #superfish-1-accordion li {
 	padding:10px;
+	text-align: center;
+}
+
+#superfish-menu #superfish-1-accordion li a {
+	text-align: center;
+	color:$grey;
 }
 
 
