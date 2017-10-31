@@ -184,6 +184,7 @@
 
 
 
+#emailbutton,
 .useremail {
 	width:100%;
 }
@@ -233,6 +234,7 @@
 	margin:20px 0;
 }
 
+#emailbutton a,
 .pane-people .view-people .views-row a {
 	display:block;
 	padding:5px;
@@ -242,6 +244,7 @@
 	background:$pink; 
 }
 
+#emailbutton a:hover,
 .pane-people .view-people .views-row a:hover {
 	color:$pink;
 	background:$lightpink; 

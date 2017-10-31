@@ -1,0 +1,65 @@
+/* List views of supporters */
+
+.view-supporters a {
+	color:$pink;
+}
+
+.view-supporters {
+	@include clearfix;
+}
+
+.view-supporters .views-row:hover {
+	background:$lightpink;
+}
+.view-supporters .views-row {
+	float:left;
+	width:60%;
+	margin:0 17.5% 5%;
+	min-height:165px;
+	position:relative;
+	border:1px solid $lightpink;
+	padding:10px;
+	text-align: center;
+}
+
+				@include breakpoint($gridded) {
+						.view-supporters .views-row {
+							float:left;
+							width:20%;
+							margin:0 2.5% 5%;
+							position:relative;
+						} 
+				}
+
+.view-supporters .views-field-title {
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	text-align: center;
+}
+.view-supporters .views-field-title a {
+	display:block;
+	text-align: center;
+	padding:10px 0;
+}
+.view-supporters img {
+	max-width:140px;
+	height:auto;
+	display:inline-block;
+	margin:20px auto 10px;
+}
+
+/* specific row overrides for tricky logos */
+
+.view-supporters a.Big.Lottery.Fund img,
+.view-supporters a.Omidyar.Network img {
+	max-width:100px;
+	margin:0px auto 10px;
+}
+.view-supporters a.National.Trust img {
+	max-width:70px;
+	margin:0px auto 10px;
+}
+
+  

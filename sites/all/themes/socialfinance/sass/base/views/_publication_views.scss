@@ -93,7 +93,10 @@
 html.js .view-publications fieldset.collapsed {
 	margin-left:160px;
 	border:none;
-	border-bottom:1px solid $green; 
+}
+html.js .view-publications fieldset {
+	margin-left:160px;
+	border:none;
 }
 
 .view-publications fieldset legend {

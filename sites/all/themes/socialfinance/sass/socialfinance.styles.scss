@@ -22,7 +22,6 @@
 @import "base/**/*";
 @import "components/**/*";
 
-
 .page-user .l-content .pane-user-login {
 	position:relative;
 	z-index:100;
@@ -62,20 +61,15 @@
 	font-weight:normal;
 }
 
+/* BACKGROUNDING OF THE IMAGE */
 
-
-
-
-/*
-.admin-menu #superfish-menu ul li ul {
-	top:105px;
+.background-image-formatter {
+	background-size: cover;
+	background:center;
+	min-height:300px;
 }
-
-.admin-menu #sm-block {
-	top:30px;
-}
-.admin-menu #search {
-	top:37px;
-}
-
-*/
+	
+	
+	
+	
+	

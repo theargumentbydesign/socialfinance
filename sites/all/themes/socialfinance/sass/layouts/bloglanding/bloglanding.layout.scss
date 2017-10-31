@@ -56,7 +56,7 @@ a:link,a:visited,a:active,a:hover {
 	
 			.l-region--rightcol {
 				padding-left:20px;
-				border-left:5px solid $lightgold;
+				border-left:5px solid $lightgreen;
 				float:left;
 			}
 	}
@@ -65,43 +65,25 @@ a:link,a:visited,a:active,a:hover {
 	float:left;
 	width:100%;
 	margin:0 0 20px 0;
-	border-bottom:1px solid $lightgold;
+	border-bottom:1px solid $lightgreen;
 	padding-bottom:20px;
 }
  .views-row-last {
 	border-bottom:none;
 	margin:0;
 }
- 
-.views-field-type {
-	font-size:0.7em;
-	padding:7px;
-	background:$lightgold;
-	color:$gold;
-	width:86px;
-	text-align:center;
-	margin-bottom:7px;
+
+.view-videos .views-field-body p {
+	font-size:1em;
 }
-.views-field-field-cover-pic {
-	min-height:120px;
-	width:16%;
+ 
+.ytvid {
+	float:left;
+	width:50%;
 }
 
-.contactus {
-	margin:0 auto;
-	width:25%;
-	background:$gold;
-	color:$lightgold;
-	padding:10px;
-	text-align: center;
+.views-field-field-video {
+	float:right;
+	width:45%;
 }
-.contactus:hover {
-	background:$lightgold;
-	color:$gold;
-}
-.contactus a {
-	color:$lightgold;
-}
-.contactus:hover a {
-	color:$gold;
-}
+

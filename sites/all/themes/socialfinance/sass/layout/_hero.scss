@@ -12,6 +12,21 @@ body.not-front .hero {
 	position:relative;
 }
 
+.background-image-formatter {
+	min-height:300px;
+	background-size: cover;
+	background:center center;
+}
+
+#search-wrapper {
+	position:absolute;
+	height:100%;
+	width:100%;
+	background: url(/sites/all/themes/socialfinance/images/search.jpg);
+	background-size: cover; 
+	background-position: center center;
+}
+
 #contact-wrapper {
 	position:absolute;
 	height:100%;
@@ -110,34 +125,18 @@ body.not-front .hero {
 
 .hero .pane-page-title { 
 	position:absolute;
-	top:35px;
-	left:0;
-	right:0;
-	padding:0;
-	margin:0 auto;
-	z-index:2;
-}
-
-.hero .pane-title { 
-	position:absolute;
-	left:0;
-	right:0;
-	padding:0;
-	margin:0 auto;
-	z-index:2;
-	text-shadow: 0px 0px 50px rgba(0, 0, 0, 1);
 	top:150px;
-	color:#ffffff;
-	font-size:3em;
-	transition:font-size 300ms;
-	line-height: 1em;
-	text-align: center;
+	left:0;
+	right:0;
+	padding:0;
+	margin:0 auto;
+	z-index:2;
 }
 
 .hero .pane-page-title h1 {
 	text-align: center;
     font-family:"Avenir LT W01 35 Light";
-	font-size:4.5em;
+	font-size:4em;
 	color:#ffffff;
 	margin-top:0;
 	text-shadow: 0px 0px 50px rgba(0, 0, 0, 1);

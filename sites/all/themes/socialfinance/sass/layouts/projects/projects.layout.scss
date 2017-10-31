@@ -22,18 +22,21 @@
 @import "../../base/**/*";
 @import "../../components/**/*";
 
+
+a:link,a:visited,a:active,a:hover {
+	color:$green;
+}
+
 /* MOVE THE TABS FOR THESE PAGES */
 .pane-page-tabs {
 	position:absolute;
 	right:0;
 }
-
  
 /* OVERRIDE THE OTHER PAGES */
 .l-content .l-region .panel-pane, .l-content .panel-pane {
 	width:auto;
 }
-
 
 .l-content {
 	@include grid-span(12,1); 
@@ -43,19 +46,10 @@
 	font-size:1em;
 }
 
-
-
-/* BACKGROUNDING OF THE IMAGE */
-
-.background-image-formatter {
-	background-size: cover;
-	background:center;
-	min-height:300px;
-}
-
 /* SOME OF THESE TITLES ARE REALLY LONG... So - reduce the size on Project pages */
 .hero .pane-page-title h1 {
-	font-size:3em;
+	font-size:3.25em;
+	text-transform:capitalize;
 }
 
 .l-region--sidebar {

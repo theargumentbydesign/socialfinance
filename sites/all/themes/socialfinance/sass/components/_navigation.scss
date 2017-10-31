@@ -5,7 +5,6 @@
 	position:relative;
 	@include clearfix;
 }
-
 .l-region--navigation {
 	width:100%;
 	position:fixed;
@@ -13,13 +12,10 @@
 	height:75px;
 	background:#ffffff;
 } 
-
 .logged-in .l-region--navigation {
 	top:30px;
 } 
-
-/*MOBILE BLOCKS*/
-
+/* LOGO */
 #logo-holder {
 	width:140px;
 	padding-top:15px;
@@ -287,30 +283,76 @@
 	height:25px;
 	background:url(/sites/all/themes/socialfinance/images/menu.png) no-repeat;
 	margin:20px 0 0 20px;
-	
 }
 
-#superfish-1-accordion {
+#superfish-1-accordion.sf-menu.menu  {
 	position:fixed;
 	height:100% !important;
 	z-index: 200;
-	width:100%;
-	background:rgba(255,255,255,0.85);
+	width:100% !important;
+	background:rgba(255,255,255,0.95);
 	padding:20px;
+	height:inherit;
 }
 
-#superfish-menu #superfish-1-accordion li {
-	padding:10px;
+#superfish-menu #superfish-1-accordion > li {
+	padding:0;
 	text-align: center;
+	float:right;
+	width:100%;
+	position:fixed;
+	height:60px;
 }
+
+			#superfish-menu #superfish-1-accordion > li.sf-item-1  {
+				top:360px
+			}
+			#superfish-menu #superfish-1-accordion > li.sf-item-2  {
+				top:290px
+			}
+			#superfish-menu #superfish-1-accordion > li.sf-item-3  {
+				top:220px
+			}
+			#superfish-menu #superfish-1-accordion > li.sf-item-4  {
+				top:150px;
+			}
 
 #superfish-menu #superfish-1-accordion li a {
 	text-align: center;
 	color:$grey;
+	font-size:2em;
+	padding:10px;
 }
 
+			/* DROPDOWN MENU */
+			#superfish-menu #superfish-1-accordion li ul {
+				position:relative;
+				text-align: center;
+				color:#ffffff;
+				height:auto;
+				margin:0 20%;
+				width:60%;
+			}
+			#superfish-menu #superfish-1-accordion li ul li {
+				padding:0;
+				height:auto;
+			}
+			#superfish-menu #superfish-1-accordion li.sf-item-1 ul {
+				background:$blue;
+			}
+			#superfish-menu #superfish-1-accordion li.sf-item-2 ul {
+				background:$green;
+			}
+			#superfish-menu #superfish-1-accordion li.sf-item-3 ul {
+				background:$gold;
+			}
+			#superfish-menu #superfish-1-accordion li.sf-item-4 ul {
+				background:$pink;
+			}
 
-
-
-/* Scss Document */
+			#superfish-menu #superfish-1-accordion li ul li a {
+				padding:15px;
+				font-size:1em;
+				color:#ffffff;
+			}
 
