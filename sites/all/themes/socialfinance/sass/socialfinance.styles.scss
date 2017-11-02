@@ -64,12 +64,21 @@
 /* BACKGROUNDING OF THE IMAGE */
 
 .background-image-formatter {
-	background-size: cover;
+	background-size: cover !important;
 	background:center;
 	min-height:300px;
 }
 	
-	
+	.front .background-image-formatter {
+	background-size: cover !important;
+	background:center;
+	min-height:700px;
+}
+	/* Makes this accessible more easily */
+	.front .hero .contextual-links-wrapper {
+		margin-top:50px;
+	}
+
 	
 	
 	

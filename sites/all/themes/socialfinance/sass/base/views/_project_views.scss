@@ -128,3 +128,53 @@
 	color:$lightgreen;
 	background:$green;
 }
+
+
+
+/* RELATED CONTENT VIEWS */
+
+/* A closer look */
+
+.l-region--sidebar .view-display-id-block_5 .view-content {
+	width:100%;
+}
+
+.view-display-id-block_5 .views-row {
+	float:left;
+	width:100%;
+	margin:0 0 10px 0;
+	border-bottom:1px solid $lightgreen;
+	padding-bottom:5px;
+}
+ .view-display-id-block_5 .views-row-last {
+	border-bottom:none;
+	margin:0;
+}
+ 
+.view-display-id-block_5 .views-field-type {
+	font-size:0.7em;
+	padding:7px;
+	background:$lightgreen;
+	color:$green;
+	width:86px;
+	text-align:center;
+	margin-bottom:7px; 
+}
+.view-display-id-block_5 .views-field-field-page-image,
+.view-display-id-block_5 .views-field-field-video,
+.view-display-id-block_5 .views-field-field-cover-pic {
+	width:23%;
+	margin-right:4%;
+	float:left;
+	min-height:100px;
+}
+.view-display-id-block_5 .views-field-title {
+	font-size:1em;
+	float:right;
+	width:73%;
+} 
+
+
+
+
+

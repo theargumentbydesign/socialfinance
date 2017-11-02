@@ -4,6 +4,7 @@ body.front .hero {
 	height:600px;
 	margin-top:76px;
 	position:relative;
+	overflow:hidden;
 }
 
 body.not-front .hero {
@@ -12,11 +13,6 @@ body.not-front .hero {
 	position:relative;
 }
 
-.background-image-formatter {
-	min-height:300px;
-	background-size: cover;
-	background:center center;
-}
 
 #search-wrapper {
 	position:absolute;
@@ -36,7 +32,7 @@ body.not-front .hero {
 	background-position: center center;
 }
 
-#hero-wrapper {
+/*#hero-wrapper {
 	position:absolute;
 	height:100%;
 	width:100%;
@@ -44,6 +40,7 @@ body.not-front .hero {
 	background-size: cover; 
 	background-position: center center;
 }
+*/
 
 #blog-wrapper {
 	position:absolute;
@@ -123,6 +120,23 @@ body.not-front .hero {
 
 /* TITLES ETC */
 
+.front .hero h2.pane-title{ 
+	position:absolute;
+	top:250px;
+	left:0;
+	right:0;
+	padding:0;
+	margin:0 auto;
+	z-index:2;
+	text-align: center;
+    font-family:"Avenir LT W01 35 Light";
+	font-size:4em;
+	color:#ffffff;
+	margin-top:0;
+	text-shadow: 0px 0px 50px rgba(0, 0, 0, 1);
+}
+
+
 .hero .pane-page-title { 
 	position:absolute;
 	top:150px;
@@ -146,11 +160,6 @@ body.not-front .hero {
 	padding:0;
 }
 
-.front .l-region--hero p img {
-	position:absolute;
-	top:0;
-	width:150%;
-}
 .overlay {
 	padding-top:20px;
 	position:absolute;
@@ -232,6 +241,19 @@ body.not-front .hero {
 	width:200px;
 	background:rgba(255,255,255,0.20);
 	margin:40px auto;
+}
+.overlay .ourstory a {
+	color:#ffffff;
+}
+
+.overlay .ourstory:hover {
+	background:rgba(255,255,255,0.80);
+	transition:background 200ms;
+}
+
+.overlay .ourstory:hover a {
+	color:$grey;
+	transition:color 200ms;
 }
 
 @include breakpoint($gridded) {

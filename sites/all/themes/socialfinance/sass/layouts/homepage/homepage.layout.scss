@@ -22,7 +22,7 @@
 @import "../../base/**/*";
 @import "../../components/**/*"; 
 
-
+ 
 /*----------*/
 
 h2 {
@@ -62,18 +62,13 @@ h4 {
 	margin:0; 
 }
 
-.l-region--search {
-	padding:20px 0;
-}
 .l-region--resources {
 	background-color: #ffffff;
+	padding-bottom: 40px;
 }
 
 
-.l-region--whoweare, .l-region--resources, .l-region--search {
-	@include clearfix;
-}
-.hero {
+.hero, .l-region--whoweare, .l-region--resources {
 	@include clearfix;
 }
 
@@ -82,7 +77,7 @@ h4 {
 
 .l-region--whoweare h2.pane-title,
 .l-region--whoweare h4 {
-	color:$gold;
+	color:$purple;
 }
 .l-region--whoweare h4 { 
 	margin:0 0 30px 0;
@@ -92,34 +87,43 @@ h4 {
 	padding-bottom:5px;
 }
 
-/* Most read */
-
-.l-region--resources h2,
-.l-region--resources h4 {
-	color:$blue;
+.l-region--whoweare a {
+	color:$purple;
 }
 
-.l-region--whoweare #about, 
-.l-region--whoweare #people, 
-.l-region--whoweare #global, 
-.l-region--whoweare #news {
+.l-region--whoweare img {
+	padding:10px;
+}
+
+.l-region--whoweare #publicservices, 
+.l-region--whoweare #charities, 
+.l-region--whoweare #trusts,  
+.l-region--whoweare #international {
 	width:100%;
 } 
 
 
-@include breakpoint($gridded) {
-		
-.l-region--whoweare #about, 
-.l-region--whoweare #people, 
-.l-region--whoweare #global, 
-.l-region--whoweare #news {
-	width:25%;
-	float:left;
-}
+			@include breakpoint($gridded) {
+
+			.l-region--whoweare #publicservices, 
+			.l-region--whoweare #charities, 
+			.l-region--whoweare #trusts,  
+			.l-region--whoweare #international {
+				width:25%;
+				float:left;
+			}
+			}
+
+
+/* Most read */
+
+.l-region--resources h2 {
+	padding-top:0;
 }
 
-.l-region--whoweare a {
-	color:$gold;
+.l-region--resources h2,
+.l-region--resources h4 {
+	color:$blue;
 }
 
 .l-region--resources a {
@@ -127,11 +131,7 @@ h4 {
 
 }
 
-.l-region--whoweare img {
-	padding:10px;
-}
-
-/* HoMEPAGE RESOURCES VIEW */
+/* H)MEPAGE RESOURCES VIEW */
 
 .view-homepage-recent-content a {
 	color:$blue;

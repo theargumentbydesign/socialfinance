@@ -23,7 +23,7 @@
 @import "../../components/**/*";
 
 a:link,a:visited,a:active,a:hover {
-	color:$gold;
+	color:$purple;
 }
 
 .l-main {
@@ -39,26 +39,48 @@ a:link,a:visited,a:active,a:hover {
 	width:auto;
 }
 
+
 #publicservice {
 	margin:50px 0;
-	border-bottom:5px $lightgold solid;
+	border-bottom:5px $lightpurple solid;
 	padding-bottom:50px;
 	@include clearfix;
 }
 #charities {
-	@include grid-span(4,1);
+	@include grid-span(12,1);
 	margin-bottom:50px;
 }
 #trusts {
-	@include grid-span(4,5);
-	background:$lightgold;
+	@include grid-span(12,1);
+	background:$lightpurple;
 	margin-bottom:50px;
 }
 #international {
-	@include grid-span(4,9);
+	@include grid-span(12,1);
 	margin-bottom:50px;
 }
 
+				@include breakpoint($gridded) {
+						#publicservice {
+							margin:50px 0;
+							border-bottom:5px $lightpurple solid;
+							padding-bottom:50px;
+							@include clearfix;
+						}
+						#charities {
+							@include grid-span(4,1);
+							margin-bottom:50px;
+						}
+						#trusts {
+							@include grid-span(4,5);
+							background:$lightpurple;
+							margin-bottom:50px;
+						}
+						#international {
+							@include grid-span(4,9);
+							margin-bottom:50px;
+						}
+				}
 
 #charities .l-region--charities,
 #trusts .l-region--trusts,
@@ -68,7 +90,7 @@ a:link,a:visited,a:active,a:hover {
 
   
 h2.pane-title {
-	color:$gold;
+	color:$purple;
 	font-family:"Avenir LT W01 35 Light";
 	text-align: center;
 	font-size:2em;
@@ -86,8 +108,6 @@ h2.pane-title {
 	text-transform: uppercase;
 } 
 
-
-
 #publicservice .field__items,
 #international .field__items,
 #trusts .field__items,
@@ -97,20 +117,28 @@ h2.pane-title {
 	margin:0 0 20px 0;
 }  
 
-#publicservice .field__item,
-#international .field__item,
-#trusts .field__item,
-#charities .field__item {
-	float:left;
-	width:60%;
-	margin:0 20%;
-} 
+
 
 					@include breakpoint($gridded) {
 						#publicservice .field__item {
 							float:left;
-							width:30%;
+							width:22%;
 							margin:1.5%;
+						} 
+						#international .field__item,
+						#trusts .field__item,
+						#charities .field__item {
+							float:left;
+							width:100%;
+							margin:0;
+						} 
+					}
+
+					@include breakpoint($wide) {
+						#publicservice .field__item {
+							float:left;
+							width:16%;
+							margin:2%;
 						} 
 						#international .field__item,
 						#trusts .field__item,
@@ -121,20 +149,12 @@ h2.pane-title {
 						} 
 					}
 
-					@include breakpoint($wide) {
-						#publicservice .field__item {
-							float:left;
-							width:14%;
-							margin:1.25%;
-						} 
-					}
-
 
 					@include breakpoint($widest) {
 						#publicservice .field__item {
 							float:left;
-							width:14%;
-							margin:1.25%;
+							width:16%;
+							margin:2%;
 						} 
 						
 					}
@@ -146,6 +166,32 @@ h2.pane-title {
 #publicservice .field__item img {
 	padding:20px 20px 0;
 }
+
+
+#international .field__item a,
+#trusts .field__item a,
+#charities .field__item a,
+#publicservice .field__item a {
+	display:block;
+	padding:5px 0;
+	font-size:1.4em;
+}
+					@include breakpoint($gridded) {
+						#international .field__item a,
+						#trusts .field__item a,
+						#charities .field__item a,
+						#publicservice .field__item a {
+							font-size:1em;
+						}
+					}
+
+#international .field__item .entity-field-collection-item:hover,
+#trusts .field__item .entity-field-collection-item:hover,
+#charities .field__item .entity-field-collection-item:hover,
+#publicservice .field__item .entity-field-collection-item:hover {
+	background:$lightpurple;
+}
+
 
 
 

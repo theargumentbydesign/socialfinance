@@ -24,8 +24,8 @@
 
 #tabs ul.tabs--primary li a,
 a:link,a:visited,a:active,a:hover {
-	color:$gold;
-}
+	color:$purple;
+} 
 
 .hero .pane-page-title h1 {
 	font-size:3.25em;
@@ -64,16 +64,19 @@ a:link,a:visited,a:active,a:hover {
 	
 			.l-region--rightcol {
 				padding-left:20px;
-				border-left:5px solid $lightgold;
+				border-left:5px solid $lightpurple;
 				float:left;
 			}
 	}
+
+
+/* A closer look */
 
 .views-row {
 	float:left;
 	width:100%;
 	margin:0 0 20px 0;
-	border-bottom:1px solid $lightgold;
+	border-bottom:1px solid $lightpurple;
 	padding-bottom:20px;
 }
  .views-row-last {
@@ -84,8 +87,8 @@ a:link,a:visited,a:active,a:hover {
 .views-field-type {
 	font-size:0.7em;
 	padding:7px;
-	background:$lightgold;
-	color:$gold;
+	background:$lightpurple;
+	color:$purple;
 	width:86px;
 	text-align:center;
 	margin-bottom:7px;
@@ -94,43 +97,64 @@ a:link,a:visited,a:active,a:hover {
 	min-height:120px;
 	width:16%;
 }
-
-.contactus {
-	margin:0 auto;
-	width:25%;
-	background:$gold;
-	color:$lightgold;
-	padding:10px;
-	text-align: center;
-}
-.contactus:hover {
-	background:$lightgold;
-	color:$gold;
-}
-.contactus a {
-	color:$lightgold;
-}
-.contactus:hover a {
-	color:$gold;
+/* Override the annoying empty view lack of title conundrum fix */
+.view-what-we-do-tagged-content .view-empty p {
+	display:none;
 }
 
 
 /* PROJECT PARTNERS */
 
+.pane-node-field-project-partners {
+	@include clearfix;
+	border-top:2px solid $lightpurple;
+	border-bottom:2px solid $lightpurple;
+	padding:20px 0;
+	margin-bottom: 20px
+}
+
 .field--name-field-project-partners > .field__items > .field__item {
 	float:left;
-	width:25%;
-	padding-right:5%;
+	width:32%;
+	padding-right:1%;
 }
 
 .l-content .pane-node-field-project-partners h2.pane-title {
-	color:$gold;
+	color:$purple;
 	background:white;
 	width:100%;
 	font-family:"Avenir LT W01 35 Light";
 	font-size:1.2em;
 } 
 
+/* CONTACT US BUTTON */
+
+
+.contactus {
+	@include clearfix;
+	margin:20px auto;
+	width:90%;
+	background:$purple;
+	color:$lightpurple;
+	padding:10px;
+	text-align: center;
+}
+			@include breakpoint($gridded) {
+				.contactus {
+					width:35%;
+				}
+			}
+
+.contactus:hover {
+	background:$lightpurple;
+	color:$purple;
+}
+.contactus a {
+	color:$lightpurple;
+}
+.contactus:hover a {
+	color:$purple;
+}
 
 
 
