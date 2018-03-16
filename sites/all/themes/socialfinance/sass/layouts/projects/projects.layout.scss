@@ -119,18 +119,29 @@ a:link,a:visited,a:active,a:hover {
 
 /* PROJECT PARTNERS */
 
+
+.pane-project-partners {
+	float:left;
+	width:100%;
+	@include clearfix;
+}
+
+
+
 .field--name-field-project-partners > .field__items > .field__item {
 	float:left;
-	width:25%;
+	width:50%;
 	padding-right:5%;
 }
 
-.l-content .pane-node-field-project-partners h2.pane-title {
+.l-content .pane-project-partners h2.pane-title {
 	color:$green;
 	background:white;
 	width:100%;
 	font-family:"Avenir LT W01 35 Light";
 	font-size:1.2em;
+	
+	
 } 
 
 /* CONTACT PANE */

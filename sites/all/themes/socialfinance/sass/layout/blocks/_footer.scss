@@ -90,7 +90,7 @@ footer .pane-block-1 p {
 		#footlinks {
 			@include grid-span(8,1);
 			clear:both;
-			margin-top:40px;
+			margin-top:20px;
 		}
 		#fsm-block {
 			@include grid-span(4,9);
@@ -119,6 +119,11 @@ footer .pane-block-1 p {
 		}	
 }
 
+			@include breakpoint ($wide) {
+				#footlinks {
+					margin-top:40px;
+				}
+			}
 
 
 /* FOOTER MENU */
@@ -138,6 +143,7 @@ footer .pane-block-1 p {
 	padding:0 40px;
 	float:none;
 } 
+
 
 #footlinks li {
 	float:none;
@@ -163,9 +169,18 @@ footer .pane-block-1 p {
 					float:left;
 					text-align:left;
 				}	
+				#footlinks li a {
+					padding-right:1em;
+					font-size:0.7em;
+				}
 			}
 
-
+			@include breakpoint ($wide) {
+				#footlinks li a {
+					padding-right:1.5em;
+					font-size:0.9em;
+				}			
+			}
 /* SOCIAL MEDIA LINKS */
 
 #fsm-block {

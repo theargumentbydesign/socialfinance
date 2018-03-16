@@ -22,14 +22,24 @@
 		.view-projects .views-row {
 			float:left;
 			width:85%;
-			margin:0 7.5% 5%;
+			margin:0 7.5% 5% 0;
 			position:relative;
 		} 
-	.views-field-field-page-image {
+	.l-content .view-projects .views-field-field-page-image {
 		float:left;
-		width:15%;
+		width:25%;
 		margin-right:5%;
 	}
+	
+	.l-content .view-projects .views-field-title,
+	.l-content .views-field-field-strapline {
+		float:right;
+		width:70%;
+	}
+	.l-content #rightcolumn .views-field-field-strapline {
+		width:80%;
+	}	
+	
 		.view-projects .view-filters {
 		@include grid-span(4,9);
 	}
@@ -137,6 +147,7 @@
 
 .l-region--sidebar .view-display-id-block_5 .view-content {
 	width:100%;
+	padding-top:20px;
 }
 
 .view-display-id-block_5 .views-row {

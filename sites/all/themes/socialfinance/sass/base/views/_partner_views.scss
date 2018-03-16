@@ -9,13 +9,13 @@
 }
 
 .view-supporters .views-row:hover {
-	background:$lightpink;
+	border:1px solid $pink;
 }
 .view-supporters .views-row {
 	float:left;
 	width:60%;
 	margin:0 17.5% 5%;
-	min-height:165px;
+	min-height:170px;
 	position:relative;
 	border:1px solid $lightpink;
 	padding:10px;
@@ -52,11 +52,16 @@
 
 /* specific row overrides for tricky logos */
 
+.view-supporters a.Garfield img,
+.view-supporters a.John img,
 .view-supporters a.Big.Lottery.Fund img,
 .view-supporters a.Omidyar.Network img {
 	max-width:100px;
 	margin:0px auto 10px;
 }
+
+.view-supporters a.The.Law img,
+.view-supporters a.City img,
 .view-supporters a.National.Trust img {
 	max-width:70px;
 	margin:0px auto 10px;

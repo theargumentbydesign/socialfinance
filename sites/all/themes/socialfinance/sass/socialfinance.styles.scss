@@ -22,6 +22,11 @@
 @import "base/**/*";
 @import "components/**/*";
 
+
+body.not-front.page-user .hero {
+	height:0px;
+}
+
 .page-user .l-content .pane-user-login {
 	position:relative;
 	z-index:100;
@@ -30,7 +35,7 @@
 	border-radius: 10px;
 	border:5px solid $lightbeige;
 	padding:0 20px;
-	top:120px;
+	top:0;
 	@include clearfix;
 	background:#ffffff;
 	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
@@ -80,5 +85,17 @@
 	}
 
 	
+/* COOKiE COMPLIANCE */
+
+#cookie-compliance {
+	position:fixed;
+	z-index: 100;
+}
 	
-	
+#cookie-compliance .cookie-compliance__text p  {
+	color:white;
+}
+
+#cookie-compliance #edit-submit {
+	color:black;
+}

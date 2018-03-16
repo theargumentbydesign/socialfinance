@@ -55,7 +55,7 @@
 				top:0; 
 				}
 				.sf-menu.menu {
-				width:650px;
+				width:737px !important;
 				margin:0 50px 0 auto;
 				}
 			
@@ -66,7 +66,11 @@
 				}		
 			} 
 
-
+			@include breakpoint($wide) {
+				.sf-menu.menu {
+				width:970px;
+				}
+			}
 
 /* LAYOUT MEU */
 
@@ -83,6 +87,8 @@
 	padding:0 20px;
 	color:#000000;
 }
+
+
 
 
 /*WHO WE ARE */
@@ -134,7 +140,53 @@
 	margin:0 20px;
 	border-bottom:5px solid transparent;
 	transition: border-bottom-color 200ms;
+	width:auto;
 }
+	
+			@include breakpoint($gridded) {
+				#superfish-menu > ul.sf-menu > li#menu-721-1 > ul a  {
+					font-size:0.75em;
+					padding:15px 0 23px;
+					width:150px;
+					margin:0 10px;
+		
+				}
+					/* BETTER PUBLIC SERVICES LINK */
+					#superfish-menu > ul.sf-menu > li#menu-721-1 > ul li#menu-607-1 a  {
+					padding:15px 0 11px;
+					width:110px;
+				}
+					/* CHARITIES LINK */
+					#superfish-menu > ul.sf-menu > li#menu-721-1 > ul li#menu-605-1 a  {
+					padding:15px 0 11px;
+				}
+					/* PARTNERING LINK */
+					#superfish-menu > ul.sf-menu > li#menu-721-1 > ul li#menu-606-1 a  {
+					padding:15px 0 11px;
+					width:200px;
+				}			
+				
+			}
+
+			@include breakpoint($wide) {
+				#superfish-menu > ul.sf-menu > li#menu-721-1 > ul a  {
+					margin:0 10px;
+					padding:22px 0 14px;
+					font-size:0.9em;
+					width:auto;
+				}
+				#superfish-menu > ul.sf-menu > li#menu-721-1 > ul li#menu-605-1 a,
+				#superfish-menu > ul.sf-menu > li#menu-721-1 > ul li#menu-606-1 a,
+				#superfish-menu > ul.sf-menu > li#menu-721-1 > ul li#menu-607-1 a  {
+					padding:22px 0 14px;
+					width:auto;
+				}	
+			}
+			@include breakpoint($widest) {
+					#superfish-menu > ul.sf-menu > li#menu-721-1 > ul a  {
+					margin:0 20px;
+				} 
+			}
 
 #superfish-menu > ul.sf-menu > li > ul a:hover,
 #superfish-menu > ul.sf-menu > li > ul a.active {

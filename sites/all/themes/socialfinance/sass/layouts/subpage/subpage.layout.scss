@@ -37,3 +37,20 @@
 .hero .pane-page-title {
 	z-index: 1 !important;
 }
+
+.field--name-field-cover-pic {
+	float:left;
+	width:200px;
+	margin:0 20px 20px 0;
+}
+
+.field--name-field-upload {
+	padding:20px;
+	background:$lightgreen;
+	float:left;
+	width:100%;
+	margin:20px 0;
+	@include clearfix;
+}
+
+

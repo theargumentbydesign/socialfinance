@@ -232,7 +232,7 @@ body.not-front .hero {
 /* line 111, ../sass/layout/_hero.scss */
 #pubs-wrapper {
   position: absolute;
-  height: 100%;
+  height: 300px;
   width: 100%;
   background: url(/sites/default/files/pictures/publications1.jpg);
   background-size: cover;
@@ -357,7 +357,7 @@ body.not-front .hero {
 .overlay .ourstory {
   padding: 20px;
   border: 2px solid #ffffff;
-  width: 200px;
+  width: 230px;
   background: rgba(255, 255, 255, 0.2);
   margin: 40px auto; }
 
@@ -554,7 +554,7 @@ footer .pane-block-1 p {
     margin-left: 0;
     clear: none;
     clear: both;
-    margin-top: 40px; }
+    margin-top: 20px; }
 
   /* line 95, ../sass/layout/blocks/_footer.scss */
   #fsm-block {
@@ -589,6 +589,10 @@ footer .pane-block-1 p {
   #menu-address .address {
     padding: 30px 3% 0 0;
     width: 22%; } }
+@media (min-width: 1024px) {
+  /* line 123, ../sass/layout/blocks/_footer.scss */
+  #footlinks {
+    margin-top: 40px; } }
 /* FOOTER MENU */
 /* line 13, ../../../../../../../../../../../usr/local/rvm/gems/ruby-2.2.4/gems/toolkit-2.10.2/stylesheets/toolkit/_clearfix.scss */
 #footlinks:after {
@@ -596,87 +600,97 @@ footer .pane-block-1 p {
   display: table;
   clear: both; }
 
-/* line 130, ../sass/layout/blocks/_footer.scss */
+/* line 135, ../sass/layout/blocks/_footer.scss */
 #footlinks ul, #footlinks li {
   list-style: none;
   list-style-image: none;
   margin: 0;
   padding: 0; }
 
-/* line 137, ../sass/layout/blocks/_footer.scss */
+/* line 142, ../sass/layout/blocks/_footer.scss */
 #footlinks ul {
   padding: 0 40px;
   float: none; }
 
-/* line 142, ../sass/layout/blocks/_footer.scss */
+/* line 148, ../sass/layout/blocks/_footer.scss */
 #footlinks li {
   float: none;
   text-align: center;
   line-height: 1.6em; }
 
-/* line 147, ../sass/layout/blocks/_footer.scss */
+/* line 153, ../sass/layout/blocks/_footer.scss */
 #footlinks li a {
   color: #fff;
   text-transform: uppercase;
   padding-right: 1.5em;
   font-size: 0.9em; }
 
-/* line 154, ../sass/layout/blocks/_footer.scss */
+/* line 160, ../sass/layout/blocks/_footer.scss */
 #footlinks li a:hover {
   text-decoration: underline; }
 
 @media (min-width: 768px) {
-  /* line 159, ../sass/layout/blocks/_footer.scss */
+  /* line 165, ../sass/layout/blocks/_footer.scss */
   #footlinks ul {
     float: left; }
 
-  /* line 162, ../sass/layout/blocks/_footer.scss */
+  /* line 168, ../sass/layout/blocks/_footer.scss */
   #footlinks li {
     float: left;
-    text-align: left; } }
+    text-align: left; }
+
+  /* line 172, ../sass/layout/blocks/_footer.scss */
+  #footlinks li a {
+    padding-right: 1em;
+    font-size: 0.7em; } }
+@media (min-width: 1024px) {
+  /* line 179, ../sass/layout/blocks/_footer.scss */
+  #footlinks li a {
+    padding-right: 1.5em;
+    font-size: 0.9em; } }
 /* SOCIAL MEDIA LINKS */
-/* line 171, ../sass/layout/blocks/_footer.scss */
+/* line 186, ../sass/layout/blocks/_footer.scss */
 #fsm-block {
   padding: 0;
   margin: 30px 0; }
 
-/* line 175, ../sass/layout/blocks/_footer.scss */
+/* line 190, ../sass/layout/blocks/_footer.scss */
 #fsm-block ul {
   margin: 0 auto; }
 
-/* line 178, ../sass/layout/blocks/_footer.scss */
+/* line 193, ../sass/layout/blocks/_footer.scss */
 #fsm-block ul, #fsm-block li {
   list-style: none;
   list-style-image: none; }
 
-/* line 182, ../sass/layout/blocks/_footer.scss */
+/* line 197, ../sass/layout/blocks/_footer.scss */
 #fsm-block li {
   float: left; }
 
-/* line 185, ../sass/layout/blocks/_footer.scss */
+/* line 200, ../sass/layout/blocks/_footer.scss */
 #fsm-block a {
   display: block;
   height: 30px; }
 
-/* line 189, ../sass/layout/blocks/_footer.scss */
+/* line 204, ../sass/layout/blocks/_footer.scss */
 #fsm-block #email {
   text-indent: -5000px;
   background: url(/sites/all/themes/socialfinance/images/sm-block/e-wo.png) no-repeat left bottom;
   width: 45px; }
 
-/* line 195, ../sass/layout/blocks/_footer.scss */
+/* line 210, ../sass/layout/blocks/_footer.scss */
 #fsm-block #facebook {
   text-indent: -5000px;
   background: url(/sites/all/themes/socialfinance/images/sm-block/fb.png) no-repeat left bottom;
   width: 30px; }
 
-/* line 200, ../sass/layout/blocks/_footer.scss */
+/* line 215, ../sass/layout/blocks/_footer.scss */
 #fsm-block #twitter {
   text-indent: -5000px;
   background: url(/sites/all/themes/socialfinance/images/sm-block/twit.png) no-repeat left bottom;
   width: 40px; }
 
-/* line 205, ../sass/layout/blocks/_footer.scss */
+/* line 220, ../sass/layout/blocks/_footer.scss */
 #fsm-block #linkedin {
   text-indent: -5000px;
   background: url(/sites/all/themes/socialfinance/images/sm-block/in.png) no-repeat left bottom;
@@ -985,14 +999,14 @@ html.js .view-news fieldset {
 
 /* line 11, ../sass/base/views/_partner_views.scss */
 .view-supporters .views-row:hover {
-  background: #fbe5f2; }
+  border: 1px solid #d5007f; }
 
 /* line 14, ../sass/base/views/_partner_views.scss */
 .view-supporters .views-row {
   float: left;
   width: 60%;
   margin: 0 17.5% 5%;
-  min-height: 165px;
+  min-height: 170px;
   position: relative;
   border: 1px solid #fbe5f2;
   padding: 10px;
@@ -1028,12 +1042,16 @@ html.js .view-news fieldset {
 
 /* specific row overrides for tricky logos */
 /* line 55, ../sass/base/views/_partner_views.scss */
+.view-supporters a.Garfield img,
+.view-supporters a.John img,
 .view-supporters a.Big.Lottery.Fund img,
 .view-supporters a.Omidyar.Network img {
   max-width: 100px;
   margin: 0px auto 10px; }
 
-/* line 60, ../sass/base/views/_partner_views.scss */
+/* line 63, ../sass/base/views/_partner_views.scss */
+.view-supporters a.The.Law img,
+.view-supporters a.City img,
 .view-supporters a.National.Trust img {
   max-width: 70px;
   margin: 0px auto 10px; }
@@ -1210,16 +1228,26 @@ html.js .view-news fieldset {
   .view-projects .views-row {
     float: left;
     width: 85%;
-    margin: 0 7.5% 5%;
+    margin: 0 7.5% 5% 0;
     position: relative; }
 
   /* line 28, ../sass/base/views/_project_views.scss */
-  .views-field-field-page-image {
+  .l-content .view-projects .views-field-field-page-image {
     float: left;
-    width: 15%;
+    width: 25%;
     margin-right: 5%; }
 
-  /* line 33, ../sass/base/views/_project_views.scss */
+  /* line 34, ../sass/base/views/_project_views.scss */
+  .l-content .view-projects .views-field-title,
+  .l-content .views-field-field-strapline {
+    float: right;
+    width: 70%; }
+
+  /* line 39, ../sass/base/views/_project_views.scss */
+  .l-content #rightcolumn .views-field-field-strapline {
+    width: 80%; }
+
+  /* line 43, ../sass/base/views/_project_views.scss */
   .view-projects .view-filters {
     width: 32.20339%;
     float: right;
@@ -1227,7 +1255,7 @@ html.js .view-news fieldset {
     margin-right: 0;
     clear: none; }
 
-  /* line 36, ../sass/base/views/_project_views.scss */
+  /* line 46, ../sass/base/views/_project_views.scss */
   .view-projects .view-content {
     width: 66.10169%;
     float: left;
@@ -1235,20 +1263,20 @@ html.js .view-news fieldset {
     margin-left: 0;
     clear: none; } }
 @media (min-width: 1024px) {
-  /* line 42, ../sass/base/views/_project_views.scss */
+  /* line 52, ../sass/base/views/_project_views.scss */
   .view-projects .views-row {
     float: left;
     width: 92%;
     margin: 0 4% 5%;
     position: relative; } }
-/* line 50, ../sass/base/views/_project_views.scss */
+/* line 60, ../sass/base/views/_project_views.scss */
 .view-projects .views-field-title {
   font-family: "Avenir LT W01 35 Light";
   font-weight: normal;
   color: #7c8928;
   font-size: 1.6em; }
 
-/* line 57, ../sass/base/views/_project_views.scss */
+/* line 67, ../sass/base/views/_project_views.scss */
 .view-projects .view-content h3 {
   font-family: "Avenir LT W01 35 Light";
   font-weight: normal;
@@ -1256,22 +1284,22 @@ html.js .view-news fieldset {
   font-size: 1.8em;
   margin-top: 0; }
 
-/* line 64, ../sass/base/views/_project_views.scss */
+/* line 74, ../sass/base/views/_project_views.scss */
 .view-projects .view-content h3 a {
   color: #68777e !important; }
 
-/* line 68, ../sass/base/views/_project_views.scss */
+/* line 78, ../sass/base/views/_project_views.scss */
 .view-projects .views-field-field-standfirst p {
   margin: 0;
   font-size: 1.2em;
   line-height: 1.4em;
   height: 100px; }
 
-/* line 76, ../sass/base/views/_project_views.scss */
+/* line 86, ../sass/base/views/_project_views.scss */
 .view-projects .holder {
   position: relative; }
 
-/* line 79, ../sass/base/views/_project_views.scss */
+/* line 89, ../sass/base/views/_project_views.scss */
 .view-projects .overproj {
   z-index: 1;
   position: absolute;
@@ -1282,12 +1310,12 @@ html.js .view-news fieldset {
   width: 100%;
   height: 100%; }
 
-/* line 90, ../sass/base/views/_project_views.scss */
+/* line 100, ../sass/base/views/_project_views.scss */
 .view-projects .projimg {
   z-index: -1; }
 
 /* FILTERS */
-/* line 96, ../sass/base/views/_project_views.scss */
+/* line 106, ../sass/base/views/_project_views.scss */
 #views-exposed-form-projects-page {
   float: left;
   margin-bottom: 50px; }
@@ -1297,7 +1325,7 @@ html.js .view-news fieldset {
     display: table;
     clear: both; }
 
-/* line 102, ../sass/base/views/_project_views.scss */
+/* line 112, ../sass/base/views/_project_views.scss */
 #views-exposed-form-projects-page label {
   font-family: "Avenir LT W01_45 Book1475508";
   font-weight: normal;
@@ -1305,15 +1333,15 @@ html.js .view-news fieldset {
   padding-bottom: 10px;
   color: #7c8928; }
 
-/* line 110, ../sass/base/views/_project_views.scss */
+/* line 120, ../sass/base/views/_project_views.scss */
 .view-projects .form-type-bef-link a {
   background: #e5e7d4; }
 
-/* line 113, ../sass/base/views/_project_views.scss */
+/* line 123, ../sass/base/views/_project_views.scss */
 .view-projects .form-type-bef-link a.active {
   background: #7c8928; }
 
-/* line 118, ../sass/base/views/_project_views.scss */
+/* line 128, ../sass/base/views/_project_views.scss */
 #views-exposed-form-projects-page .views-reset-button #edit-reset {
   display: block !important;
   padding: 10px;
@@ -1323,18 +1351,19 @@ html.js .view-news fieldset {
   border-radius: 0;
   border: none; }
 
-/* line 127, ../sass/base/views/_project_views.scss */
+/* line 137, ../sass/base/views/_project_views.scss */
 #views-exposed-form-projects-page .views-reset-button #edit-reset:hover {
   color: #e5e7d4;
   background: #7c8928; }
 
 /* RELATED CONTENT VIEWS */
 /* A closer look */
-/* line 138, ../sass/base/views/_project_views.scss */
+/* line 148, ../sass/base/views/_project_views.scss */
 .l-region--sidebar .view-display-id-block_5 .view-content {
-  width: 100%; }
+  width: 100%;
+  padding-top: 20px; }
 
-/* line 142, ../sass/base/views/_project_views.scss */
+/* line 153, ../sass/base/views/_project_views.scss */
 .view-display-id-block_5 .views-row {
   float: left;
   width: 100%;
@@ -1342,12 +1371,12 @@ html.js .view-news fieldset {
   border-bottom: 1px solid #e5e7d4;
   padding-bottom: 5px; }
 
-/* line 149, ../sass/base/views/_project_views.scss */
+/* line 160, ../sass/base/views/_project_views.scss */
 .view-display-id-block_5 .views-row-last {
   border-bottom: none;
   margin: 0; }
 
-/* line 154, ../sass/base/views/_project_views.scss */
+/* line 165, ../sass/base/views/_project_views.scss */
 .view-display-id-block_5 .views-field-type {
   font-size: 0.7em;
   padding: 7px;
@@ -1357,7 +1386,7 @@ html.js .view-news fieldset {
   text-align: center;
   margin-bottom: 7px; }
 
-/* line 163, ../sass/base/views/_project_views.scss */
+/* line 174, ../sass/base/views/_project_views.scss */
 .view-display-id-block_5 .views-field-field-page-image,
 .view-display-id-block_5 .views-field-field-video,
 .view-display-id-block_5 .views-field-field-cover-pic {
@@ -1366,7 +1395,7 @@ html.js .view-news fieldset {
   float: left;
   min-height: 100px; }
 
-/* line 171, ../sass/base/views/_project_views.scss */
+/* line 182, ../sass/base/views/_project_views.scss */
 .view-display-id-block_5 .views-field-title {
   font-size: 1em;
   float: right;
@@ -1731,7 +1760,7 @@ html.js .view-publications fieldset {
 
   /* line 57, ../sass/components/_navigation.scss */
   .sf-menu.menu {
-    width: 650px;
+    width: 737px !important;
     margin: 0 50px 0 auto; }
 
   /* line 62, ../sass/components/_navigation.scss */
@@ -1739,15 +1768,19 @@ html.js .view-publications fieldset {
     position: absolute;
     top: 20px;
     right: 20px; } }
+@media (min-width: 1024px) {
+  /* line 70, ../sass/components/_navigation.scss */
+  .sf-menu.menu {
+    width: 970px; } }
 /* LAYOUT MEU */
-/* line 73, ../sass/components/_navigation.scss */
+/* line 77, ../sass/components/_navigation.scss */
 #superfish-menu > ul.sf-menu > li {
   margin: 0;
   text-align: center;
   float: right;
   padding: 0; }
 
-/* line 79, ../sass/components/_navigation.scss */
+/* line 83, ../sass/components/_navigation.scss */
 #superfish-menu > ul.sf-menu > li a {
   display: block;
   font-family: "Avenir LT W01_55 Roman1475520";
@@ -1756,27 +1789,27 @@ html.js .view-publications fieldset {
   color: #000000; }
 
 /*WHO WE ARE */
-/* line 90, ../sass/components/_navigation.scss */
+/* line 96, ../sass/components/_navigation.scss */
 #superfish-menu ul.sf-menu > li.sf-item-4 > ul {
   background: #d5007f; }
 
 /*WHAT WE DO */
-/* line 95, ../sass/components/_navigation.scss */
+/* line 101, ../sass/components/_navigation.scss */
 #superfish-menu ul.sf-menu > li.sf-item-3 > ul {
   background: #783c81; }
 
 /* RESOURCES */
-/* line 101, ../sass/components/_navigation.scss */
+/* line 107, ../sass/components/_navigation.scss */
 #superfish-menu ul.sf-menu > li.sf-item-2 > ul {
   background: #7c8928; }
 
 /* CAREERS */
-/* line 107, ../sass/components/_navigation.scss */
+/* line 113, ../sass/components/_navigation.scss */
 #superfish-menu ul.sf-menu > li.sf-item-1 > ul {
   background: #3795c2; }
 
 /* SUB MENU OF SUPERFISH */
-/* line 114, ../sass/components/_navigation.scss */
+/* line 120, ../sass/components/_navigation.scss */
 #superfish-menu > ul.sf-menu > li > ul {
   position: fixed;
   top: 70px;
@@ -1787,27 +1820,70 @@ html.js .view-publications fieldset {
   width: inherit;
   margin: inherit; }
 
-/* line 125, ../sass/components/_navigation.scss */
+/* line 131, ../sass/components/_navigation.scss */
 #superfish-menu > ul.sf-menu > li > ul li {
   float: right;
   text-align: center; }
 
-/* line 131, ../sass/components/_navigation.scss */
+/* line 137, ../sass/components/_navigation.scss */
 #superfish-menu > ul.sf-menu > li > ul a {
   color: #fff;
   padding: 22px 0 14px;
   margin: 0 20px;
   border-bottom: 5px solid transparent;
-  transition: border-bottom-color 200ms; }
+  transition: border-bottom-color 200ms;
+  width: auto; }
 
-/* line 139, ../sass/components/_navigation.scss */
+@media (min-width: 768px) {
+  /* line 147, ../sass/components/_navigation.scss */
+  #superfish-menu > ul.sf-menu > li#menu-721-1 > ul a {
+    font-size: 0.75em;
+    padding: 15px 0 23px;
+    width: 150px;
+    margin: 0 10px; }
+
+  /* BETTER PUBLIC SERVICES LINK */
+  /* line 155, ../sass/components/_navigation.scss */
+  #superfish-menu > ul.sf-menu > li#menu-721-1 > ul li#menu-607-1 a {
+    padding: 15px 0 11px;
+    width: 110px; }
+
+  /* CHARITIES LINK */
+  /* line 160, ../sass/components/_navigation.scss */
+  #superfish-menu > ul.sf-menu > li#menu-721-1 > ul li#menu-605-1 a {
+    padding: 15px 0 11px; }
+
+  /* PARTNERING LINK */
+  /* line 164, ../sass/components/_navigation.scss */
+  #superfish-menu > ul.sf-menu > li#menu-721-1 > ul li#menu-606-1 a {
+    padding: 15px 0 11px;
+    width: 200px; } }
+@media (min-width: 1024px) {
+  /* line 172, ../sass/components/_navigation.scss */
+  #superfish-menu > ul.sf-menu > li#menu-721-1 > ul a {
+    margin: 0 10px;
+    padding: 22px 0 14px;
+    font-size: 0.9em;
+    width: auto; }
+
+  /* line 178, ../sass/components/_navigation.scss */
+  #superfish-menu > ul.sf-menu > li#menu-721-1 > ul li#menu-605-1 a,
+  #superfish-menu > ul.sf-menu > li#menu-721-1 > ul li#menu-606-1 a,
+  #superfish-menu > ul.sf-menu > li#menu-721-1 > ul li#menu-607-1 a {
+    padding: 22px 0 14px;
+    width: auto; } }
+@media (min-width: 1440px) {
+  /* line 186, ../sass/components/_navigation.scss */
+  #superfish-menu > ul.sf-menu > li#menu-721-1 > ul a {
+    margin: 0 20px; } }
+/* line 191, ../sass/components/_navigation.scss */
 #superfish-menu > ul.sf-menu > li > ul a:hover,
 #superfish-menu > ul.sf-menu > li > ul a.active {
   color: #ffffff;
   border-bottom: 5px solid #ffffff; }
 
 @media (min-width: 768px) {
-  /* line 148, ../sass/components/_navigation.scss */
+  /* line 200, ../sass/components/_navigation.scss */
   #superfish-menu > ul.sf-menu > li > ul {
     position: fixed;
     top: 70px;
@@ -1818,42 +1894,42 @@ html.js .view-publications fieldset {
     width: 100%;
     margin: 0 auto; }
 
-  /* line 159, ../sass/components/_navigation.scss */
+  /* line 211, ../sass/components/_navigation.scss */
   .admin-menu #superfish-menu > ul.sf-menu > li > ul {
     top: 105px; } }
 @media (min-width: 1440px) {
-  /* line 169, ../sass/components/_navigation.scss */
+  /* line 221, ../sass/components/_navigation.scss */
   #superfish-menu > ul.sf-menu > li > ul {
     width: 1440px; } }
-/* line 175, ../sass/components/_navigation.scss */
+/* line 227, ../sass/components/_navigation.scss */
 #superfish-menu ul li ul.sf-hidden li a {
   margin: -50px 50px 0 0;
   transition: margin 800ms; }
 
 /* ORANGE OVERRIDE FOR WHAT WE DO */
-/* line 183, ../sass/components/_navigation.scss */
+/* line 235, ../sass/components/_navigation.scss */
 #superfish-menu .sf-item-4 a:hover,
 #superfish-menu .sf-item-4 a.active {
   color: #d5007f; }
 
-/* line 188, ../sass/components/_navigation.scss */
+/* line 240, ../sass/components/_navigation.scss */
 #superfish-menu .sf-item-3 a:hover,
 #superfish-menu .sf-item-3 a.active {
   color: #783c81; }
 
-/* line 192, ../sass/components/_navigation.scss */
+/* line 244, ../sass/components/_navigation.scss */
 #superfish-menu .sf-item-2 a:hover,
 #superfish-menu .sf-item-2 a.active {
   color: #7c8928; }
 
-/* line 197, ../sass/components/_navigation.scss */
+/* line 249, ../sass/components/_navigation.scss */
 #superfish-menu .sf-item-1 a:hover,
 #superfish-menu .sf-item-1 a.active {
   color: #3795c2; }
 
 /* SUPERFISH MOBILE VIEW */
 /* mobile toggle */
-/* line 206, ../sass/components/_navigation.scss */
+/* line 258, ../sass/components/_navigation.scss */
 .sf-menu-toggle span {
   display: block;
   text-indent: -5000px;
@@ -1862,44 +1938,44 @@ html.js .view-publications fieldset {
   background: url(/sites/all/themes/socialfinance/images/menu.png) no-repeat;
   margin-left: 20px; }
 
-/* line 216, ../sass/components/_navigation.scss */
+/* line 268, ../sass/components/_navigation.scss */
 .sf-menu-accordion {
   width: 100%;
   background: rgba(255, 255, 255, 0.65);
   padding: 20px; }
 
-/* line 222, ../sass/components/_navigation.scss */
+/* line 274, ../sass/components/_navigation.scss */
 .sf-menu-accordion li {
   padding: 10px; }
 
 /* LAYOUT MEU */
-/* line 230, ../sass/components/_navigation.scss */
+/* line 282, ../sass/components/_navigation.scss */
 #superfish-menu ul#superfish-2 > li {
   margin: 0;
   text-align: center; }
 
 /* WHO WE ARE */
-/* line 236, ../sass/components/_navigation.scss */
+/* line 288, ../sass/components/_navigation.scss */
 #superfish-menu ul#superfish-2 > li#menu-473-2 {
   width: 175px; }
 
 /* WHAT WE DO */
-/* line 241, ../sass/components/_navigation.scss */
+/* line 293, ../sass/components/_navigation.scss */
 #superfish-menu ul#superfish-2 > li#menu-495-2 {
   width: 175px; }
 
 /*RESOURCES */
-/* line 246, ../sass/components/_navigation.scss */
+/* line 298, ../sass/components/_navigation.scss */
 #superfish-menu ul#superfish-2 > li#menu-496-2 {
   width: 150px; }
 
 /*CAREERS */
-/* line 251, ../sass/components/_navigation.scss */
+/* line 303, ../sass/components/_navigation.scss */
 #superfish-menu ul#superfish-2 > li#menu-497-2 {
   width: 150px; }
 
 /* BEIGE OVERRIDE FOR WHAT WE DO */
-/* line 259, ../sass/components/_navigation.scss */
+/* line 311, ../sass/components/_navigation.scss */
 #superfish-menu #menu-495-2 a:hover,
 #superfish-menu #menu-495-2 ul li a:hover,
 #superfish-menu #menu-495-2 a.active,
@@ -1907,7 +1983,7 @@ html.js .view-publications fieldset {
   color: #783c81; }
 
 /* ORANGE OVERRIDE FOR RESOURCES */
-/* line 267, ../sass/components/_navigation.scss */
+/* line 319, ../sass/components/_navigation.scss */
 #superfish-menu #menu-496-2 a:hover,
 #superfish-menu #menu-496-2 ul li a:hover,
 #superfish-menu #menu-496-2 a.active,
@@ -1916,7 +1992,7 @@ html.js .view-publications fieldset {
 
 /* SUPERFISH MOBILE VIEW */
 /* mobile toggle */
-/* line 279, ../sass/components/_navigation.scss */
+/* line 331, ../sass/components/_navigation.scss */
 .sf-accordion-toggle span {
   display: block;
   text-indent: -5000px;
@@ -1925,7 +2001,7 @@ html.js .view-publications fieldset {
   background: url(/sites/all/themes/socialfinance/images/menu.png) no-repeat;
   margin: 20px 0 0 20px; }
 
-/* line 288, ../sass/components/_navigation.scss */
+/* line 340, ../sass/components/_navigation.scss */
 #superfish-1-accordion.sf-menu.menu {
   position: fixed;
   height: 100% !important;
@@ -1935,7 +2011,7 @@ html.js .view-publications fieldset {
   padding: 20px;
   height: inherit; }
 
-/* line 298, ../sass/components/_navigation.scss */
+/* line 350, ../sass/components/_navigation.scss */
 #superfish-menu #superfish-1-accordion > li {
   padding: 0;
   text-align: center;
@@ -1944,23 +2020,23 @@ html.js .view-publications fieldset {
   position: fixed;
   height: 60px; }
 
-/* line 307, ../sass/components/_navigation.scss */
+/* line 359, ../sass/components/_navigation.scss */
 #superfish-menu #superfish-1-accordion > li.sf-item-1 {
   top: 360px; }
 
-/* line 310, ../sass/components/_navigation.scss */
+/* line 362, ../sass/components/_navigation.scss */
 #superfish-menu #superfish-1-accordion > li.sf-item-2 {
   top: 290px; }
 
-/* line 313, ../sass/components/_navigation.scss */
+/* line 365, ../sass/components/_navigation.scss */
 #superfish-menu #superfish-1-accordion > li.sf-item-3 {
   top: 220px; }
 
-/* line 316, ../sass/components/_navigation.scss */
+/* line 368, ../sass/components/_navigation.scss */
 #superfish-menu #superfish-1-accordion > li.sf-item-4 {
   top: 150px; }
 
-/* line 320, ../sass/components/_navigation.scss */
+/* line 372, ../sass/components/_navigation.scss */
 #superfish-menu #superfish-1-accordion li a {
   text-align: center;
   color: #68777e;
@@ -1968,7 +2044,7 @@ html.js .view-publications fieldset {
   padding: 10px; }
 
 /* DROPDOWN MENU */
-/* line 328, ../sass/components/_navigation.scss */
+/* line 380, ../sass/components/_navigation.scss */
 #superfish-menu #superfish-1-accordion li ul {
   position: relative;
   text-align: center;
@@ -1977,28 +2053,28 @@ html.js .view-publications fieldset {
   margin: 0 20%;
   width: 60%; }
 
-/* line 336, ../sass/components/_navigation.scss */
+/* line 388, ../sass/components/_navigation.scss */
 #superfish-menu #superfish-1-accordion li ul li {
   padding: 0;
   height: auto; }
 
-/* line 340, ../sass/components/_navigation.scss */
+/* line 392, ../sass/components/_navigation.scss */
 #superfish-menu #superfish-1-accordion li.sf-item-1 ul {
   background: #3795c2; }
 
-/* line 343, ../sass/components/_navigation.scss */
+/* line 395, ../sass/components/_navigation.scss */
 #superfish-menu #superfish-1-accordion li.sf-item-2 ul {
   background: #7c8928; }
 
-/* line 346, ../sass/components/_navigation.scss */
+/* line 398, ../sass/components/_navigation.scss */
 #superfish-menu #superfish-1-accordion li.sf-item-3 ul {
   background: #783c81; }
 
-/* line 349, ../sass/components/_navigation.scss */
+/* line 401, ../sass/components/_navigation.scss */
 #superfish-menu #superfish-1-accordion li.sf-item-4 ul {
   background: #d5007f; }
 
-/* line 353, ../sass/components/_navigation.scss */
+/* line 405, ../sass/components/_navigation.scss */
 #superfish-menu #superfish-1-accordion li ul li a {
   padding: 15px;
   font-size: 1em;
@@ -2113,7 +2189,11 @@ ul.pager {
 #custom-search-blocks-form-2 #edit-actions {
   float: right; }
 
-/* line 25, ../sass/socialfinance.styles.scss */
+/* line 26, ../sass/socialfinance.styles.scss */
+body.not-front.page-user .hero {
+  height: 0px; }
+
+/* line 30, ../sass/socialfinance.styles.scss */
 .page-user .l-content .pane-user-login {
   position: relative;
   z-index: 100;
@@ -2122,7 +2202,7 @@ ul.pager {
   border-radius: 10px;
   border: 5px solid #f3f2f1;
   padding: 0 20px;
-  top: 120px;
+  top: 0;
   background: #ffffff;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
@@ -2133,44 +2213,58 @@ ul.pager {
     display: table;
     clear: both; }
 
-/* line 41, ../sass/socialfinance.styles.scss */
+/* line 46, ../sass/socialfinance.styles.scss */
 .page-user .l-content .pane-user-login h2 {
   margin-top: 0;
   line-height: 1.2em; }
 
-/* line 47, ../sass/socialfinance.styles.scss */
+/* line 52, ../sass/socialfinance.styles.scss */
 .page-user .l-content .pane-user-login .form-item {
   float: left;
   width: 45%;
   margin-right: 5%; }
 
-/* line 53, ../sass/socialfinance.styles.scss */
+/* line 58, ../sass/socialfinance.styles.scss */
 .page-user .l-content .pane-user-login .form-item input {
   margin: 5px 0;
   width: 100%;
   padding: 5px;
   height: 30px; }
 
-/* line 60, ../sass/socialfinance.styles.scss */
+/* line 65, ../sass/socialfinance.styles.scss */
 .page-user .l-content .pane-user-login .form-item label {
   font-weight: normal; }
 
 /* BACKGROUNDING OF THE IMAGE */
-/* line 66, ../sass/socialfinance.styles.scss */
+/* line 71, ../sass/socialfinance.styles.scss */
 .background-image-formatter {
   background-size: cover !important;
   background: center;
   min-height: 300px; }
 
-/* line 72, ../sass/socialfinance.styles.scss */
+/* line 77, ../sass/socialfinance.styles.scss */
 .front .background-image-formatter {
   background-size: cover !important;
   background: center;
   min-height: 700px; }
 
 /* Makes this accessible more easily */
-/* line 78, ../sass/socialfinance.styles.scss */
+/* line 83, ../sass/socialfinance.styles.scss */
 .front .hero .contextual-links-wrapper {
   margin-top: 50px; }
+
+/* COOKiE COMPLIANCE */
+/* line 90, ../sass/socialfinance.styles.scss */
+#cookie-compliance {
+  position: fixed;
+  z-index: 100; }
+
+/* line 95, ../sass/socialfinance.styles.scss */
+#cookie-compliance .cookie-compliance__text p {
+  color: white; }
+
+/* line 99, ../sass/socialfinance.styles.scss */
+#cookie-compliance #edit-submit {
+  color: black; }
 
 /*# sourceMappingURL=socialfinance.no-query.css.map */
