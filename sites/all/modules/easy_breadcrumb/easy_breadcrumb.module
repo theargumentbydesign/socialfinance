@@ -6,7 +6,7 @@
  * Easy Breadcrumb uses the URL (path alias) and the current page's title
  * (when available) to obtain the breadcrumb's segments and its respective
  * links. The resulting block will be something like:
- * "Home >> Contact Us" or "Home / Contact us".
+ * "Home » Contact Us" or "Home / Contact us".
  * Such presentation could vary depending on the configuration of the module.
  */
 
@@ -30,6 +30,32 @@ function easy_breadcrumb_init() {
   if ($disable_drupal_default_breadcrumb) {
     // Sets the Drupal's default breadcrumb as an empty array to disable it.
     drupal_set_breadcrumb(array());
+  }
+}
+
+/**
+ * Implements hook_help().
+ */
+function easy_breadcrumb_help($path, $arg) {
+  switch ($path) {
+    case 'admin/help#easy_breadcrumb':
+      $readme = file_get_contents(dirname(__FILE__) . '/README.md');
+      $output = '';
+
+      if (module_exists('markdown')) {
+        $filters = module_invoke('markdown', 'filter_info');
+        $info = $filters['filter_markdown'];
+
+        if (function_exists($info['process callback'])) {
+          $output = $info['process callback']($readme, NULL);
+        }
+      }
+
+      if ($output === '') {
+        $output = '<pre>' . $readme . '</pre>';
+      }
+
+      return $output;
   }
 }
 
@@ -110,9 +136,18 @@ function template_preprocess_easy_breadcrumb(&$variables) {
     $content = decode_entities($breadcrumb['content']);
     if (isset($breadcrumb['url'])) {
       $variables['breadcrumb'][$i] = '<span itemprop="title">';
-      $variables['breadcrumb'][$i] .= l($content, $breadcrumb['url'], array(
-        'attributes' => array('class' => $breadcrumb['class'])
+
+      $parsed_query = '';
+      $parsed_url = parse_url($breadcrumb['url']);
+      if (isset($parsed_url['query'])) {
+        parse_str($parsed_url['query'], $parsed_query);
+      }
+      $variables['breadcrumb'][$i] .= l($content, $parsed_url['path'], array(
+        'attributes' => array('class' => $breadcrumb['class']),
+        'query' => $parsed_query,
+        'html' => $breadcrumb['html'],
       ));
+
       $variables['breadcrumb'][$i] .= '</span>';
     }
     else {
@@ -122,7 +157,7 @@ function template_preprocess_easy_breadcrumb(&$variables) {
   }
   $variables['segments_quantity'] = count($variables['breadcrumb']);
   $variables['separator_ending'] = variable_get(EasyBreadcrumbConstants::DB_VAR_SEPERATOR_ENDING, FALSE) ? 0 : 1;
-  $variables['separator'] = filter_xss(variable_get(EasyBreadcrumbConstants::DB_VAR_SEGMENTS_SEPARATOR, '>>'));
+  $variables['separator'] = filter_xss(variable_get(EasyBreadcrumbConstants::DB_VAR_SEGMENTS_SEPARATOR, '»'));
 }
 
 /**
@@ -199,6 +234,7 @@ function _easy_breadcrumb_build_items() {
     // Iterates over the segments of the current URL
     // ("blog/article/hello-world") excepting the last segment
     // (the title, 'hello-world' in that case).
+    $last_segment_title = '';
     for ($idx_0 = 0, $idx_1 = 1; $idx_1 < $segments_quantity; ++$idx_0, ++$idx_1) {
       // Build an array containing the URL of the segment being currently
       // processed. E.g., having $alias as "blog/article/hello-world", at the
@@ -211,7 +247,7 @@ function _easy_breadcrumb_build_items() {
       // Jump to the next segment if this url is configured to be excluded.
       $excluded_path = _easy_breadcrumb_check_excluded_path($segment_url);
       if ($excluded_path) {
-          continue;
+        continue;
       }
 
       $segments_classes[1] = 'easy-breadcrumb_segment-' . $idx_1;
@@ -221,14 +257,34 @@ function _easy_breadcrumb_build_items() {
       // Check if this is a valid path.
       $segment_valid_path = _easy_breadcrumb_validate_segment_path($segment_normal_path);
 
+      if (!$segment_valid_path && module_exists('redirect')) {
+        global $language;
+        $redirect = redirect_load_by_source($segment_url, $language->language);
+        if ($redirect) {
+          $segment_normal_path = $redirect->redirect;
+          $segment_valid_path = _easy_breadcrumb_validate_segment_path($segment_normal_path);
+          $segment_url = drupal_get_path_alias($segment_normal_path);
+        }
+      }
+
       // Get the segment's raw text from the URL.
       $segment_text = $alias_arr[$idx_0];
       // Normalized segment's text (e.g. 'Blog');
       $segment_title = _easy_breadcrumb_obtain_segment_title($segment_normal_path, $segment_valid_path, $segment_text);
       _easy_breadcrumb_check_replaced_title($segment_title);
+
+      // Don't duplicate breadcrumbs for menu default local tasks.
+      if ($segment_title == $last_segment_title) {
+        $item = menu_get_item($segment_url);
+        if ($item['type'] != MENU_VISIBLE_IN_BREADCRUMB) {
+          continue;
+        }
+      }
+
       if ($segment_valid_path || $include_invalid_paths) {
         $breadcrumb[] = _easy_breadcrumb_build_item($segment_title, $segments_classes, $segment_url, $segment_valid_path);
       }
+      $last_segment_title = $segment_title;
     }
 
     // Gets the flag saying if the title should be appended to the breadcrumb.
@@ -318,10 +374,12 @@ function _easy_breadcrumb_build_item($item_title, $item_classes, $item_url, $as_
       variable_get(EasyBreadcrumbConstants::DB_VAR_TRUNCATOR_DOTS, TRUE)
     );
   }
+  $item = array('class' => $item_classes, 'html' => TRUE);
   if (!variable_get(EasyBreadcrumbConstants::DB_VAR_HTML_TAGS, TRUE)) {
     $item_title = strip_tags(html_entity_decode($item_title));
+    $item['html'] = TRUE;
   }
-  $item = array('content' => $item_title, 'class' => $item_classes);
+  $item['content'] = $item_title;
   if ($as_link) {
     $item['url'] = $item_url;
   }
@@ -395,7 +453,7 @@ function _easy_breadcrumb_check_excluded_path($url) {
   }
 
   drupal_alter('easy_breadcrumb_exclude_path', $excluded, $url);
-  
+
   return $excluded;
 }
 
